@@ -1,0 +1,217 @@
+# Options for TreeLine, an information storage program
+#
+# All options are set from within the program,
+# editing here is not recommended
+#
+##############################################################
+# Keyboard key bindings
+##############################################################
+#
+FileNew              Ctrl+N
+FileOpen             Ctrl+O
+FileOpenSample       
+FileSave             Ctrl+S
+FileSaveAs           
+FileExport           Ctrl+E
+FilePrintOpt         
+FilePrintPreview     
+FilePrint            Ctrl+P
+FileQuit             Ctrl+Q
+EditUndo             Ctrl+Z
+EditRedo             Ctrl+Y
+EditCut              Ctrl+X
+EditCopy             Ctrl+C
+EditCopyText         
+EditPaste            Ctrl+V
+EditPasteText        
+EditRename           Ctrl+R
+EditInsertBefore     Ctrl+B
+EditInsertAfter      Ctrl+I
+EditAddChild         Ctrl+A
+EditDelete           Del
+EditIndent           Ctrl+Shift+Right
+EditUnindent         Ctrl+Shift+Left
+EditMoveUp           Ctrl+Shift+Up
+EditMoveDown         Ctrl+Shift+Down
+EditMoveFirst        
+EditMoveLast         
+ViewPreviousSelect   Ctrl+Shift+P
+ViewNextSelect       Ctrl+Shift+N
+ViewTree             
+ViewFlat             
+ViewDataOutput       Ctrl+Shift+O
+ViewDataEdit         Ctrl+Shift+E
+ViewTitleList        Ctrl+Shift+L
+ViewShowChild        Ctrl+Shift+C
+ViewShowDescend      Ctrl+Shift+D
+ViewStatusBar        
+DataSetItemType      Ctrl+T
+DataSetDescendType   
+DataConfigType       
+DataCopyTypes        
+DataSort             
+DataChange           
+DataNumber           
+DataFilterCond       
+DataFilterText       
+DataFilterClear      
+DataCategoryAdd      
+DataCategoryFlat     
+DataRefArrange       
+DataRefFlat          
+ToolsExpand          Ctrl+Right
+ToolsCollapse        Ctrl+Left
+ToolsFind            Ctrl+F
+ToolsSpellCheck      
+ToolsRemXLST         
+ToolsGenOptions      
+ToolsFileOptions     
+ToolsTreeFont        
+ToolsOutputFont      
+ToolsEditFont        
+ToolsShortcuts       
+ToolsCustomToolbar   
+ToolsDefaultColor    
+ToolsBackColor       
+ToolsTextColor       
+WinNewWindow         
+WinCloseWindow       
+WinUpdateWindow      Ctrl+W
+HelpContents         F1
+HelpFullReadMe       
+HelpAbout            
+HelpPlugin           
+TextAddBoldTag       Ctrl+Shift+B
+TextAddItalicsTag    Ctrl+Shift+I
+TextAddUnderlineTag  Ctrl+Shift+U
+TextAddSizeTag       Ctrl+Shift+S
+TextAddColorTag      Ctrl+Shift+T
+TreeFocusView        Ctrl+G
+TreeSelectPrev       Ctrl+K
+TreeSelectNext       Ctrl+J
+TreePrevSibling      Ctrl+Shift+K
+TreeNextSibling      Ctrl+Shift+J
+TreeSelectParent     Ctrl+U
+TreeOpenItem         Ctrl+L
+TreeCloseItem        Ctrl+H
+TreePageUp           Ctrl+Shift+PgUp
+TreePageDown         Ctrl+Shift+PgDown
+TreeIncremSearch     Ctrl+/
+TreeIncremNext       F3
+TreeIncremPrev       Shift+F3
+RightChildPageUp     Ctrl+PgUp
+RightChildPageDown   Ctrl+PgDown
+RightParentPageUp    Shift+PgUp
+RightParentPageDown  Shift+PgDown
+#
+##############################################################
+# Other options
+##############################################################
+#
+AutoFileOpen         yes
+StartShowChildren    yes
+StartShowDescend     yes
+ShowStatusBar        yes
+PersistTreeState     yes
+SaveWindowGeom       yes
+#
+ClickRename          yes
+DragTree             yes
+InsertOnEnter        yes
+RenameNewNodes       yes
+OpenSearchNodes      yes
+ShowTreeIcons        yes
+EnableExecLinks      yes
+OpenNewWindow        yes
+CompressNewFiles     yes
+EncryptNewFiles      yes
+HtmlNewFields        no
+#
+IndentOffset         20
+MaxEditLines         7
+UndoLevels           16
+AutoSaveMinutes      2
+RecentFiles          4
+EditorPages          1
+SelectOrder          tree
+#
+EditDateFormat       dd/mm/yyyy
+EditTimeFormat       HH:MM
+#
+PrintWhat            tree
+PrintRoot            yes
+PrintLines           no
+PrintOpenOnly        no
+PrintKeepFirstChild  yes
+PrintUseOutputFont   yes
+PrintFont            
+PrintFontSize        
+PrintFontBold        no
+PrintFontItalic      no
+PrintFontUnderline   no
+PrintFontStrikeOut   no
+PrintPageSize        A4
+PrintLandscape       no
+PrintNumCols         1
+PrintColSpace        0.39370078740157477
+PrintIndentOffset    0.0
+HorizMargin          0.09842519685039369
+VertMargin           0.09842519685039369
+PrintUnits           centimeter
+#
+UseDefaultColors     no
+BackgroundR          0
+BackgroundG          0
+BackgroundB          0
+ForegroundR          0
+ForegroundG          255
+ForegroundB          0
+#
+TreeFont             Arial Narrow
+TreeFontSize         11
+TreeFontBold         no
+TreeFontItalic       no
+TreeFontUnderline    no
+TreeFontStrikeOut    no
+OutputFont           Arial Narrow
+OutputFontSize       11
+OutputFontBold       no
+OutputFontItalic     no
+OutputFontUnderline  no
+OutputFontStrikeOut  no
+EditorFont           Terminus
+EditorFontSize       15
+EditorFontBold       no
+EditorFontItalic     no
+EditorFontUnderline  no
+EditorFontStrikeOut  no
+#
+ToolbarQuantity      2
+ToolbarSize          16
+Toolbar0             FileNew,FileOpen,FileSave,FilePrintPreview,FilePrint,,EditCut,EditCopy,EditPaste,,ViewPreviousSelect,ViewNextSelect,,ViewShowChild,ViewShowDescend,,HelpContents
+Toolbar1             EditInsertAfter,EditAddChild,,EditDelete,EditIndent,EditUnindent,,EditMoveUp,EditMoveDown,,DataSetDescendType,DataConfigType,,DataSort
+ToolbarPosition      AAAA/wAAAAD9AAAAAAAACgAAAAPGAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAGAHQAYgAwAQAAAAD/////AAAAAAAAAAAAAAAGAHQAYgAxAQAAAXn/////AAAAAAAAAAA=
+RecentFile1          /recent/file_1
+RecentFile2          /recent/file_2
+RecentFile3          /recent/file_3
+RecentFile4          /recent/file_4
+TreeState1           0:0:0:0
+TreeState2           0:0:0:0
+TreeState3           0:0:0:0
+TreeState4           0:0:0:0
+SpellCheckPath       
+ExtEditorPath        
+#
+WindowXSize          2560
+WindowYSize          1037
+WindowXPos           0
+WindowYPos           21
+TreeSplitPercent     20
+OutputSplitPercent   81
+EditorSplitPercent   100
+TitleSplitPercent    100
+ActiveRightView      1
+PrintPrevXSize       1366
+PrintPrevYSize       728
+PrintPrevXPos        0
+PrintPrevYPos        0
