@@ -1,0 +1,2137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>README_de</title>
+  <style type="text/css">
+<!--
+  div {margin-left: 20px}
+  td {padding: 10px}
+  tr {vertical-align: top}
+  -->
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        <center>
+          <h1>Handbuch für TreeLine</h1>
+        </center>
+
+        <center>
+          <h2>ein Informationsverwaltungsprogramm</h2>
+        </center>
+
+        <center>
+          von Doug Bell
+        </center>
+
+        <center>
+          Version 1.4.1
+        </center>
+
+        <center>
+          11. November 2011
+        </center>
+        <hr>
+
+        <h2>Inhalt</h2>
+
+        <div>
+          <br>
+          <a href="#background">Hintergrund</a><br>
+          <br>
+          <a href="#features">Features</a><br>
+          <br>
+          <a href="#legal">Rechtliches</a><br>
+          <br>
+          <a href="#sysreq">System-Anforderungen</a><br>
+
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#linux-sys">Linux</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#win-sys">Windows</a><br>
+          </div><br>
+          <a href="#install">Installation</a><br>
+
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#linux-inst">Linux</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#win-inst">Windows</a><br>
+          </div><br>
+          <a href="#using">TreeLine benutzen</a><br>
+          <br>
+          <a href="#revs">Liste der Änderungen</a><br>
+          <br>
+          <a href="#contact">Fragen, Kommentare, Kritik?</a><br>
+        </div><a id="background" name="background">
+        <hr>
+
+        <h2>Hintergrund</h2>
+
+        <div>
+          <p>Haben Sie auch Dutzende von Post-Its herumliegen, auf denen mehr
+          oder weniger wichtige Informationen hingekritzelt sind? Oder
+          verschiedenste Listen von Büchern, Filmen, Lesezeichen,
+          Login-Daten, Adressen oder Aufgaben, die zu erledigen sind? Finden
+          Sie sie, wenn Sie sie brauchen? Ich konnte das meistens nicht. Hier
+          ist meine Antwort auf das Problem.</p>
+
+          <p>Einige würden TreeLine einen "Outliner" nennen, andere einen PIM
+          ("Personal Information Manager"). Auf den Punkt gebracht verwaltet
+          TreeLine fast jede Art von Information. Eine Baumstruktur macht es
+          einfach, Dinge in Ordnung zu halten und wiederzufinden. Und jedes
+          Element im Baum kann mehrere Felder enthalten, so dass sich eine
+          Mini-Datenbank ergibt. Das Ausgabeformat für jedes Element kann
+          frei definiert werden, uns das Ergebnis kann am Bildschirm
+          angezeigt, gedruckt oder auch als Webseite exportiert werden.</p>
+
+          <p>Ich bin nicht in der Softwarebranche tätig. Deshalb stelle ich
+          dieses Programm für jeden zur freien Verfügung. Es kann benutzt,
+          weiterverbreitet und verändert werden. Sie dürfen es nur nicht in
+          Programme integrieren, die selbst nicht unter einer freien Lizenz
+          stehen. Wenn Sie diese Software nützlich finden, erzählen Sie es
+          weiter. Und lassen Sie mich wissen, was Sie über TreeLine denken.
+          Im Kapitel <a href="#contact">Fragen, Kommentare, Kritik?</a>
+          finden Sie, wie Sie mich erreichen können.</p>
+        </div><a id="features" name="features">
+        <hr>
+
+        <h2>Features</h2>
+
+        <div>
+          <h4>Allgemein</h4>
+
+          <div>
+            <ul>
+              <li>TreeLine verwaltet praktisch jede Art von Informationen,
+              einschließlich Freitext, HTML, Zahlen, Termine, URLs usw.</li>
+
+              <li>Die Baumstruktur hilft dabei, Ordnung zu halten.</li>
+
+              <li>Jedes Element kann verschiedene Felder enthalten, die eine
+              Mini-Datenbank bilden.</li>
+
+              <li>Verschiedene Element-Typen mit verschiedenen
+              Felddefinitionen können in einer Datei zusammengefasst
+              werden.</li>
+
+              <li>Das Ausgabeformat, einschließlich der anzuzeigenden Felder,
+              Ausgabezeilen und eines Symbols (Icons) für die Baumansicht,
+              kann für jeden Element-Typ separat definiert werden.</li>
+            </ul>
+          </div>
+
+          <h4>Ansichten</h4>
+
+          <div>
+            <ul>
+              <li>Die linke Fensterhälfte zeigt standardmäßig eine
+              Baumstruktur, kann aber auch eine flache Ansicht der
+              Unterelemente des aktuellen Elements zeigen.</li>
+
+              <li>Die flache Ansicht in der linken Fensterhälfte kann auch
+              die Ergebnisse einer Filteroperation anzeigen.</li>
+
+              <li>Die rechte Fensterhälfte kann eine von drei Ansichten
+              zeigen, mit denen die Daten angesehen, die Datenfelder und die
+              Titelzeilen der Elemente bearbeitet werden können.</li>
+
+              <li>Die rechte Fensterhälfte zeigt normalerweise eine
+              zweigeteilte Ansicht des aktuellen Elements und seiner
+              Unterelemente.</li>
+
+              <li>Falls mehrfache Auswahlen selektiert sind, zeigt die rechte
+              Fensterhälfte alle Daten der Auswahlen.</li>
+
+              <li>Die rechte Fensterhälfte kann so konfiguriert werden, dass
+              alle Unterelemente sichtbar sind.</li>
+            </ul>
+          </div>
+
+          <h4>Navigation</h4>
+
+          <div>
+            <ul>
+              <li>Eine inkrementelle Suche erlaubt es, Elemente mit passendem
+              Titel schenll zu finden.</li>
+
+              <li>Ein Suchkommando durchsucht alle Datenfelder der
+              Elemente.</li>
+
+              <li>Kommandos zum Wechsel zu vorhergehenden und nachfolgenden
+              Auswahlen erlauben eine schnelle Navigation zwischen den Teilen
+              eines Baumes.</li>
+            </ul>
+          </div>
+
+          <h4>Formatierung</h4>
+
+          <div>
+            <ul>
+              <li>Der Dialog zur Datentypkonfiguration hat mehrere Reiter, um
+              schnell alle Typen, Felder und Ausgabeparameter
+              festzulegen.</li>
+
+              <li>Die Formatierungseinstellungen und das Datenschema kann von
+              einer anderen TreeLine-Datei kopiert werden. Damit lassen sich
+              einfach Vorlagen zur Wiederverwendung erzeugen.</li>
+            </ul>
+          </div>
+
+          <h4>Datenbehandlung</h4>
+
+          <div>
+            <ul>
+              <li>Alle Befehle oder Funktionen, die Daten verändern, können
+              rückgängig gemacht und wiederhergestellt werden.</li>
+
+              <li>TreeLine verwendet in der Regel XML-Dateien. Auf Wunsch
+              können die Dateien auch komprimiert und/oder verschlüsselt
+              gespeichert werden.</li>
+
+              <li>Dokumentvorlagen für neue Dateien enthalten vordefinierte
+              Datentypen für Standardelemente.</li>
+
+              <li>Die formatierte Datenausgabe kann gedruckt werden,
+              wahlweise auch mit Linien, die die Baumstruktur verdeutlichen,
+              und konfigurierbaren Kopf- und Fußzeilen</li>
+            </ul>
+          </div>
+
+          <h4>Datenimport und -export</h4>
+
+          <div>
+            <ul>
+              <li>Alle Daten können als HTML exportiert werden.</li>
+
+              <li>Es kann ein XSLT-Stylesheet erzeugt werden, der zum
+              formatierten Anzeigen der TreeLine-XML-Dateien geeignet
+              ist.</li>
+
+              <li>Text kann in verschiedenen Formaten importiert werden, u.a.
+              als Freitext mit Leerzeilen, als einfache Tabelle mit
+              Tabulatoren oder als Dokument, das mit Tabulatoren eingerückt
+              und strukturiert ist. Die Tabellen oder strukturierten
+              Dokumente kann TreeLine auch wieder exportieren.</li>
+
+              <li>Lesezeichen im Mozilla-Format und im XBEL-Standard, der
+              z.B. von Konqueror verwendet wird, lassen sich importieren und
+              exportieren.</li>
+
+              <li>Praktisch jede XML-Datei kann von TreeLine gelesen und
+              geschrieben werden. Damit lässt sich TreeLine als einfacher
+              XML-Editor verwenden.</li>
+
+              <li>ODF-Dokumente können als Gliederung importiert und
+              exportiert werden.</li>
+
+              <li>Auf der Kommandozeile können mehrere Dateien auf einmal von
+              TreeLine von einem zu einem anderen der unterstützten
+              Dateiformate umgewandelt werden.</li>
+            </ul>
+          </div>
+
+          <h4>Verknüpfungen</h4>
+
+          <div>
+            <ul>
+              <li>Wenn Sie auf URL-Felder in der Ansicht klicken, öffnet sich
+              die Verknüpfung in einem externen Webbrowser.</li>
+
+              <li>Es gibt interne Verknüpfungen, die an Hand eines
+              Verweis-Felds oder eines Schlüsselworts ein anderes Element im
+              Baum öffnen.</li>
+
+              <li>Eine ausführbare Verknüpfung kann ein externes Programm
+              aufrufen oder eine Datei öffnen, wenn sie angeklickt wird.</li>
+            </ul>
+          </div>
+
+          <h4>Daten bearbeiten</h4>
+
+          <div>
+            <ul>
+              <li>Es gibt verschiedene Sortier-Optionen.</li>
+
+              <li>Elemente können nach verschiedenen Kriterien gefiltert
+              werden.</li>
+
+              <li>Das in der Baumansicht angezeigte Symbol (Icon) für ein
+              Element kann sich in Abhängikeit von dessen Daten ändern.</li>
+
+              <li>Wenn das benötigte externe Programm installiert ist (siehe
+              Kapitel <a href="#sysreq">System-Anforderungen</a>), kann eine
+              Rechtschreibprüfung benutzt werden.</li>
+
+              <li>Daten können automatisch neu angeordnet werden, entweder an
+              Hand von Verweisen auf Elternelemente oder nach Kategorien aus
+              Datenfeldern.</li>
+
+              <li>Es gibt eine flexible Nummerierungsfunktion.</li>
+            </ul>
+          </div>
+
+          <h4>Anpassungen</h4>
+
+          <div>
+            <ul>
+              <li>Es gibt eine Vielzahl von Möglichkeiten TreeLine
+              anzupassen, sowohl allgemeine als auch dateispezifische.</li>
+
+              <li>Tastatur-Kürzel und Symbolleisten können selbst angepasst
+              werden.</li>
+
+              <li>Die Benutzeroberfläche und das Handbuch sind in deutscher,
+              englischer, französischer, portugiesischer und russischer
+              Sprache verfügbar.</li>
+            </ul>
+          </div>
+        </div><a id="legal" name="legal">
+        <hr>
+
+        <h2>Rechtliches</h2>
+
+        <div>
+          <p>TreeLine ist freie Software; Sie können TreeLine gemäß den
+          Regeln der GNU General Public License in der von der Free Software
+          Foundation veröffentlichten Version 2 oder wahlweise einer
+          beliebigen neueren Version weiterverbreiten.</p>
+
+          <p>Dieses Programm wird in der Hoffnung verbreitet, dass es
+          nützlich sein wird, aber OHNE JEDE GARANTIE ODER GEWÄHRLEISTUNG.
+          Beachten Sie die mitgelieferte Lizenzdatei LICENSE, um weitere
+          Informationen zu bekommen.</p>
+        </div><a id="sysreq" name="sysreq">
+        <hr>
+
+        <h2>System-Anforderungen</h2>
+
+        <div>
+          <a id="linux-sys" name="linux-sys">
+
+          <h4>Linux</h4>
+
+          <div>
+            <p>TreeLine benötigt die folgenden Bibliotheken und
+            Programme:</p>
+
+            <div>
+              <ul>
+                <li>Qt (Version 4.4 oder neuer)</li>
+
+                <li>Python (Version 2.4, 2.5 oder 2.6)</li>
+
+                <li>PyQt (Version 4.4.0 oder neuer - vgl. <a href=
+                "http://www.riverbankcomputing.co.uk">www.riverbankcomputing.co.uk</a>
+                für weitere Informationen).</li>
+
+                <li>Ein XML-Parser wird benötigt, z.B. die expat-Bibliothek
+                mit den dazugehörigen Python-Bindings oder das
+                PyXML-Paket.</li>
+
+                <li>Wenn Sie die Rechtschreibprüfung benutzen wollen,
+                benötigen Sie entweder aspell (empfohlen) oder ispell. Diese
+                Pakete sind in den meisten Linux-Distributionen
+                enthalten.</li>
+              </ul>
+            </div>
+          </div><a id="win-sys" name="win-sys">
+
+          <h4>Windows</h4>
+
+          <div>
+            <p>Mit den Dateien, die der Installer bereitstellt, sollte
+            TreeLine auf jedem Computer mit Windows XP, Vista oder 7
+            laufen.</p>
+
+            <p>Wenn Sie die Rechtschreibprüfung benutzen wollen, benötigen
+            Sie entweder aspell (empfohlen) oder ispell. Vgl. <a href=
+            "http://aspell.net/win32/">aspell.net/win32/</a> bzw. <a href=
+            "http://www.luziusschneider.com/Speller/English/">www.luziusschneider.com/Speller/English/</a>.
+            Dort können Sie eines der Programme und die passenden
+            Lexikondateien für Ihre benötigte Sprache herunterladen.</p>
+          </div>
+        </div><a id="install" name="install">
+        <hr>
+
+        <h2>Installation</h2>
+
+        <div>
+          <a id="linux-inst" name="linux-inst">
+
+          <h4>Linux</h4>
+
+          <div>
+            <p>Entpacken Sie die Quelldateien aus der TreeLine tar-Datei,
+            z.B. auf der Kommandozeile mit<br>
+            <br>
+            "tar zvxf treeline.x.x.x.tar.gz"<br>
+            <br>
+            (Ihre tar-Datei kann einen anderen Namen haben, je nach
+            Version).<br>
+            <br>
+            Wechseln Sie dann in das Verzeichnis TreeLine und führen Sie als
+            Benutzer root das Kommando<br>
+            <br>
+            "python install.py"<br>
+            <br>
+            aus.</p>
+
+            <p>"python install.py -h" zeigt Ihnen die verfügbaren Optionen
+            an.<br>
+            <br>
+            Um TreeLine nicht wie standardmäßig vorgesehen nach /usr/local,
+            sondern an eine andere Stelle zu installieren, verwenden Sie
+            z.B.:<br>
+            <br>
+            "python install.py -p /ihr/gewünschter/pfad"</p>
+
+            <p>Um Übersetzungspakete für TreeLine zu installieren, laden Sie
+            sich die "treeline-i18n-..." tar-Datei herunter, die zu Ihrer
+            TreeLine-Installationsdatei passt (die Buchstaben am Ende der
+            Versionsnummer der Übersetzungspakete können Sie ignorieren). Um
+            TreeLine und die Übersetzungen zusammen zu installieren,
+            entpacken Sie das Übersetzungspaket in das selbe Verzeichnis wie
+            TreeLine selbst und installieren Sie dann wie oben beschrieben.
+            Wenn TreeLine bereits installiert sein sollte, entpacken Sie das
+            Übersetzungspaket in ein beliebiges Verzeichnis, wechseln in das
+            Verzeichnis und führen dann das Installationskommando wie oben
+            beschrieben mit den gleichen Optionen aus.</p>
+          </div><a id="win-inst" name="win-inst">
+
+          <h4>Windows</h4>
+
+          <div>
+            <p>Die heruntergeladene Datei treeline-x.x.x-install.exe einfach
+            ausführen. TreeLine wird dann installiert, und wahlweise werden
+            auch Dateiverknüpfungen und ein Desktop-Symbol angelegt.</p>
+
+            <p>Um die Rechtschreibprüfung von TreeLine zu benutzen, müssen
+            Sie wie unter <a href="#sysreq">System-Anforderungen</a>
+            beschrieben ispell oder aspell installiert haben.</p>
+
+            <p>Um Übersetzungspakete für TreeLine zu installieren, laden Sie
+            sich die "treeline-i18n-..." exe-Datei herunter, die zu Ihrer
+            TreeLine-Installationsdatei passt (die Buchstaben am Ende der
+            Versionsnummer der Übersetzungspakete können Sie ignorieren). Zur
+            Installation einfach die Datei ausführen.</p>
+
+            <p>Wenn Sie selbst die Quelldateien verändern oder Ihre eigenen
+            PyQt-Programme für Windows schreiben wollen, gehen Sie nicht wie
+            oben beschrieben vor, sondern installieren Python ( <a href=
+            "http://www.python.org">www.python.org</a>), Qt ( <a href=
+            "http://www.trolltech.com">www.trolltech.com</a>) und PyQt (
+            <a href=
+            "http://www.riverbankcomputing.co.uk">www.riverbankcomputing.co.uk</a>)
+            jeweils wie dort beschrieben. Dann entpacken Sie die Quelldateien
+            aus der Linux-Version (TreeLine tar-Datei) in ein beliebiges
+            Verzeichnis und führen die Datei treeline.py aus.</p>
+          </div>
+        </div><a id="using" name="using">
+        <hr>
+
+        <h2>TreeLine benutzen</h2>
+
+        <div>
+          <hr>
+
+          <h3>Inhalt</h3>
+
+          <div>
+            <br>
+            <a href="#start">Wir legen los!</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#start-intro">Einführung</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#start-templates">Vorlagen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#start-example">Beispieldateien</a><br>
+            </div><br>
+            <a href="#basics">Grundlagen</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#basics-left">Linke
+              Fensterhälfte</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#basics-right">Rechte
+              Fensterhälfte</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#basics-cmds">Befehle</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#basics-wins">Mehrere
+              Fenster</a><br>
+            </div><br>
+            <a href="#nav">Navigation im Baum</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#nav-keys">Tastatur-Kürzel</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#nav-select">Auswahl</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#nav-search">Suchen</a><br>
+            </div><br>
+            <a href="#edit">Den Baum bearbeiten</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#edit-menu">Menü
+              "Bearbeiten"</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#edit-shortcuts">Tipps und
+              Tricks</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#edit-view">Die rechte
+              Fensterhälfte</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#edit-spell">Rechtschreibprüfung</a><br>
+            </div><br>
+            <a href="#format">Formatierung und Elementtypen</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-set">Den Typ eines
+              Elements setzen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-type">Liste der
+              Typen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-config">Typ
+              konfigurieren</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-fields">Liste der
+              Felder</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-fieldconf">Felder
+              konfigurieren</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#format-output">Ausgabe</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-title">Formatierung
+              von Überschriften</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-skip">Übersprungene
+              Zeilen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#format-html">HTML-Auszeichnungen (Tags)</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#format-example">Formatierungsbeispiele</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-refs">Andere
+              Feldverweise</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-sibling-text">Präfix
+              und Suffix für Elemente auf gleicher Ebene</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-link-ref">Referenzfeld
+              für Verknüpfungen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-derived">Basistypen
+              und abgeleitete Typen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#format-condition">Datenabhängige ("bedingte") Typen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-copy">Formate
+              kopieren</a><br>
+            </div><br>
+            <a href="#fields">Feldtypen</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#field-options">Feldoptionen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-text">Der Typ
+              "Text"</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-choice">Die Typen
+              "Auswahl", "Kombination (Mehrfachauswahl)" und "Boolsche
+              Variable"</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-number">Der Typ
+              "Zahl"</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-date">Die Typen "Datum"
+              und "Zeit"</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#field-link">Verknüpfungen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-unique">Eindeutige
+              ID</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-advanced">Weitere
+              Einstellungen</a><br>
+            </div><br>
+            <a href="#data">Verändern der Daten im Baum</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#data-category">Kategoriebasierte Befehle</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#data-ref">Verweisbasierte
+              Befehle</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#data-sort">Sortierung</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#data-filter">Filtern</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#data-number">Nummerierung</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#data-change">Die Auswahl
+              ändern</a><br>
+            </div><br>
+            <a href="#print">Drucken</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#print-options">Druckereinstellungen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#print-setup">Seitenaufbau</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#print-font">Druckerschrift</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#print-header">Kopf und
+              Fuß</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#print-preview">Druckvorschau</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#print-problems">Probleme beim
+              Drucken</a><br>
+            </div><br>
+            <a href="#file">Umgang mit Dateien</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#file-comp">Dateikomprimierung</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#file-enc">Verschlüsselung</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#file-auto-save">Automatisches
+              Speichern</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#file-states">Baumansichtsstatus merken</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#file-cmdline">Kommandozeile</a><br>
+            </div><br>
+            <a href="#import">Datei-Import</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#import-general">Allgemeine
+              Informationen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#import-delim">Text mit
+              Trennzeichen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#import-plain">Fließtext</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#import-treepad">TreePad-Dateien</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#import-bookmarks">Lesezeichen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#import-xml">Unspezifisches
+              XML</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#import-odf">ODF
+              Textdokumente</a><br>
+            </div><br>
+            <a href="#export">Datei-Export</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-general">Allgemeine
+              Informationen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-html">HTML</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-delim">Text mit
+              Trennzeichen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#export-bookmarks">Lesezeichen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-xml">Unspezifisches
+              HTML</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-xslt">XSLT</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-odf">ODF
+              Textformat</a><br>
+            </div><br>
+            <a href="#custom">Anpassungen</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#custom-options">Optionen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#custom-fonts">Schriften</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#custom-keys">Tastatur-Kürzel</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#custom-tools">Symbolleisten</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#custom-color">Farben</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#custom-icons">Baum-Symbole</a><br>
+            </div><br>
+            <a href="#plugins">Plugins</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#plugins-intro">Beschreibung</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#plugins-install">Installation</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#plugins-intrf">Interface</a><br>
+            </div><br>
+            <a href="#errors">Geläufige Probleme</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#errors-panes">Unsichtbare
+              Bereiche</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#errors-xml">XML-Fehler</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#errors-print">Drucken</a><br>
+            </div>
+          </div><a id="start" name="start">
+          <hr>
+
+          <h3>Wir legen los!</h3>
+
+          <div>
+            <a id="start-intro" name="start-intro">
+
+            <h4>Einführung</h4>
+
+            <p>TreeLine ist wesentlich komplexer als es auf den ersten Blick
+            aussieht. Deshalb ist es empfehlenswert, einen großen Teil dieses
+            Handbuchs zu lesen, um TreeLine wirklich effektiv nutzen zu
+            können.<br>
+            <br>
+            Das Kapitel <a href="#basics">Grundlagen</a> beschreibt die
+            verschiedenen Ansichten und das Auswählen von Elementen. Die
+            <a href="#nav">Navigation im Baum</a> auf der linken
+            Bildschirmseite wird im gleichnamigen Kapitel beschrieben, und
+            das Kapitel <a href="#edit">Den Baum bearbeiten</a> widmet sich
+            den Bearbeitungsfunktionen im Elementbaum. Im nächsten Schritt
+            lernen Sie, dass TreeLine mehr beherrscht als für jedes Element
+            nur eine einzelne Textzeile anzuzeigen. Wie Sie selbst eigene
+            Datentypen für jedes Datenelement definieren können, erklären die
+            Kapitel <a href="#format">Formatierung und Elementtypen</a> und
+            <a href="#fields">Feldtypen</a>.</p><a id="start-templates" name=
+            "start-templates">
+
+            <h4>Vorlagen</h4>
+
+            <p>Wenn Sie mit einer neuen Datei beginnen, gibt Ihnen der
+            nachfolgende Dialog eine Auswahl mehrer vordefinierter Vorlagen.
+            Die Standardvorlage gibt Ihnen nur einen einzeiligen Text. Die
+            Vorlagen mit mehrzeiligem Text besitzen eine Titelzeile und ein
+            Textfeld, entweder als Fließtexttext oder als Text mit
+            HTML-Formatierung.<br>
+            <br>
+            Es gibt auch komplexere Vorlagen einschließlich Kontaktdaten,
+            einer Buchliste und einer Todo-Liste.</p><a id="start-example"
+            name="start-example">
+
+            <h4>Beispieldateien</h4>
+
+            <p>Verschiedene TreeLine-Beispieldateien können mit dem
+            Menübefehl "Datei-&gt;Beispiele" geöffnet werden, die Sie direkt
+            als Formatvorlagen oder als Beispiele für die Erstellung eigener
+            Formate heranziehen können. Darunter sind (nach Schwierigkeit
+            sortiert):</p>
+
+            <div>
+              <ul>
+                <li>"sample_basic_contacts" ist ein einfaches Format, um
+                Adressen bzw. Kontakte zu erfassen und zu speichern. Es
+                werden verschiedene Felder für die verschiedenen
+                Informationsteile benutzt.</li>
+
+                <li>"sample_basic_booklist" ist eine Liste von Büchern. Hier
+                sehen Sie, wie Elemente zum Aufnehmen von Daten konfiguriert
+                werden können. Verschiedene Feldtypen werden benutzt, z.B.
+                für den Autor und das eigentliche Buch.</li>
+
+                <li>"sample_basic_longtext" enthält unter jedem Element ein
+                langes Textfeld, ähnlich wie das Programm Treepad. Die Datei
+                zeigt außerdem den Unterschied zwischen einfachen Textfeldern
+                und HTML-Textfeldern.</li>
+
+                <li>"sample_color_items" verwendet HTML-Auszeichnungen in
+                Datenformaten, um farbige Ausgaben zu erzeugen. Vgl. das
+                Kapitel <a href="#format-html">HTML-Auszeichnungen
+                (Tags)</a>.</li>
+
+                <li>"sample_char_format" ist ein Beispiel, wie Sie mit
+                HTML-Auszeichnungen die Formatierung mit Schriften
+                beeinflussen können. Vgl. das Kapitel <a href=
+                "#field-options">Field Options</a>.</li>
+
+                <li>"sample_bookmarks" zeigt die Benutzung von externen
+                HTML-Verknüpfungen. Es entspricht dem Format, das beim
+                Importieren und Exporieren von Lesezeichen benutzt wird.</li>
+
+                <li>"sample_intern_links" zeigt, wie man innerhalb einer
+                TreeLine-Datei Verknüpfungen erstellen kann. Vgl. Kapitel
+                <a href="#field-link">Linking Types</a>.</li>
+
+                <li>"sample_table_booklist" zeigt die Benutzung von
+                HTML-Auszeichnungen und Präfix- und Suffix-Tags, um Tabellen
+                in der Ausgabeansicht zu erzeugen. Vgl. Kapitel <a href=
+                "#format-advanced">Weitere Einstellungen</a>.</li>
+
+                <li>"sample_other_fields" ist ein Beispiel für besondere
+                Feldverweise, z.B. Verweise auf Eltern- oder Unterelemente
+                oder Datei-Informationen. Vgl. Kapitel <a href=
+                "#format-refs">Andere Feldverweise</a>.</li>
+
+                <li>"sample_conditional_todo" zeigt, wie man regelbasierte
+                Typen einsetzen kann, um die Darstellung von Elementen in
+                Abhängigkeit von ihrem Inhalt zu verändern. Vgl. Kapitel
+                <a href="#format-derived">Basistypen und abgeleitete
+                Typen</a>.</li>
+
+                <li>Die Datei "readme", die Vorlage für dieses Handbuch,
+                zeigt selbst eine Vielzahl von Formatierungen, u.a.
+                Überschriften, Aufzählungen, interne Verknüpfungen und
+                Bilder.</li>
+              </ul>
+            </div>
+          </div><a id="basics" name="basics">
+          <hr>
+
+          <h3>Grundlagen</h3>
+
+          <div>
+            <a id="basics-left" name="basics-left">
+
+            <h4>Linke Fensterhälfte</h4>
+
+            <p>Die Standardansicht in der linken Fensterhälfte ist die
+            Baumansicht. Elemente können geöffent oder geschlossen werden um
+            Unterelemente anzuzeigen oder zu verbergen.<br>
+            <br>
+            Eine zweite Ansicht ist die "flache Ansicht". Es zeigt alle
+            Unterelemente des ausgewählten Elements als flache Liste. Es
+            zeigt auch die Filterergebnisse (vgl. den Abschnitt <a href=
+            "#data-filter">Filter</a>).</p><a id="basics-right" name=
+            "basics-right">
+
+            <h4>Rechte Fensterhälfte</h4>
+
+            <p>Das Arbeitsfenster von TreeLine ist in zwei Bereiche
+            aufgeteilt. Auf der linken Seite sieht man die komplette
+            Baumstruktur, während in der rechten Fensterhälfte Informationen
+            über das im Baum ausgewählte Element angezeigt wird.<br>
+            <br>
+            Über die Reiter unten auf der rechten Fensterhälfte kann man
+            zwischen drei verschiedenen Ansichten umschalten. Die "Ansicht"
+            zeigt den formatierten Text für jedes Element und ist nicht
+            bearbeitbar (siehe <a href="#fig-1">Abbildung 1</a>). Der
+            "Editor" zeigt ein Textfeld für jedes Datenfeld eines Elements
+            (siehe <a href="#fig-2">Abbildung 2</a>). Die
+            "Überschriften-Liste" zeigt eine Liste von Element-Titeln
+            (Überschriften), die wie in einem Text-Editor direkt bearbeitet
+            werden können. Damit lassen sich z.B. sehr schnell Unterobjekte
+            anlegen und dann später in der "Editor"-Ansicht mit Daten
+            füllen.<br>
+            <br>
+            Standardmäßig zeigt die rechte Fensterhälfte Informationen über
+            das ausgewählte Element im oberen rechten Fensterviertel und
+            Informationen über die Unterelemente ("Kinder") des ausgewählten
+            Elements im unteren rechten Fensterviertel. Im Menü kann das mit
+            "Ansicht-&gt;Ausgewähltes Element mit Unterelementen" umgestellt
+            werden. Nun wird nur noch das ausgewählte Element angezeigt.<br>
+            <br>
+            Wenn Sie "Ansicht-&gt;Alle Unterelemente" auswählen, werden in
+            der "Ausgabe-Ansicht" alle Unterelemente angezeigt.<br>
+            <br>
+            Der Anfangszustand der Ansicht kann durch Anpassen der
+            Programmstart-Optin unter "Extras-&gt;Allgemeine Optionen..."
+            eingestellt werden<br>
+            <br>
+            Standardmäßig ist in der "Editor-Ansicht" die Zahl der
+            Unterelemente begrenzt. Die Buttons in der oberen Hälfte erlauben
+            es, zu vorhergehenden und nachfolgenden Unterelementen zu
+            springen. Dieses ermöglicht alle Unterelemente zu bearbeiten,
+            ohne zu viele Unterelemente anzuzeigen. Die Zahl der
+            Unterelemente kann unter "Extras-&gt;Allgemeine Einstellungen..."
+            konfiguriert werden.</p>
+
+            <div>
+              <a id="fig-1" name="fig-1">
+
+              <p><img src="doc_main.png"></p>
+
+              <p><b>Abbildung 1: Ausgabe-Ansicht</b></p><a id="fig-2" name=
+              "fig-2">
+
+              <p><img src="doc_edit.png"></p>
+
+              <p><b>Abbildung 2: Editor-Ansicht</b></p>
+            </div><a id="basics-cmds" name="basics-cmds">
+
+            <h4>Befehle</h4>
+
+            <p>Die meisten Menü- und Symbolleistenbefehle beziehen sich auf
+            die Elemente, die im Baum ausgewählt sind. In der Regel führen
+            wirken sie sich auf das Element selbst oder seine Unterelemente
+            aus. Mehrere Elemente können gleichzeitig ausgewählt sein. Halten
+            Sie dazu die "Strg"-Taste und die Umschalttaste gedrückt ("Ctrl"
+            und "Shift") und klicken Sie dann mit der Maus auf die
+            gewünschten Elemente.<br>
+            <br>
+            Um Informationen zu einer neuen TreeLine-Datei hinzuzufügen,
+            benutzen Sie den Befehl "Bearbeiten-&gt;Unterelement anlegen".
+            Danach können Sie mit den anderen Einfügebefehlen im Menü
+            "Bearbeiten" weitere Elemente einfügen. Alternativ können neue
+            Unterelemente auch einfach in die "Überschriften-Liste" auf der
+            rechten Seite eingetippt werden.</p><a id="basics-wins" name=
+            "basics-wins">
+
+            <p>Mehrer Treeline-Fenster mit unterschiedlichen Dateien können
+            innerhalb derselben Treeline-Sitzung geöffnet werden. Die Option
+            "Öffne Dateien in neuem Fenster" in "Extras-&gt;Allgemeine
+            Einstellungen" kontrolliert ob neue Fenster beim Öffnen oder
+            Anlegen von Dateien benutzt werden.<br>
+            <br>
+            Das Kommando "Fenster-&gt;Neues Fenster" erzeugt ein neues
+            Fenster welches die gleiche TreeLine-Datei anzeigt. Änderungen in
+            jedem Fenster werden in demselben Dokument gespeichert. Die
+            verschiedenen Ansichten können genutzt werden, um an
+            unterschiedlichen Stellen der Datei gleichzeitig zu arbeiten. Das
+            inaktive Fenster zeigt aus Effizienzgründen solange keine
+            Änderungen an, bis entweder das inaktive Fenster den Focus erhält
+            oder das Kommando "Fenster-&gt;Aktualisiere andere Fenster"
+            benutzt wird.<br>
+            <br>
+            Beim Starten von Treeline (durch Shortcut, Dateiassoziation oder
+            Kommandozeile) wird eine bestehende TreeLine-Sitzung benutzt,
+            falls diese bereits läuft. Ein neues Fenster wird geöffnet falls
+            eine noch nicht geöffnete Datei in der Dateiassoziation oder der
+            Kommandozeile angegeben ist.</p>
+          </div><a id="nav" name="nav">
+          <hr>
+
+          <h3>Navigation im Baum</h3>
+
+          <div>
+            <a id="nav-keys" name="nav-keys">
+
+            <h4>Tastatur-Kürzel</h4>
+
+            <p>Es gibt mehrere Tastaturkürzel, mit denen man sich durch die
+            Baumansicht bewegen kann. Mit den Pfeiltasten "nach oben" und
+            "nach unten" wählt man das nächst höhere bzw. niedrigere Element
+            im Baum aus. Die Pfeiltasten "nach links" und "nach rechts"
+            öffnen und schließen die Unterelemente des aktuellen Elements.
+            Durch Drücken von "Strg" und "Shift" zusammen mit "J" oder "K"
+            kann man direkt zum nächsten Element auf der gleichen
+            Gliederungseben springen. "Strg+U" springt zum Elternelement. Die
+            Tasten "Pos1", "Ende", "Bild aufwärts" und "Bild abwärts"
+            ermöglichen es, sehr schnell an den Anfang oder das Ende des
+            Baums zu gelangen oder sich in großen Schritten durch einen
+            langen Baum zu bewegen. Hält man die Umschalttaste ("Shift") und
+            "Strg" gedrückt, dann kann man sich mit "Bild aufwärts" und "Bild
+            abwärts" durch den Baum bewegen, selbst wenn eine andere Ansicht
+            den Focus hat.<br>
+            <br>
+            Alle Tastatur-Kürzel und Abkürzungen der Menukommandos können
+            unter Verwendung des Menüs "Extras-&gt;Tastatur-Kürzel
+            konfigurieren..." angepasst werden. Der Dialog hat Reiter für
+            Menüs und andere Kommandos. Drücken Sie einfach die neue
+            Tastenkombination während das entsprechende Feld ausgewählt
+            ist.<br>
+            <br>
+            Eine weitere Möglichkeit besteht darin, den ersten Buchstaben
+            eines sichtbaren Elements zu tippen. Durch wiederholen springen
+            Sie zum nächsten passenden Element.</p><a id="nav-select" name=
+            "nav-select">
+
+            <h4>Auswahl</h4>
+
+            <p>Mehrere Elemente können ausgewählt werden durch Drücken der
+            Strg- oder Umschalt-Taste (Shift) beim Wechseln des aktuellen
+            Elements. Einzelne Elemente werden beim Drücken von STRG
+            hinzugefügt oder entfernt. Alle Elemente zwischen dem alten
+            ausgewähltem Element und dem aktuellen Element werden
+            hinzugefügt, wenn SHIFT gedrückt ist. Das aktuelle Element kann
+            bei Benutzung der Maus oder der Tastatur-Navigation geändert
+            werden.<br>
+            <br>
+            Die Kommandos "Ansicht-&gt;Vorhergehende Auswahl" und
+            "Ansicht-&gt;Nachfolgende Auswahl" können benutzt werden, um in
+            der Geschichte der Auswahlen schnell zu navigieren.<br>
+            <br>
+            Normalerweise spielt die Reihenfolge in der man eine mehrfache
+            Auswahl tätigt, keine Rolle. Falls jedoch die allgemeine Option
+            für mehrfache Auswahlen auf "Reihenfolge der Auswahl" gesetzt
+            wird, wird die Reihenfolge der Auswahl beachtet, wenn Elemente
+            mit gedrückter Strg-Taste hinzugefügt werden.</p><a id=
+            "nav-search" name="nav-search">
+
+            <h4>Suchen</h4>
+
+            <p>Es gibt zwei Möglichkeiten, Elemente zu suchen. Sie können
+            damit Elemente finden, die tief in der Baumstruktur versteckt
+            liegen. Die erste Möglichkeit ist der Befehl
+            "Extras-&gt;Suchen...". Sie können damit Suchbegriffe eingeben,
+            nach denen dann in allen Feldern aller Elemente gesucht wird. Der
+            gesuchte Text wird in der "Ansicht"-Ausgabe hervorgehoben.<br>
+            <br>
+            Die zweite Möglichkeit ist die inkrementelle Suche. Tippen Sie
+            dazu einfach ein "/", gefolgt vom Suchbegriff. Während Sie
+            tippen, springt das ausgewählte Feld jeweils zum nächsten
+            Element, dessen Überschrift mit den bereits eingegebenen
+            Buchstaben beginnt. Die vorausgehende Suche können sie mit "F3"
+            (vorwärts) oder "Umschalttaste+F3" (rückwärts) wiederholen.<br>
+            <br>
+            Die Voreinstellung ist, dass Suchtreffer, die Unterelemente
+            haben, automatisch aufklappen. Dieses Verhalten können Sie unter
+            "Extras-&gt;Allgemeine Einstellungen" abstellen.</p>
+          </div><a id="edit" name="edit">
+          <hr>
+
+          <h3>Den Baum bearbeiten</h3>
+
+          <div>
+            <a id="edit-menu" name="edit-menu">
+
+            <h4>Menü "Bearbeiten"</h4>
+
+            <p>Mit Ausnahme von "Rückgängig" und "Wiederherstellen" beziehen
+            sich die Befehle im Menü "Bearbeiten" auf die im Baum
+            ausgewählten Elemente, bzw. auf den in der rechten Fensterhälfte
+            ausgewählten Text. Beachten Sie, dass in der Regel auch die
+            Unterelemente betroffen sind. Wenn Ein Element kopiert wird,
+            werden z.B. auch alle Unterelemente mit kopiert.<br>
+            <br>
+            "Einfügen" fügt das kopierte Element als letztes Unterelement des
+            aktiven Elements ein. Mit "Bearbeiten-&gt;Text des Elements
+            einfügen" ersetzen Sie nur die Überschrift des aktiven Elements
+            mit der Überschrift des Elements in der Zwischenablage.<br>
+            <br>
+            Das Kommando "Bearbeiten-&gt;Text des Elements einfügen" benennt
+            die Auswahl um, entwedner basierend auf dem Text in der
+            Zwischenablage oder auf dem Titel des ersten Elements der
+            Zwischenablage.</p><a id="edit-shortcuts" name="edit-shortcuts">
+
+            <h4>Kürzel</h4>
+
+            <p>Es gibt einige Tricks, die das Bearbeiten im Baum
+            vereinfachen. Sie können z.B. einfach ein Element anwählen und
+            mit gedrückter linker Maustaste ein Element samt Unterelementen
+            verschieben, bzw. es kopieren, wenn Sie zusätzlich die
+            "Strg"-Taste gedrückt halten. Wenn Sie auf ein bereits
+            ausgewähltes Element noch einmal klicken, können Sie es direkt
+            umbenennen. Die "Entf"-Taste löscht das aktive Element, und die
+            "Enter"-Taste fügt nach dem aktiven Element ein neues auf
+            gleicher Ebene ein. Diese beiden Kürzel können unter
+            "Extras-&gt;Allgemeine Einstellungen" deaktiviert
+            werden.</p><a id="edit-view" name="edit-view">
+
+            <h4>Die rechte Fensterhälfte</h4>
+
+            <p>In der rechten Fensterhälfte bietet die Ansicht "Editor" den
+            direktesten Weg, um die Daten eines Elements zu bearbeiten. Wenn
+            das bearbeitete Feld im Titel benutzt wird, zeigt der Baum sofort
+            die jeweilige Änderung an. Die Felder erlauben die Eingabe von
+            mehrzeiligem Text. Wenn nötig, wird ein Rollbalken angezeigt.<br>
+            <br>
+            Wenn die Benutzung von HTML freigeschaltet ist (siehe weiter
+            unten im Kapitel <a href="#fields">Feldtypen</a>), dann finden
+            sich im Kontextmenü (erreichbar über die rechte Maustaste) unter
+            "Text auszeichnen" Einträge, um HTML-Auszeichnungen wie "fett"
+            oder "kursiv" hinzuzufügen.<br>
+            <br>
+            Ein weiterer Eintrag im Kontextmenü kann einen internen Link
+            einfügen. Im unteren Status-Bereich erfolgt dann eine
+            Aufforderung, den Link in der Baumansicht anzuklicken. Dieses
+            wird einen internen Link zu diesem Knoten hinzufügen. Das Feld
+            muss natürlich so konfiguriert sein, dass HTML angezeigt wird,
+            damit es funktioniert.<br>
+            <br>
+            Vom Kontextmenü kann auch ein externer Editor aufgerufen werden.
+            Nachdem der Texteditor seine Änderungen gespeicher hat und
+            beendet wurde, erscheint der Text in der Textbox in TreeLine. Der
+            Editor kann mit Hilfe der Umgebungsvariable EDITOR gesetzt
+            werden. Wenn die Variable nicht existiert, fragt TreeLine den
+            Pfad zum gewünschten Editor bei der ersten Benutzung ab.<br>
+            <br>
+            Die Ansicht "Überschriften-Liste", ebenfalls in der rechten
+            Fensterhälfte, ist nützlich, um schnell die Titel von
+            Unterelementen zu bearbeiten oder neue Unterelemente
+            hinzuzufügen. Sie können natürlich auch eine Liste neuer Elemente
+            direkt in die Überschriften-Liste hineinkopieren.</p><a id=
+            "edit-spell" name="edit-spell">
+
+            <h4>Rechtschreibprüfung</h4>
+
+            <p>"Extras-&gt;Rechtschreibprüfung" öffnet einen Dialog, der für
+            nicht im Lexikon gefundene Wörter einen Korrekturvorschlag
+            anbietet und abfragt, ob unbekannte Wörter ins Wörterbuch
+            aufgenommen werden sollen. Es wird der Text in allen Feldern
+            aller Elemente geprüft.<br>
+            <br>
+            Ein externes Programm (aspell oder ispell) muss installiert sein,
+            um die Rechtschreibprüfung einsetzen zu können. Vgl. <a href=
+            "#sysreq">System-Anforderungen</a>. Die Standardeinstellung ist,
+            dass das zur derzeitigen Spracheinstellung des Betriebssystems
+            passende Lexikon benutzt wird. Falls Sie aspell benutzen, können
+            Sie aber unter "Extras-&gt;Datei-Einstellungen einen anderen
+            zweistelligen Ländercode (z.B. "en" für Englisch) für die
+            geöffnete Datei angeben. Allerdings müssen die nötigen Lexika für
+            aspell auch installiert sein. Auf ispell hat diese Option keinen
+            Effekt.</p>
+          </div><a id="format" name="format">
+          <hr>
+
+          <h3>Formatierung und Elementtypen</h3>
+
+          <div>
+            <a id="format-set" name="format-set">
+
+            <h4>Den Typ eines Elements setzen</h4>
+
+            <p>In der Standardeinstellung hat eine neue TreeLine-Datei zwei
+            Typen von Elementen: "Hauptelement" und "Standard". Der Typ wird
+            oben in der Editor-Ansicht für jedes Element angezeigt. Wie man
+            eigene Elementtypen anlegt und Elementtypen anpasst, wird weiter
+            unten beschrieben.<br>
+            <br>
+            Um den Typ für ausgewählten Elemente zu ändern, verwenden Sie das
+            Menü "Daten-&gt;Datentyp ändern". Mit "Daten-&gt;Datentyp für
+            Unterelemente ändern" lassen sich die Datentypen in Unterlementen
+            nach verschiedenen Kriterien ändern (nur direkte Unterelemente,
+            alle Unterlemente, Elemente, die bestimmte Bedingungen erfüllen).
+            Dieser Dialog kann geöffnet bleiben, während Sie weitere Elemente
+            im Baum auswählen.</p><a id="format-type" name="format-type">
+
+            <h4>Liste der Typen</h4>
+
+            <p>Dieses ist der ersete Reiter des Dailogs "Daten-&gt;Datentypen
+            konfigurieren...". Die Liste der Typen kann durch die Buttons in
+            der rechten Seite geändert werden. Neue Typen können erzeugt und
+            vorhandene kopiert, umbenannt oder gelöscht werden.</p><a id=
+            "format-config" name="format-config">
+
+            <h4>Typ konfigurieren</h4>
+
+            <p>Dieses ist der zweite Reiter des Dialogs "Daten-&gt;Datentypen
+            konfigurieren...". Er enthält eine Auswahl für neue
+            Unterelemente. Falls gesetzt, wird dieses der Standardwert für
+            diesen Elementtyp. Falls der Wert auf "[Kein]" gesetzt ist,
+            werden Unterelemente entweder den Typ ihrer Geschwister oder des
+            Elterntyps übernehmen.<br>
+            <br>
+            Der Button "Symbol ändern" erlaubt die Auswahl eines passenden
+            Symbols für die Baumansicht. Der Button "Auswahl zurücksetzen" im
+            Symbol-Dialog kann das Symbol wieder zurücksetzen, so dass kein
+            Symbol angezeigt wird. Um die Anzeige ganz auszuschalten kann die
+            Auswahl "Symbole in der Baumansicht anzeigen" bei den allgemeinen
+            Optionen zurückgesetzt werden.</p><a id="format-fields" name=
+            "format-fields">
+
+            <h4>Liste der Felder</h4>
+
+            <p>Dieses ist der dritte Reiter im Dialog "Daten-&gt;Datentypen
+            konfigurieren...". Die Liste der Felder innerhalb eines Datentyps
+            kann durch die Buttons rechts geändert werden. Neue Felder können
+            angelegt, und existierende können nach oben oder unten bewegt,
+            umbenannt oder gelöscht werden.</p><a id="format-fieldconf" name=
+            "format-fieldconf">
+
+            <h4>Felder konfigurieren</h4>
+
+            <p>Dieses ist der vierte Reiter im Dialog "Daten-&gt;Datentypen
+            konfigurieren..." (siehe <a href="#fig-3">Abbildung 3</a>). Die
+            Feldtypen und ihre Ausgabeformate können konfiguriert werden
+            (siehe <a href="#fields">Feldtypen</a> für Details). Extra Text
+            für Präfix und Suffix der zusammen mit dem Feld ausgegeben wird,
+            kann eingegeben werden, sowie ein Standardwert für neue Elemente
+            konfiguriert werden. Es gibt auch eine Auswahl zwischen einem
+            Fließtext-Format, das Zeilenumbrüche beibehält und einem
+            HTML-Format, welches verschiedene HTML-Formatierungen erlaubt.
+            Zuletzt kann die Anzahl der Zeilen eingestellt werden, die in der
+            Editor-Ansicht angezeigt werden.</p>
+
+            <div>
+              <a id="fig-3" name="fig-3">
+
+              <p><img src="doc_fieldconf.png"></p>
+
+              <p><b>Abbildung 3: Reiter Felder konfigurieren</b></p>
+            </div><a id="format-output" name="format-output">
+
+            <h4>Ausgabe</h4>
+
+            <p>Dieses ist der letzte Reiter im Dialog "Daten-&gt;Datentypen
+            konfigurieren..." (siehe <a href="#fig-4">Abbildung 4</a>). Die
+            linke Seite zeigt alle Felder. Die rechte Seite zeigt die
+            Formatierung des Titels (wird für den Elementtext in der
+            Baumansicht benutzt) und die Formatierung für die
+            Ausgabe-Ansicht. Die Formatierung besteht aus Zeilen mit
+            eingebetteten Feldern. Diese werden als "{*Feldname*}" angezeigt.
+            Das in der linken Seite ausgewählte Feld kann zur Formatierung
+            mit den "&gt;&gt;"-Buttons eingefügt werden. Das an der
+            Cursorposition stehende Format kann mit den "&lt;&lt;"-Buttons
+            aus der Formatierung entfernt werden.</p>
+
+            <div>
+              <a id="fig-4" name="fig-4">
+
+              <p><img src="doc_output.png"></p>
+
+              <p><b>Abbildung 4: Ausgabeformatierung</b></p>
+            </div><a id="format-title" name="format-title">
+
+            <h4>Formatierung von Überschriften</h4>
+
+            <p>Wenn ein Element im Baum umbenannt wird, versucht TreeLine,
+            den eingegebenen Titel gemäß dem Titelformat in die jeweiligen
+            Felder des Elements aufzuspalten. Bei besonders komplexen
+            Titelformatdefinitionen funktioniert das nicht immer zuverlässig.
+            Vermeiden Sie beispielsweise zusammenhängende Felder, die nicht
+            durch ein eindeutiges Trennzeichen abgegrenzt sind.<br>
+            <br>
+            Wenn der eingegebene Text aus mehreren Zeilen besteht, wird nur
+            die erste Zeile als Titel benutzt.</p><a id="format-skip" name=
+            "format-skip">
+
+            <h4>Übersprungene Zeilen</h4>
+
+            <p>Wenn eine Zeile im Ausgabeformat ein oder mehrere Felder
+            enthält und alle diese Felder für ein Element leer sind, wird die
+            Zeile komplett übersprungen. Es wird auch keine Leerzeile
+            angezeigt. Dies gilt nicht für Zeilen, die in der Formatierung
+            absichtlich als Leerzeilen angelegt wurden und keine Felder
+            enthalten. Außerdem bleiben sowohl &lt;br/&gt; als auch
+            &lt;hr/&gt; am Ende einer übersprungenen Zeile
+            erhalten.</p><a id="format-html" name="format-html">
+
+            <h4>HTML-Auszeichnungen (Tags)</h4>
+
+            <p>Im Ausgabeformat können einfache HTML-Auszeichnungen benutzt
+            werden, zum Beispiel "&lt;b&gt;fett&lt;/b&gt;",
+            "&lt;u&gt;unterstrichen&lt;/u&gt;", "Zeilenumbruch&lt;br/&gt;",
+            "&lt;hr/&gt;horizontale Linie" und verschiedene
+            Schriftauszeichnungen. Komplexe verschachtelte Auszeichnungen
+            ("block tags") sollten möglichst vermieden werden. Wenn Sie unter
+            "Extras-&gt;Datei-Einstellungen" die Option "Vereinfachtes HTML
+            ("Rich Text") in Formaten erlauben" abwählen, werden alle
+            Auszeichnungen als Text behandelt und angezeigt. Ein Beispiel mit
+            dem Namen "sample_color_items" finden Sie unter dem Menübefehl
+            "Datei-&gt;Beispiele".<br>
+            <br>
+            In den Datei-Einstellungen können Sie auch festlegen, ob nach
+            jeder Formatzeile automatisch ein Zeilenumbruch eingefügt wird
+            und ob Elemente jeweils durch eine Leerzeile getrennt werden. Den
+            selben Effekt können Sie durch ein "&lt;br/&gt;" am Ende des
+            Ausgabeformats erreichen. Alternativ bietet sich auch
+            "&lt;hr/&gt;" an, um die Elemente mit einer horizontalen Linie
+            abzutrennen.</p><a id="format-example" name="format-example">
+
+            <h4>Formatierungsbeispiele</h4>
+
+            <p>Hier ist ein Formatierungsbeispiel für eine Liste von
+            Büchern:<br>
+            <br>
+            &lt;hr/&gt;"{*Titel*}"<br>
+            (c) {*Copyright*}, Bewertung: {*Bewertung*}<br>
+            {*Zusammenfassung*}<br>
+            <br>
+            Beispieldateien mit verschiedenen Formatierungen ("sample_*.trl")
+            sind im Verzeichnis "doc" Ihrer TreeLine-Installation zu finden.
+            In SUSE Linux finden Sie diese Dateien unter
+            "/usr/share/doc/packages/treeline". Sie können auch einfach den
+            Menübefehl "Datei-&gt;Beispiele" verwenden. Vgl. auch das Kapitel
+            <a href="#start-example">Beispieldateien</a><br>
+            <br></p><a id="format-refs" name="format-refs">
+
+            <h4>Andere Feldverweise</h4>
+
+            <p>Verweise auf Felder von verwandten Elementen der Baumstruktur
+            können der Ansicht hinzugefügt werden. Der Button "Erweiterte
+            Optionen zeigen" macht diese Auswahl sichtbar.<br>
+            <br>
+            Falls die Verweisebene auf "Dateiinfo-Verweis" gesetzt wird,
+            können Felder mit Meta-Information zur Datei eingefügt werden.
+            Dieses beinhaltet den Dateinamen, den Pfad, die Dateigröße und
+            das Änderungsdatum. Die Verweise werden als "{*!Feldname*}"
+            angezeigt.<br>
+            <br>
+            Es gibt Verweise zu verschiedenen verwandten Elementen (Eltern,
+            Großeltern, etc.). Sie benötigen die Angabe des Verweistyps.
+            Diese Auswahl ermittelt die möglichen Feldnamen, jedoch werden
+            die Inhalte jedes Typs mit dem passenden Feldnamen angezeigt. Im
+            Titel- und Ausgabeformat werden die Felder von Eltern- und
+            Großelternelementen in der Form "{**feldname*}" bzw.
+            "{***feldname*}", sowie "{*?feldname*}" (nächster Verwandter mit
+            passendem Feld) angezeigt.<br>
+            <br>
+            Auch Verweise zu Unterelemente können hinzugefügt werden. Auch
+            hier muss der Verweistyp angegeben werden. Die Daten der
+            Unterelemente werden in die Ausgabe eingebettet. Sie werden durch
+            einen Trennausdruck voneinander getrennt, der bei den
+            Dateieinstellungen definiert wird. Standard ist ein Komma,
+            gefolgt von einem Leerzeichen.<br>
+            <br>
+            Schließlich kann die Anzahl der Unterelemente hinzugefügt werden.
+            Dieses Feld zeigt die Anzahl der Kinder, oder Enkel. Sie werden
+            als "{*Level#*}" angezeigt.<br>
+            <br>
+            Ein Beispiel mit dem Namen "sample_other_fields" finden Sie unter
+            dem Menübefehl "Datei-&gt;Beispiele".</p><a id=
+            "format-sibling-text" name="format-sibling-text">
+
+            <h4>Weitere Einstellungen</h4>
+
+            <p>Der Button "Erweiterte Optionen anzeigen" im Reiter "Typ
+            konfigurieren" macht den Abschnitt "Text für Elemente auf
+            gleicher Ebene" sichtbar. Hier können Präfix- und Suffix-Texte
+            eingegeben werden. Sie können häufig leer gelassen werden, aber
+            sind nützlich, um Tabellen oder Aufzählungen zu erzeugen. Die
+            Texte werden vor und nach Elementen des gewählten Typs auf
+            gleicher Ebene eingefügt. Zum Beispiel kann man eine Tabelle
+            erzeugen, indem man als Präfix-Text &lt;table border="1"&gt;" und
+            als Suffix-Text &lt;/table&gt;" setzt. Ein mögliches
+            Ausgabeformat für das Element würde dann so aussehen:<br>
+            <br>
+            &lt;tr&gt;&lt;td&gt;"{*Title*}"&lt;/td&gt;&lt;td&gt;(c)
+            {*Copyright*}&lt;/td&gt;&lt;/tr&gt;<br>
+            <br>
+            Ein Beispiel finden Sie als "sample_table_booklist" unter dem
+            Menübefehl "Datei-&gt;Beispiele".<br>
+            <br>
+            Elemente einer Ebene sollten in der Regel vom gleichen Typ sein
+            oder zumindest die gleichen Präfix- und Suffix-Tags
+            haben.</p><a id="format-link-ref" name="format-link-ref">
+
+            <h4>Referenzfeld für Verweise</h4>
+
+            <p>Für jeden Typ gibt es ein Feld, dass als Referenzfeld
+            verwendet wird. Standardmäßig ist es das erste Feld der
+            Feldliste. Durch Drücken von "Erweiterete Optionen zeigen" im
+            Reiter "Typ konfigurieren" kann das Feld eingestellt werden.<br>
+            <br>
+            Das Referenzfeld wird für interne Verweise und bei den Kommandos
+            "Nach Verweisefeldern arrangieren..." und "Nach Verweisfeldern
+            abflachen..." verwendet. Der Inhalt des Referenzfeldes sollte
+            eindeutig sein, wenn diese Funktionen benutzt werden.</p><a id=
+            "format-derived" name="format-derived">
+
+            <h4>Basistypen und abgeleitete Datentypen</h4>
+
+            <p>Datentypen können so eingestellt werden, dass sie ihre
+            Feldeinstellungen von einem Basistyp beziehen. Das ermöglicht
+            Datentypen mit unterschiedlicher Ausgabeformatierung, die die
+            gleichen Felddaten benutzen. Alle Änderungen der Feldliste und
+            der Feldtypem im Basistyp werden automatisch auch auf dessen
+            abgeleitete Datentypen angewandt, bis auf die
+            Ausgabeformatierung, die unabhängig vom Basistyp eingestellt
+            werden kann.<br>
+            <br>
+            Es gibt zwei Wege, abgeleitete Datentypen zu erzeugen. Erstens
+            kann man eine Option setzen, wenn man einen Typ im Reiter "Liste
+            der Typen" im Dialog "Daten-&gt;Datentypen konfigurieren..."
+            kopiert. Zweitens kann ein Basistyp im Reiter "Typ konfigurieren"
+            auswählen, wenn die erweiterten Optionen angezeigt
+            werden.</p><a id="format-condition" name="format-condition">
+
+            <h4>Regelbasierte Dateitypen</h4>
+
+            <p>Regelbasierte (bedingte) Dateitypen werden verwendet, um
+            basierend auf dem Inhalt eines Elements einen Datentyp
+            automatisch zuzuweisen. Eine Regel kann nur einem Basistyp und
+            seinen abgeleiteten Typen zugewiesen werden. Das erlaubt die
+            automatische Verwendung von verschiedenen Ausgabeformatierungen
+            und/oder Symbole in Abhängigkeit der Felddaten.<br>
+            <br>
+            Der Dialog ist über den Button "Bedingte Typen ändern" im Reiter
+            "Typ konfigurieren" im Dialog "Daten-&gt;Datentyp
+            konfigurieren..." erreichbar, wenn die erweiterten Optionen
+            sichtbar sind. Jede Bedingung beinhaltet ein Feld, einen Operator
+            und einen Vergleichswert (siehe <a href="#fig-5">Abbildung
+            5</a>). Beispiele für verfügbare Operatoren sind "ist gleich",
+            "größer als", "kleiner als", "beginnt mit", "endet mit" und
+            "enthält". Außerdem gibt es noch die Operatoren "Wahr" und
+            "Falsch", die den Typ aller Elemente unabhängig vom Inhalt
+            umschalten.<br>
+            <br>
+            Für spezielle Feldtypen wie Datum, Zeit oder Boolsche Variablen
+            verwenden Sie bitte für den Vergleichswert das gleiche Format wie
+            im Editor-Fenster. Generell sollten Sie die Operatoren "beginnt
+            mit", "endet mit" und "enthält" für solche Felder vermeiden, weil
+            zum Vergleich das interne Datenformat, nicht das sichtbare
+            Format, verwendet wird. Die Typen Datum und Zeit unterstützen
+            zusätzlich den Vergleichswert "now" ("jetzt"), der dem aktuellen
+            Datum und der Uhrzeit entspricht.<br>
+            <br>
+            Erzeugen Sie weitere Regeln über den Knopf "Regel hinzufügen".
+            Regeln können mit "und" oder "oder" verknüpft werden. "Regel
+            entfernen" entfernt die letzte Regel in der Liste.<br>
+            <br>
+            Regeln müssen nicht für alle Typen einer Familie gesetzt werden.
+            Falls keine Regel für ein Element erfüllt ist, wird automatisch
+            eine leere Regel ausgewählt.<br>
+            <br>
+            Ein Beispiel finden Sie unter "Datei-&gt;Beispiele..." in der
+            Datei "sample_conditional_todo".</p>
+
+            <div>
+              <a id="fig-5" name="fig-5">
+
+              <p><img src="doc_condition.png"></p>
+
+              <p><b>Abbildung 5: Der Dialog für regelbasierte
+              Dateitypen</b></p>
+            </div><a id="format-copy" name="format-copy">
+
+            <h4>Formate kopieren</h4>
+
+            <p>Eine andere Methode, die Typfestlegungen zu ändern, besteht
+            darin, die Formate von einer anderen TreeLine-Datei zu kopieren.
+            Dazu gibt es den Dialog "Daten-&gt;Datentypen aus Datei
+            übernehmen". Alle Typen aus der ausgewählten Datei werden
+            kopiert. Typen mit gleichen Namen werden überschrieben, aber
+            zusätzliche Typen, die in der Vorlage nicht vorkommen, bleiben in
+            der aktuellen Datei erhalten.</p>
+          </div><a id="fields" name="fields">
+          <hr>
+
+          <h3>Feldtypen</h3>
+
+          <div>
+            <a id="field-options" name="field-options">
+
+            <h4>Feldoptionen</h4>
+
+            <p>Die Feldoptionen werden im Reiter "Felder konfiguieren" des
+            Dialogs "Daten-&gt;Datentypen konfigurieren..." (siehe <a href=
+            "#fig-3">Figure 3</a>) gesetzt. Mögliche Feldtypen sind "Text",
+            "Zahl", "Auswahl", "Kombination (Mehrfachauswahl)", "Auswahl aus
+            allen existierenden Werten (AutoChoice)", "Datum", "Zeit",
+            "Boolsche Variable", "URL", "Pfad", "Interne Verknüpfung",
+            "Ausführbare Verknüpfung", "E-Mail-Adresse" und "Bild". Präfix
+            und Suffix werden angezeigt, sobald ein Feld nicht leer ist.<br>
+            <br>
+            Je nach gewählter Textformatierung wird das Feld entweder als
+            vereinfachtes HTML oder als Fließtext mit Zeilenumbruch
+            ausgewertet. Im ersten Fall werden Zeilenumbrüche ignoriert und
+            die Zeichen "&lt;", "&gt;" und "&amp;" werden nur angezeigt, wenn
+            sie gemäß dem HTML-Standard maskiert sind. Sie können in den
+            allgemeinen Einstellungen die standardmäßig zu wählende
+            Textformatierung für neue Elemente einstellen. Ein Beispiel mit
+            dem Namen "sample_char_format" finden Sie unter dem Menübefehl
+            "Datei-&gt;Beispiele".<br>
+            <br>
+            Einige der Feldtypen verwenden eine Ausgabeformat. Der Knopf
+            "Hilfe zu den Formaten" zeigt dann jeweils die verfügbaren
+            Formatierungszeichen an. Wenn im Editor Einträge vorgenommen
+            werden, die nicht zum Format passen, wird der Feldname fett
+            dargestellt und die Ausgabe durch "#####" ersetzt.</p><a id=
+            "field-text" name="field-text">
+
+            <h4>Der Typ "Text"</h4>
+
+            <p>"Text" ist der Standardtyp. Felder dieses Typs werden in der
+            "Editor"-Ansicht in Textfeldern bearbeitet. Das Textfeld wird
+            beim nächsten Anzeigen automatisch größer, wenn mehr Zeilen
+            eingegeben wurden, als in das Feld passen. Die Höhe des
+            Eingabefelds kann im Reiter "Felder konfigurieren" auch explizit
+            angegeben werden.</p><a id="field-choice" name="field-choice">
+
+            <h4>Die Typen "Auswahl", "Kombination (Mehrfachauswahl)" und
+            "Boolsche Variable"</h4>
+
+            <p>Die Typen "Auswahl" und "Kombination (Mehrfachauswahl)"
+            erlauben die Auswahl von einem ("Auswahl") bzw. mehreren
+            ("Kombination") Einträgen aus einer Liste. Die erlaubten Werte
+            werden getrennt durch "/" im Ausgabeformat vorgegeben. Verwenden
+            Sie "//", um das Zeichen "/" als Teil eines Werts anzugeben.<br>
+            <br>
+            Der Typ "Boolsche Variable" funktioniert ähnlich wie Auswahl,
+            aber akzeptiert nur Wertepaare wie "wahr/falsch", "ja/nein" und
+            "1/0".</p><a id="field-number" name="field-number">
+
+            <h4>Der Typ "Zahl"</h4>
+
+            <p>Das Ausgabeformat für den Typ "Zahl" wird über eine
+            Zeichenkette definiert. "#" steht für eine optionale Ziffer, "0"
+            für eine benötigte Ziffer. Beispielsweise wird die Zahl pi mit
+            dem Format "#.#" als "3.1" und mit dem Format "00.00" als "03.14"
+            dargestellt. Unabhängig vom gewählten Format werden links vom
+            Komma oder Dezimalpunkt keine Ziffern abgeschnitten, weil das das
+            Ergebnis verfälschen würde. Aber geben Sie immer eine
+            ausreichende Anzahl von optionalen oder benötigten Ziffern an, um
+            Rundungsfehler zu vermeiden.<br>
+            <br>
+            Sie können sowohl den angelsächsischen Dezimalpunkt (".") als
+            auch das deutsche Dezimalkomma (",") vorgeben. Als
+            Tausender-Trennzeichen können Sie analog "\." für die deutsche
+            und "\," für die angelsächsische Schreibweise benutzen. Eine
+            große Zahl kann beispielsweise als "#\,###\,###.##" oder
+            "#\.###\.###,##" definiert werden. Der Knopf "Hilfe zu den
+            Formaten" zeigt die Formatierungsmöglichkeiten im Detail.<br>
+            <br>
+            Im Gegensatz zu den meisten anderen Formaten wird das
+            Ausgabeformat des Typs "Zahl" auch zur Anzeige im Editor
+            verwendet. Solange das korrekte Dezimaltrennzeichen verwendet
+            wird, kann TreeLine aber die meisten sinnvollen Eingaben korrekt
+            auswerten.</p><a id="field-date" name="field-date">
+
+            <h4>Die Typen "Datum" und "Zeit"</h4>
+
+            <p>Bei den Typen "Datum" und "Zeit" werden spezielle Zeichen im
+            Ausgabeformat durch die Elemente des Datums ersetzt. Der Knopf
+            "Hilfe zu den Formaten" zeigt die Formatierungsmöglichkeiten im
+            Detail.<br>
+            <br>
+            Das Datums- bzw. Zeitformat kann auch unter
+            "Extras-&gt;Allgemeine Einstellungen-&gt;Formate im Editor"
+            definiert werden. Das bezieht sich allerdings nur auf den Editor.
+            Andere sinnvolle Eingabe werden vom Editor ebenfalls korrekt
+            interpretiert, so lange die richtige Reihenfolge von Tag, Monat
+            und Jahr eingehalten wird. Außerdem kann der Editor Wochentage
+            nicht auswerten. Nicht auswertbare Eingaben führen dazu dass der
+            Feldname fett angezeigt wird.<br>
+            <br>
+            Unter "Weitere Einstellungen" können Sie als Standardwert für neu
+            angelegte Elemente "jetzt" auswählen. Das hat den Effekt, dass
+            das Datums- oder Zeitfeld beim Anlegen des neuen Elements
+            automatisch das Anlegedatum als "Zeitstempel"
+            speichert.</p><a id="field-link" name="field-link">
+
+            <h4>Verknüpfungen</h4>
+
+            <p>Die Feldtypen "URL", "Pfad" und "E-Mail-Adresse" erzeugen in
+            der Ausgabe klickbare Verknüpfungen. Die "URL" wird für
+            Webadressen ("http://...") verwendet, "Pfad" für Dateipfade auf
+            dem lokalen Rechner ("file:///") und "E-Mail-Adresse" für
+            E-Mail-Adressen ("mailto:..."). Diese Verknüpfungen öffnen einen
+            externen Webbrowser bzw. ein E-Mail-Programm, wenn sie in der
+            Ansicht angeklickt werden. Beim Export als HTML werden sie als
+            Links exportiert. Geben Sie einfach die volle URL ein (z.B.
+            "www.bellz.org/treeline/index.html"). Unter Linux kann man den zu
+            verwendenden Browser über die Umgebungsvariable "BROWSER" setzen.
+            Zum Beispiel können Sie unter KDE mit "konqueror %s" Konqueror
+            als Standardbrowser einstellen.<br>
+            <br>
+            Es gibt auch interne Verknüpfungen, die bei einem Klick in der
+            Ansicht das nächste Element auswählen, dessen verknüpfbares Feld
+            der internen Verknüpfung entspricht. Wenn Verknüpfungen oder
+            verknüpfbare Felder mehrzeilig sind, wird jede Zeile als eine
+            separate Verknüpfung aufgefasst. Wenn gewünscht, kann das selbe
+            Feld als Verknüpfung und verknüpfbares Feld dienen, so dass der
+            Klick auf ein Schlüsselwort in einem Element das nächste Element
+            mit dem gleichen Schlüsselwort auswählt. Interne Verknüpfungen
+            werden in HTML als Anker in der Website exportiert. Bei mehrfach
+            vorkommenden Verknüpfungszielen wird jedoch jeweils nur die
+            oberste, nicht die jeweils nächste gefunden. Ein Beispiel mit dem
+            Namen "sample_intern_links" finden Sie unter dem Menübefehl
+            "Datei-&gt;Beispiele".<br>
+            <br>
+            Die "Ausführbare Verknüpfung" versucht, den im Feld eingegebenen
+            Text als Programm aufzurufen. Da dies eine Sicherheitslücke sein
+            kann, läßt sich die Funktion in den allgemeinen Einstellungen
+            deaktivieren. Man kann auch den Pfad zum ausführbaren Programm
+            als Prefix für das Feld definieren und dann in das eigentliche
+            Feld zusätzliche Argumente oder Dateinamen eingeben, die an das
+            Programm übergeben werden sollen. Diese Option kann auch
+            deaktiviert werden, falls sicherheitsbedenken bestehen.<br>
+            <br>
+            Der Typ "Bild" zeigt das Bild, dessen Pfad angegeben wurde, in
+            der Ansicht. Sie können mit Qt2 (wie in der Windows-Version von
+            TreeLine benutzt) GIF- und PNG-Bilder verwenden, mit Qt3 auch
+            JPEG und andere gängige Bildformate. Bei einem Export als HTML
+            werden diese Bilder eingebunden und vom Browser angezeigt, wenn
+            das Format unterstützt wird.</p><a id="field-unique" name=
+            "field-unique">
+
+            <h4>Eindeutige ID</h4>
+
+            <p>Ein Feld vom Typ "Eindeutige ID" wird automatisch mit einer
+            eindeutigen Nummernfolge angelegt. Dieses kann benutzt werden, um
+            automatisch eindeutige Referenzfelder zu erzeugen.<br>
+            <br>
+            Anfags wird das Ausgabeformat auf die gewünschte erste Nummer mit
+            optionalen führenden Nummern und nachfolgendem Text gesetzt. Die
+            optionalen Parameter sind nützlich, um Duplikate in
+            unterschiedlichen Dateien zu vermeiden. Alle neuen Elemente
+            erhalten eine automatisch erzeugte ID. Das Ausgabeformat zeigt
+            immer die nächste verfügbare Nummer an, die dem nächsten neuen
+            Element zugewiesen wird.</p><a id="field-advanced" name=
+            "field-advanced">
+
+            <h4>Weitere Einstellungen</h4>
+
+            <p>Der Knopf "Weitere Einstellungen" im Feldformat-Dialog
+            ermöglicht es, einen Vorgabewert für das Feld zu definieren, der
+            bei neuen Elementen automatisch vergeben wird.<br>
+            <br>
+            Verknüpfungsfelder können statt der Ziel-URL auch einen
+            alternativen Text aus einem anderen Feld anzeigen, das Sie aus
+            einer Liste auswählen können.<br>
+            <br>
+            Außerdem kann ein Feld zum Pflichtfeld gemacht werden.
+            Pflichtfelder werden im Editor mit einem "*" gekennzeichnet.
+            TreeLine erzwingt allerdings nicht das Ausfüllen von
+            Pflichtfeldern.<br>
+            <br>
+            Schließlich können Felder in der Editor-Ansicht versteckt
+            werden.</p>
+          </div><a id="data" name="data">
+          <hr>
+
+          <h3>Verändern der Daten im Baum</h3>
+
+          <div>
+            <a id="data-category" name="data-category">
+
+            <h4>Kategoriebasierte Befehle</h4>
+
+            <p>Das Menü "Daten" enthält Befehle, um die Daten nach Kategorien
+            und verknüpfbaren Feldern neu zu arrangieren bzw. "abzuflachen".
+            Diese Befehle werden dazu verwendet, automatisch unterhalb des
+            ausgewählten Elements Gliederungsebenen einzufügen bzw. zu
+            entfernen.<br>
+            <br>
+            Der Befehl "Kategorieebene hinzufügen" ermöglicht es, ein oder
+            mehr Felder auzuwählen, die die Unterelemente gemein haben. Diese
+            Felder werden dazu benutzt, neue Elternelemente für diese
+            Elemente zu erzeugen bzw. sie nach gemeinsamen Kategorien zu
+            gruppieren. Beispielsweise kann man in einer Bücherliste die
+            Felder "Vorname_des_Autors" und "Nachname_des_Autors" auswählen.
+            Das Ergebnis wird ein Baum sein, in dem alle Bücher eines
+            bestimmten Autors jeweils in einem eigenen Unterast abgelegt
+            sind.<br>
+            <br>
+            Der Befehl "Nach Kategorie abflachen" hat beinahe den
+            gegenteiligen Effekt. Er eliminiert alle Unterelemente, die
+            selbst Unterelemente haben, und überträgt ihre Datenfelder auf
+            diese. Er benennt Felder um, anstatt Felder mit gleichem Namen zu
+            überschreiben. Dennoch ist dieser Befehl am nützlichsten, wenn
+            die "Kinder" und "Eltern" im Baum von verschiedenem Typ sind und
+            einmalige Feldnamen besitzen.</p><a id="data-ref" name=
+            "data-ref">
+
+            <h4>Verweisbasierte Befehle</h4>
+
+            <p>Die Befehle "Nach Verweisfeldern arrangieren" und "Nach
+            Verweisfeldern abflachen" arrangieren Elemente neu, indem sie
+            Verweise auf den Wert des verknüpfbaren Felds ihres
+            Elternelements verwenden. Dazu ist es notwendig, dass die
+            verknüpfbaren Felder eindeutige Werte, z.B. IDs, enthalten.<br>
+            <br>
+            Der Befehl "Nach Verweisfeldern abflachen" fügt ein Feld mit der
+            ID des Elternobjekts zu jedem Unterelement hinzu. Dann platziert
+            es alle Elemente direkt unter dem ausgewählten Wurzelelement. Der
+            Befehl "Nach Verweisfeldern arrangieren" macht das Gegenteil. Er
+            platziert jedes Element unter dem Element mit der im Verweisfeld
+            genannten ID. Wenn es mehrere Elemente mit der gleichen ID gibt,
+            wird das nächste Element oberhalb verwendet. Elemente, deren
+            Elternelemente nicht gefunden werden, werden direkt unter das
+            ausgewählte Wurzelelement platziert.</p><a id="data-sort" name=
+            "data-sort">
+
+            <h4>Sortierung</h4>
+
+            <p>Das Kommando "Daten-&gt;Elemente sortieren..." zeigt den
+            Sortierdialog. Er enthält Optionen, um den gesamten Baum,
+            ausgewählte Zweige, die Unterelemente der Auswahl, und die
+            Elemente auf gleicher Eben zu sortieren. Die Sortierung kann
+            aufgrund spezifischer Felder innerhalb bestimmter Typen oder
+            aufgrund der Titel erfolgen.<br>
+            <br>
+            Eine Sortierung nach Typen erlaubt die Auswahl mehrerer Felder
+            als erster, zweiter, ... Sortierschlüssel. Mehrere Typen können
+            in der Liste in der linken Hälfte ausgewählt werden. Die
+            gemeinsamen Felder werden rechts aufgezeigt. Die Sortierschlüssel
+            werden mit der linken Maustaste ausgewählt und die
+            Sortierrichtung mit der rechten Maustaste geändert.</p><a id=
+            "data-filter" name="data-filter">
+
+            <h4>Filtern</h4>
+
+            <p>Das Kommando "Daten-&gt;Bedingt filtern..." begrenzt die
+            Anzeige von Elementen in der flachen Ansicht durch
+            benutzerdefinierte Regeln. Zuerst muss der Datentyp ausgewählt
+            werden. Danach können logische Regeln eingegeben werden,
+            basierend auf einem der Felder des Typs (ähnlich zu <a href=
+            "#fig-5">Abbildung 5</a>). Mehrere Regeln können mit "und" oder
+            "oder" verknüpft werden (wählen Sie "Regel hinzufügen"). Die
+            Regel "Wahr" kann ausgewählt werden um alle Elemente des
+            ausgewählten Typs anzuzeigen. Es werden nur Unterelemente in der
+            flachen Ansicht angezeigt, die auf die Regel passen. Der Filter
+            bleibt solange bestehen, bis er durch "Daten-&gt;Filter
+            ausschalten" zurückgenommen wird (siehe <a href=
+            "#fig-6">Abbildung 6</a>).<br>
+            <br>
+            Das Kommando "Daten-&gt;Textfilter..." wirkt ähnlich, hier muss
+            ein Suchtext eingegeben werden. Elenente, in denen der Suchtext
+            in einem der Felder auftritt werden in der flachen Ansicht
+            angezeigt. Auch dieser Filter muss mit "Daten-&gt;Filter
+            ausschalten" zurückgesetzt werden.</p>
+
+            <div>
+              <a id="fig-6" name="fig-6">
+
+              <p><img src="doc_filter.png"></p>
+
+              <p><b>Abbildung 6: Filterergebnisse</b></p>
+            </div><a id="data-number" name="data-number">
+
+            <h4>Nummerierung</h4>
+
+            <p>Der Befehl "Nummerierung" fügt zu Unterelementen Nummernfelder
+            hinzu. Die Nummernfelder werden nicht automatisch aktualisiert,
+            wenn der Baum verändert wurde. Der Befehl muss dann wiederholt
+            werden. Im Dialog wird ein neuer oder bereits existierender
+            Feldname eingegeben. Außerdem kann angegeben werden, ob das
+            ausgewählte Element in die Nummerierung einbezogen werden soll.
+            Es gibt drei Arten der Nummerierung: "nur Nummer der jeweiligen
+            Ebene anzeigen", "für jedes Element die volle Nummer (z.B. 1.5.4)
+            anzeigen" und "nur direkte Unterelemente nummerieren". Es gibt
+            die Standardformate "I, II..., A, B..., 1, 2..." für die erste
+            Art der Nummereriung und "1, 2..., 1.1, 1.2..." für die zweite.
+            Außerdem können für jede Ebene benutzerdefinierte Formate
+            spezifiziert werden. Die benutzerdefinierten Formate sollten
+            eines der folgenden Zeichen enthalten: "1", "A", "a", "I", or
+            "i". Die Serie wird dann jeweils passend mit Zahlen, Buchstaben
+            oder römischen Zahlen weitergeführt. Entscheidend ist das jeweils
+            letzte Vorkommen des Zeichens. Alle vorherigen werden als Teil
+            des Formats aufgefasst.</p><a id="data-change" name=
+            "data-change">
+
+            <h4>Die Auswahl ändern</h4>
+
+            <p>Der Befehl "Ausgewählte Elemente ändern" ermöglicht das
+            gleichzeitige Ändern der Werte für ein bestimmtes Datenfeld für
+            alle ausgewählten Elemente. Wählen Sie einfach das gewünschte
+            Feld aus und geben Sie den neuen Wert ein. Um den Feldwert zu
+            löschen, geben Sie einen Buchstaben ein und löschen Sie ihn
+            wieder. Dieses erzeugt ein leeres Feld.</p>
+          </div><a id="print" name="print">
+          <hr>
+
+          <h3>Drucken</h3>
+
+          <div>
+            <a id="print-options" name="print-options">
+
+            <h4>Druckereinstellungen</h4>
+
+            <p>Der erste Reiter des Dialogs "Datei-&gt;Druckereinstellungen"
+            ist "Allgemeine Einstellungen". Auf der linken Seite kann der
+            gesamte Baum, die ausgewählten Teilbäume (mit Unterelementen)
+            oder die ausgewählten Elemente eingestellt werden. Die ersten
+            beiden Einstellungen rücken die Unterelemente ein.<br>
+            <br>
+            Auf der rechten Seite befinden sich verschiedene Optionen. Sie
+            beinhalten die grafischen Darstellung der Baumstruktur, die
+            Einbindung des Wurzelelements, nur aufgeklappte Elenente zu
+            drucken und das erste Unterelement mit dem Elternelement beim
+            Seitenumbruch zusammenzuhalten. Die grafische Darstellung der
+            Baumstruktur zeichnet Linien zwischen Elemente und
+            Unterelementen, die die Baumstruktur visualisieren, insbesondere
+            wenn mehrere Seiten erzeugt werden. Die Linien erscheinen
+            eventuell nicht korrekt, wenn HTML-Formatierung benutzt wird.<br>
+            <br>
+            In der Standardeinstellung lässt TreeLine keine Seitenumbrüche
+            zwischen einem Element und dem ersten Unterelement zu. Falls Sie
+            dies nicht wünschen, entfernen Sie bitte den Haken vor der
+            Einstellung "Das erste Unterelement mit dem Elternelement
+            zusammen anzeigen".</p><a id="print-setup" name="print-setup">
+
+            <h4>Seitenaufbau</h4>
+
+            <p>Der zweite Reiter des Dialogs "Druckereinstellungen..."
+            enthält die "Seiteneinstellungen". In der linken Hälfte können
+            die Papiergröpe, die Orientierung und Längeneinheiten geändert
+            werden. Rechts befinden sich die Einstellungen zu Anzahl der
+            Spalten, Einrückungen und Rändern</p><a id="print-font" name=
+            "print-font">
+
+            <h4>Schriftauswahl</h4>
+
+            <p>Der dritte Reiter des Dialogs "Druckereinstellungen..."
+            enthält die "Schriftauswahl". Der Ausdruck wird dieselben Fonts
+            wie in der "Ansicht"-Ausgabe benutzen, wenn die obere Option
+            ausgewählt ist. Ansonsten kann die beim Drucken verwendete
+            Schriftart ausgewählt werden.</p><a id="print-header" name=
+            "print-header">
+
+            <h4>Kopf-/Fußzeile</h4>
+
+            <p>Der vierte Reiter des Dialogs "Druckereinstellungen..."
+            enthält die Einstellungen zu Kopf- und Fußzeile. In der linken
+            Liste befinden sich Informationen zur Datei und in der rechten
+            Hälfte sechs Eingabefelder für Kopf- und Fußzeile (jeweils links,
+            mitte und rechts). Die linken Felder können den einzelnen
+            Eingabefeldern, zusammen mit weiteren Text hinzugefügt werden,
+            genauso wie im Reiter "Ausgabe" im Dialog "Daten-&gt;Datentypen
+            konfigurieren...". Die Einstellungen für die Kopf- und Fußzeilen
+            werden in der TreeLine-Datei abgespeichert.</p><a id=
+            "print-preview" name="print-preview">
+
+            <h4>Druckvorschau</h4>
+
+            <p>Die Druckvorschau kann über "Datei-&gt;Druckvorschau..." oder
+            über den Button "Druckvorschau..." im Dialog "Druckeinstellungen"
+            erreicht werden. Die Buttons dienen zur Navigation zwischen den
+            Seiten, oder zum Öffnen der Dialogs "Druckeinstellungen" bzw.
+            "Drucken". Vergrößern Sie das Fenster, um mehr Details zu
+            sehen.</p><a id="print-problems" name="print-problems">
+
+            <h4>Probleme beim Drucken</h4>
+
+            <p>Einige Probleme beim Drucken, z.B. Fehler bei den
+            Randabständen oder dem Zeilenumbruch, können behoben werden,
+            indem man eine Schriftart wählt, die der Drucker besser
+            unterstützt.</p>
+          </div><a id="file" name="file">
+          <hr>
+
+          <h3>Umgang mit Dateien</h3>
+
+          <div>
+            <a id="file-comp" name="file-comp">
+
+            <h4>Dateien komprimieren</h4>
+
+            <p>Als Standard verwendet TreeLine ein XML-Dateiformat. Um Platz
+            zu sparen, können die Dateien im gzip-Format komprimiert
+            gespeichert werden. Die Komprimierung lässt sich für einzelne
+            Dateien unter "Extras-&gt;Datei-Einstellungen" oder vom
+            "Speichern unter"-Dialog aus aktivieren. Es gibt auch eine
+            allgemeine Einstellung, um das komprimierte Speichern zum
+            Standard für neu erstellte Dateien zu machen.</p><a id="file-enc"
+            name="file-enc">
+
+            <h4>Dateien verschlüsseln</h4>
+
+            <p>Dateien können verschlüsselt und mit einem Passwort geschützt
+            werden. Die Verschlüsselung lässt sich für einzelne Dateien unter
+            "Extras-&gt;Datei-Einstellungen" oder vom "Speichern
+            unter"-Dialog aus aktivieren. Es gibt auch eine allgemeine
+            Einstellung, um das verschlüsselte Speichern zum Standard für neu
+            erstellte Dateien zu machen. Die Verschlüsselung verwendet die
+            SHA-Hashfunktion zur Verschlüsselung des Datenstroms und sollte
+            recht sicher sein.</p><a id="file-auto-save" name=
+            "file-auto-save">
+
+            <h4>Automatisches Speichern</h4>
+
+            <p>TreeLine kann auf Wunsch ungespeicherte Dateien in einem
+            einstellbaren Zeitintervall mit einem dem Dateinamen angehängten
+            "~" speichern. Das können Sie unter "Extras-&gt;Allgemeine
+            Einstellungen" konfigurieren. Wenn TreeLine sauber beendet wird
+            oder die Datei gespeichert wird, werden die Sicherungskopien
+            automatisch entfernt.</p><a id="file-states" name="file-states">
+
+            <h4>Ansichtseinstellungen merken</h4>
+
+            <p>Wenn eine kürzlich benutze Datei geöffnet wird, stellt
+            TreeLine die zuletzt ausgeklappten bzw. eingeklappten Äste und
+            die zuletzt ausgewählten Elemente wieder her. Diese Informationen
+            werden in der Konfigurationsdatei von TreeLine gespeichert. Diese
+            Funktion können sie in den allgemeinen Einstellungen
+            deaktivieren.</p><a id="file-cmdline" name="file-cmdline">
+
+            <h4>Kommandozeile</h4>
+
+            <p>Mit dem Befehl "treeline" können Sie auf der Kommandozeile und
+            in Skripten Dateien importieren und exportieren. Damit lassen
+            sich zum Beispiel automatisierte Konvertierungsläufe einrichten.
+            Wenn Sie "treeline -h" (bzw. "treeline_dos -h" unter Windows)
+            aufrufen, werden die verfügbaren Optionen angezeigt.</p>
+          </div><a id="import" name="import">
+          <hr>
+
+          <h3>Datei-Import</h3>
+
+          <div>
+            <a id="import-general" name="import-general">
+
+            <h4>Allgemeine Informationen</h4>
+
+            <p>Eine TreeLine-Datei verwendet ein XML-Textformat. Auch andere
+            Arten von Textdateien können von TreeLine gelesen werden. In
+            diesem Fall zeigt TreeLine einen Dialog an, in dem die gewünschte
+            Importmethode ausgewählt werden kann.</p><a id="import-delim"
+            name="import-delim">
+
+            <h4>Text mit Trennzeichen</h4>
+
+            <p>TreeLine öffnet Textdateien mit einer Baumstruktur, die durch
+            eine bestimmte Anzahl von Tabulatoren am Beginn jeder Zeile
+            strukturiert sind. In diesem Fall wird nur der Elementtitel
+            importiert, keine anderen Felder.<br>
+            <br>
+            Eine Tabelle, deren Spalten mit Tabulatoren getrennt sind, kann
+            auch importiert werden. Sie wird als eine Liste von
+            Unterelementen des Wurzelelements importiert, wobei jedes
+            Unterlement Felder einer Zeile enthält. Die erste Zeile der
+            Tabelle wird benztzt, die Feldnamen zu definieren, jede folgende
+            Zeile erzeugt ein Unterelement .</p><a id="import-plain" name=
+            "import-plain">
+
+            <h4>Textdateien</h4>
+
+            <p>Es gibt zwei Möglichkeiten des Imports von Textdateien. Die
+            eine erzeugt für jede Zeile des Texts ein neues Element, die
+            andere je eines pro Absatz, wobei Absätze durch Leerzeilen
+            getrennt sein müssen. In beiden Fällen werden alle neuen Elemente
+            direkte Unterelemente des Wurzelelements. Verschachtelte
+            Kapitelstrukturen können nicht erkannt werden. Dies ist aber ein
+            guter Ausgangspunkt. Weitere Dokumentstruktur kann später durch
+            das Einrücken von Elementen hinugefügt werden.</p><a id=
+            "import-treepad" name="import-treepad">
+
+            <h4>Treepad-Dateien</h4>
+
+            <p>Es gibt auch einen Filter zum Importieren von Dateien, die vom
+            Shareware-Programm Treepad geschrieben wurden. Dabei werden nur
+            Textelemente unterstützt.</p><a id="import-bookmarks" name=
+            "import-bookmarks">
+
+            <h4>Lesezeichen-Dateien</h4>
+
+            <p>TreeLine kann sowohl das HTML-Lesezeichenformat von Mozilla,
+            Firefox und Netscape als auch das XBEL-Format, das z.B. von
+            Konqueror, Galeon oder Elinks benutzt wird, einlesen. Jedes
+            Lesezeichen wird ein Element mit Name und Verknüpfungsfeld.
+            Einige Informationen wie das letzte Besuchsdatum der Webseite
+            oder die Verknüpfung auf das Icon gehen beim Import verloren. Ein
+            Beispiel können Sie in der Datei "sample_bookmarks" finden. Die
+            Beispiele finden Sie mit dem Menübefehl
+            "Datei-&gt;Beispiele".</p><a id="import-xml" name="import-xml">
+
+            <h4>Unspezifisches XML</h4>
+
+            <p>TreeLine importiert und exportiert XML-Dateien. Die benutzten
+            Routinen sind nicht sehr intelligent. Jedes XML-Element wird ein
+            TreeLine-Element und jedes XML-Attribute wird ein Feld dieses
+            Elements. XML-Textinhalte werden Felder mit dem Namen
+            "Element_Data". Damit lässt sich TreeLine als einfacher
+            XML-Editor verwenden.</p><a id="import-odf" name="import-odf">
+
+            <h4>ODF Textdokumente</h4>
+
+            <p>TreeLine kann Texte im Open Document Format (ODF) importieren,
+            die von OpenOffice.org oder KWord erzeugt wurden. Die
+            Baumstruktur wird abgeleitet von Überschriftstilen, die im
+            Dokument auftreten. Jeder Text unter einer solchen Überschrift
+            wird dem Element als Mehrzeilentext hinzugefügt. Dieser Filter
+            ist für einfache Gliederungs-Formatierungen gedacht. Jegliche
+            Formatierung jenseits der Überschriften wird ignoriert. Objekte
+            wie Tabelleun und Bilder werden beim Import ignoriert.</p>
+          </div><a id="export" name="export">
+          <hr>
+
+          <h3>Datei-Export</h3>
+
+          <div>
+            <a id="export-general" name="export-general">
+
+            <h4>Allgemeine Informationen</h4>
+
+            <p>Dateien werden mit dem Befehl "Datei-&gt;Exportieren"
+            exportiert. Der folgende Dialog zeigt alle möglichen Exporttypen
+            und ihre Optionen an.</p><a id="export-html" name="export-html">
+
+            <h4>HTML</h4>
+
+            <p>Der Export als einzelne Datei funktioniert ähnlich wie
+            drucken. Sie kann die Kopf- und Fußzeilen der Druckausgabe
+            enthalten, und die Zahl der Zeilen kann gesetzt werden.<br>
+            <br>
+            Es gibt auch zwei HTML Export-Funktionen, die
+            Verzeichnishierarchien anlegen. Die Verzeichnisse werden dabei
+            nach dem Referenzfeld benannt, welches gültige Zeichen für
+            Dateinamen enthalten müssen und keine doppelten Einträge pro
+            Verzeichnis beinhalten dürfen. Die erste Variante erzeugt eine
+            Tabelle mit den Daten der Elemente auf gleicher Ebene mit
+            HTML-Links zu Eltern- und Unterelementen. Die zweite Variante
+            erzeugt eine HTML-Datei für jeden Knoten, mit einem
+            Navigationsbereich auf der linken Seite, der Links zum Vater, zu
+            den Elementen auf gleicher Ebene und zu den Kindern
+            enthält.</p><a id="export-delim" name="export-delim">
+
+            <h4>Text mit Trennzeichen</h4>
+
+            <p>Daten können als mit tabulatoren eingerückte Titellisten und
+            Tabulator-getrennte Tabellen exportiert werden. Die Exportformate
+            entsprechen den jeweiligen Importformaten. Beim Export als
+            Tabelle wird nur die erste Unterebene des Baums verwendet. Es
+            bietet sich oft an, die Datei vorher "abzuflachen" (also
+            Hierarchieebenen zu entfernen).</p><a id="export-bookmarks" name=
+            "export-bookmarks">
+
+            <h4>Lesezeichen</h4>
+
+            <p>TreeLine kann sowohl das HTML-Lesezeichenformat von Mozilla,
+            Firefox und Netscape als auch das XBEL-Format, das z.B. von
+            Konqueror, Galeon oder Elinks benutzt wird, schreiben.</p><a id=
+            "export-xml" name="export-xml">
+
+            <h4>Unspezifisches XML</h4>
+
+            <p>TreeLine importiert und exportiert XML-Dateien. Die benutzten
+            Routinen sind nicht sehr intelligent. Jedes TreeLine-Element wird
+            ein XML-Element und jedes Feld dieses Elements wird ein
+            XML-Attribut. Felder mit dem Namen "Element_Data" werden
+            XML-Textinhalte. Damit lässt sich TreeLine als einfacher
+            XML-Editor verwenden.</p><a id="export-xslt" name="export-xslt">
+
+            <h4>XSLT</h4>
+
+            <p>Das Format einer TreeLine-Datei kann auch als XSLT-Stylesheet
+            exportiert werden. Dieser kann zum Anzeigen der
+            TreeLine-XML-Datei in einem dafür geeigneten Webbrowser benutzt
+            werden, ohne dass vorher ein HTML-Export erfolgen muss. Beachten
+            Sie, dass in der XSLT-Datei einige komplexe Feldformatierungen
+            ignoriert werden.<br>
+            <br>
+            Beim Export eines XSLT-Stylesheets wird eine Verknüpfung auf die
+            Datei in die TreeLine-Datei geschrieben. Beachten Sie, dass die
+            TreeLine-Datei gespeichert werden muss, um diese Änderung zu
+            enthalten. Idealerweise sollte die TreeLine-Datei mit einer
+            Dateiendung von ".xml" gespeichert werden, da diese von
+            geeigneten Browsern dirket geöffnet werden können. Der Stylesheet
+            muss nur nach Änderungen in der Format- oder Typdefinition neu
+            generiert werden.<br>
+            <br>
+            Wenn in einem nach XSLT zu exportierenden Datenformat
+            HTML-Auszeichnungen verwendet werden, sollten sie dem
+            XHTML-Standard entsprechen (z.B. &lt;br/&gt; statt &lt;br&gt;).
+            Beim Export wird nach einem Namen für einen optionalen
+            CSS-Stylesheet gefragt. Dieser Name wird in der TreeLine-Datei
+            als Name für zukünfige Exporte gespeichert. Der Verweis auf den
+            XSLT-Stylesheet kann mit dem Befehl "Extras-&gt;XSLT-Referenz
+            entfernen" aus der TreeLine-Datei entfernt werden.</p><a id=
+            "export-odf" name="export-odf">
+
+            <h4>ODF Textdokumente</h4>
+
+            <p>TreeLine kann ein Outline im Open Document Format (ODF)
+            speichern, welches kompatibel zu OpenOffice.org und KWord ist.
+            Der Titel jedes Elements wird ein Überschriftenstil der
+            entsprechenden Ebene zugeordent. Die anderen Felder werden als
+            normaler Text exportiert. Der Export ist als einfacher
+            Gliederungs-Formatierung gedacht. Jegliche HTML-Formatierung wird
+            entfernt und Objekte wie Tabellen und Bilder werden nicht
+            unterstützt.</p>
+          </div><a id="custom" name="custom">
+          <hr>
+
+          <h3>Anpassungen</h3>
+
+          <div>
+            <a id="custom-options" name="custom-options">
+
+            <h4>{*Topic_en*}</h4>
+
+            <p>{*Text_en*}</p><a id="custom-fonts" name="custom-fonts">
+
+            <h4>Schriften</h4>
+
+            <p>Die Schriften für die Baumansicht, die Ausgabe-Ansicht und die
+            Editor-Ansicht können im Menü "Extras-&gt;Schriften
+            konfigurieren..." eingestellt werden.</p><a id="custom-keys"
+            name="custom-keys">
+
+            <h4>Tastatur-Kürzel</h4>
+
+            <p>Tastatur-Kürzel für Menü-Kommandos und andere Kommandos können
+            unter "Extras-&gt;Tastatur-Kürzel..." definiert werden. Es gibt
+            Reiter für Menü- und andere Kommandos. Geben Sie einfach den
+            neuen Tastaturkürzel nach Auswahl des Kommandos ein.</p><a id=
+            "custom-tools" name="custom-tools">
+
+            <h4>Symbolleisten</h4>
+
+            <p>Unter "Extras-&gt;Symbolleisten konfigurieren..." können Sie
+            die Anzahl der Toolbars und deren Inhalt einstellen.</p><a id=
+            "custom-color" name="custom-color">
+
+            <h4>Farben</h4>
+
+            <p>Die Farben für Vordergrund und Textfarbe können in den letzten
+            drei Einträgen im Meü "Extras" ausgewählt werden. Falls
+            "Standardfarben benutzen" aktiviert ist, werden dei
+            Benuztereinstellungen ignoriert.</p><a id="custom-icons" name=
+            "custom-icons">
+
+            <h4>Baum-Symbole (Icons)</h4>
+
+            <p>Es gibt eine Verzeichnis für Symbole im
+            Konfigurationsverzeichnis ("~/.treeline-1.x/icons/" unter Linux,
+            "C:\Dokumente und
+            Einstellungen\&gt;user\&lt;Anwendungsdaten\bellz\treeline-1.x\icons"
+            unter Windows). Icon-Dateien (PNG oder BMP), die in diesem
+            Verzeichnis abgelegt sind, können innerhalb von TreeLine als
+            Baum-Symbole benutzt werden.</p>
+          </div><a id="plugins" name="plugins">
+          <hr>
+
+          <h3>Plugins</h3>
+
+          <div>
+            <a id="plugins-intro" name="plugins-intro">
+
+            <h4>Beschreibung</h4>
+
+            <p>TreeLine hat eine Schnittstelle (Interface), um Erweiterungen,
+            sogenannte Plugins, einzubinden.<br>
+            <br>
+            Momentan verfügbare Plugins finden Sie auf der "Downloads"-Seite
+            der TreeLine-Website.</p><a id="plugins-install" name=
+            "plugins-install">
+
+            <h4>Installation</h4>
+
+            <p>Plugins werden installiert, indem Sie ihre Python-Datei (*.py)
+            in ein Plugin-Verzeichnis kopieren. Dieses kann das Verzeichnis
+            in der TreeLine-Installation sein
+            ("&lt;prefix&gt;/lib/treeline/plugins/" unter Linux oder
+            "TreeLine\lib\plugins\" unter Windows). Sie können aber auch das
+            Benuzterverzeichnis ("~/.treeline-1.x/plugins/" unter Linux,
+            "Dokumente und
+            Einstellungen\&lt;user&gt;\Anwendungsdaten\bellz\treeline-1.x\plugins\"
+            on Windows) verwenden. Die Liste der geladenen Plugins kann unter
+            "Hilfe-&gt;&gt;Über Plugins" eingesehen werden.</p><a id=
+            "plugins-intrf" name="plugins-intrf">
+
+            <h4>Interface</h4>
+
+            <p>Informationen über das Schreiben eigener Plugins finden Sie in
+            der Datei "plugininterface.py" im TreeLine-Quellcode.</p>
+          </div><a id="errors" name="errors">
+          <hr>
+
+          <h3>Geläufige Probleme</h3>
+
+          <div>
+            <a id="errors-panes" name="errors-panes">
+
+            <h4>Unsichtbare Bereiche</h4>
+
+            <p>Falls einer der Ansichten nicht sichtbar sein sollte, obwohl
+            sie Daten enthält, ist sie eventuell minimiert worden. Dieses
+            kann für die linke Fensterhälfte oder der obere oder untere
+            Bereich in der rechten Fensterhälfte passieren. Falls dieses
+            Auftritt, bewegen Sie die Maus zum entsprechenden Rand und ziehen
+            Sie die miinimierte Ansicht wieder auf.</p><a id="errors-xml"
+            name="errors-xml">
+
+            <h4>XML-Fehler</h4>
+
+            <p>Eine Fehlermeldung "Fehler beim Laden des XML-Parsers" heißt
+            in der Regel, dass TreeLine die benötigte XML-Bibliothek nicht
+            gefunden hat. Unter Linux verwendet Python entweder expat oder
+            das PyXML-Paket. Installieren Sie diese gegebenenfalls nach.
+            Unter Windows dürfte dieser Fehler nur auftreten, wenn Dateien
+            z.B. beschädigt sind oder versehentlich gelöscht
+            wurden.</p><a id="errors-print" name="errors-print">
+
+            <h4>Drucken</h4>
+
+            <p>Einige Probleme beim Drucken, z.B. Fehler bei den
+            Randabständen oder dem Zeilenumbruch, können behoben werden,
+            indem man eine Schriftart wählt, die der Drucker besser
+            unterstützt.</p>
+          </div>
+        </div><a id="revs" name="revs">
+        <hr>
+
+        <h2>Liste der Änderungen</h2>
+
+        <div>
+          <p>Die vollständige Liste der Änderungen kann in der englischen
+          Version des ReadMe gefunden werden.</p>
+        </div><a id="contact" name="contact">
+        <hr>
+
+        <h2>Fragen, Kommentare, Kritik?</h2>
+
+        <div>
+          <p>Es gibt eine Mailing-Liste für TreeLine-Benutzer.<br>
+          <br>
+          Zum Anmeldgen, gehen Sie bitte auf die Webseite <a href=
+          "https://lists.berlios.de/mailman/listinfo/treeline-users">lists.berlios.de/mailman/listinfo/treeline-users</a>.</p>
+
+          <p>Sie können mich auch per E-Mail unter "doug101 AT bellz DOT org"
+          erreichen.</p>
+
+          <p>Ich freue mich über jegliches Feedback, auch Fehlerberichte
+          (Bugreports). Sehen Sie auch von Zeit zu Zeit auf <a href=
+          "http://treeline.bellz.org">treeline.bellz.org</a> nach neuen
+          Versionen oder Updates.</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
