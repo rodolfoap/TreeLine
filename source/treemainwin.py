@@ -2040,29 +2040,16 @@ class TreeMainWin(QtGui.QMainWindow):
         self.notRootActGrp = QtGui.QActionGroup(self)
         self.selParentsActGrp = QtGui.QActionGroup(self)
 
-        fileNewAct = QtGui.QAction(_('&New...'), self)
-        fileNewAct.setToolTip(_('New File'))
-        fileNewAct.setStatusTip(_('Start a new file'))
-        fileMenu.addAction(fileNewAct)
-        self.actions['FileNew'] = fileNewAct
-        self.connect(fileNewAct, QtCore.SIGNAL('triggered()'), self.fileNew)
-
-        fileOpenAct = QtGui.QAction(_('&Open...'), self)
-        fileOpenAct.setToolTip(_('Open File'))
-        fileOpenAct.setStatusTip(_('Open a file from disk'))
-        fileMenu.addAction(fileOpenAct)
-        self.actions['FileOpen'] = fileOpenAct
-        self.connect(fileOpenAct, QtCore.SIGNAL('triggered()'), self.fileOpen)
-
-        fileOpenSampleAct =  QtGui.QAction(_('Open Sa&mple...'), self)
-        fileOpenSampleAct.setStatusTip(_('Open a sample template file'))
-        fileMenu.addAction(fileOpenSampleAct)
-        self.actions['FileOpenSample'] = fileOpenSampleAct
-        self.connect(fileOpenSampleAct, QtCore.SIGNAL('triggered()'),
-                     self.fileOpenSample)
-
         fileMenu.addSeparator()
-        
+
+        # FILE/EXPORT
+        fileExportAct = QtGui.QAction(_('&Export...'), self)
+        fileExportAct.setStatusTip(_('Export the file as html, as a table or as text'))
+        fileMenu.addAction(fileExportAct)
+        self.actions['FileExport'] = fileExportAct
+        self.connect(fileExportAct, QtCore.SIGNAL('triggered()'), self.fileExport)
+
+        # FILE/SAVE
         fileSaveAct = QtGui.QAction(_('&Save'), self)
         fileSaveAct.setToolTip(_('Save File'))
         fileSaveAct.setStatusTip(_('Save changes to the current file'))
@@ -2070,26 +2057,43 @@ class TreeMainWin(QtGui.QMainWindow):
         self.actions['FileSave'] = fileSaveAct
         self.connect(fileSaveAct, QtCore.SIGNAL('triggered()'), self.fileSave)
 
+        # FILE/SAVEAS
         fileSaveAsAct = QtGui.QAction(_('Save &As...'), self)
         fileSaveAsAct.setStatusTip(_('Save the file with a new name'))
         fileMenu.addAction(fileSaveAsAct)
         self.actions['FileSaveAs'] = fileSaveAsAct
-        self.connect(fileSaveAsAct, QtCore.SIGNAL('triggered()'),
-                     self.fileSaveAs)
-
-        fileExportAct = QtGui.QAction(_('&Export...'), self)
-        fileExportAct.setStatusTip(_('Export the file as html, as a table '\
-                                     'or as text'))
-        fileMenu.addAction(fileExportAct)
-        self.actions['FileExport'] = fileExportAct
-        self.connect(fileExportAct, QtCore.SIGNAL('triggered()'),
-                     self.fileExport)
+        self.connect(fileSaveAsAct, QtCore.SIGNAL('triggered()'), self.fileSaveAs)
 
         fileMenu.addSeparator()
 
+        # FILE/NEW
+        fileNewAct = QtGui.QAction(_('&New...'), self)
+        fileNewAct.setToolTip(_('New File'))
+        fileNewAct.setStatusTip(_('Start a new file'))
+        fileMenu.addAction(fileNewAct)
+        self.actions['FileNew'] = fileNewAct
+        self.connect(fileNewAct, QtCore.SIGNAL('triggered()'), self.fileNew)
+
+        # FILE/OPEN
+        fileOpenAct = QtGui.QAction(_('&Open...'), self)
+        fileOpenAct.setToolTip(_('Open File'))
+        fileOpenAct.setStatusTip(_('Open a file from disk'))
+        fileMenu.addAction(fileOpenAct)
+        self.actions['FileOpen'] = fileOpenAct
+        self.connect(fileOpenAct, QtCore.SIGNAL('triggered()'), self.fileOpen)
+
+        # FILE/OPEN SAMPLE
+        #fileOpenSampleAct =  QtGui.QAction(_('Open Sa&mple...'), self)
+        #fileOpenSampleAct.setStatusTip(_('Open a sample template file'))
+        #fileMenu.addAction(fileOpenSampleAct)
+        #self.actions['FileOpenSample'] = fileOpenSampleAct
+        #self.connect(fileOpenSampleAct, QtCore.SIGNAL('triggered()'), self.fileOpenSample)
+
+        fileMenu.addSeparator()
+
+        # FILE/PRINT
         filePrintOptAct = QtGui.QAction(_('P&rint Options...'), self)
-        filePrintOptAct.setStatusTip(_('Set margins, page size and other '\
-                                       'options for printing'))
+        filePrintOptAct.setStatusTip(_('Set margins, page size and other options for printing'))
         fileMenu.addAction(filePrintOptAct)
         self.actions['FilePrintOpt'] = filePrintOptAct
         self.connect(filePrintOptAct, QtCore.SIGNAL('triggered()'),
