@@ -1,0 +1,1627 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<HEADING1 item="y" nospace="y" nobreaks="y" tlversion="1.4.1"
+line0="{*Name*}"
+line1="&lt;center&gt;&lt;h1&gt;{*Name*}&lt;/h1&gt;&lt;/center&gt;"
+childtype="HEADING2">
+<Name type="Text">LisezMoi TreeLine</Name>
+<Ref type="Text" ref="y"></Ref>
+<HEADING1 item="y">
+<Name>Fichier LisezMoi pour TreeLine</Name>
+</HEADING1>
+<HEADING_CNTR item="y"
+line0="{*Name*}"
+line1="&lt;center&gt;&lt;h2&gt;{*Name*}&lt;/h2&gt;&lt;/center&gt;"
+childtype="TEXT_PARA">
+<Name type="Text">Un logiciel libre de gestion d'information</Name>
+<Ref type="Text" ref="y"></Ref>
+</HEADING_CNTR>
+<TEXT_CNTR item="y"
+line0="{*Name*}"
+line1="&lt;center&gt;{*Name*}&lt;/center&gt;">
+<Name type="Text">par Doug Bell</Name>
+<Ref type="Text" ref="y"></Ref>
+</TEXT_CNTR>
+<TEXT_CNTR item="y">
+<Name>Version 1.4.1</Name>
+</TEXT_CNTR>
+<TEXT_CNTR item="y">
+<Name>11 novembre 2011</Name>
+</TEXT_CNTR>
+<HEADING2 item="y"
+line0="{*Name*}"
+line1="&lt;hr /&gt;&lt;h2&gt;{*Name*}&lt;/h2&gt;"
+childtype="HEADING3">
+<Name type="Text">Contenus</Name>
+<Ref type="Text" ref="y"></Ref>
+<CONTENTS_LINK item="y"
+line0="{*Name*}"
+line1="&lt;br /&gt;{*Link*}&lt;br /&gt;">
+<Name type="Text">Portée</Name>
+<Link type="InternalLink" html="y" linkalt="Name">background</Link>
+<Ref type="Text" ref="y"></Ref>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Fonctionalités</Name>
+<Link>features</Link>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Avis juridique</Name>
+<Link>legal</Link>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Configuration minimales système</Name>
+<Link>sysreq</Link>
+<CONTENTS_LINK_INDENT item="y"
+line0="{*Name*}"
+line1="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{*Link*}&lt;br /&gt;">
+<Name type="Text">Linux</Name>
+<Link type="InternalLink" html="y" linkalt="Name">linux-sys</Link>
+<Ref type="Text" ref="y"></Ref>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Windows</Name>
+<Link>win-sys</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Installation</Name>
+<Link>install</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Linux</Name>
+<Link>linux-inst</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Windows</Name>
+<Link>win-inst</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Utilisation de Treeline</Name>
+<Link>using</Link>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Historique des Révisions</Name>
+<Link>revs</Link>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Questions, Commentaires, Critiques?</Name>
+<Link>contact</Link>
+</CONTENTS_LINK>
+</HEADING2>
+<HEADING2 item="y">
+<Name>Portée</Name>
+<Ref>background</Ref>
+<TEXT_PARA item="y"
+line0="{*Topic*}"
+line1="&lt;p&gt;{*Text*}&lt;/p&gt;">
+<Topic type="Text">Introduction</Topic>
+<Text type="Text" html="y" lines="12">Avez-vous tout un tas de notes éparpillées un peu partout contenant des informations utiles? Ou de nombreuses listes de livres, films, liens, sites web, adresses personnelles ou encore listes de choses à faire? Les trouvez-vous quand vous en avez besoin? Et bien, ce n'est pas souvent mon cas. Alors voilà ma réponse.</Text>
+<Ref type="Text" ref="y"></Ref>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<Topic>Vue d'ensemble</Topic>
+<Text>D'aucuns appeleraient TreeLine un &quot;Outliner&quot;, d'autres l'appelent un outil PIM (outil de gestion de données personnelles). En fait, TreeLine gère tout simplement pratiquement n'importe quelle sorte d'information. Une structure hiérarchique en forme d'arbre permet d'organiser simplement les choses. Et chaque noeud dans l'arbre peut contenir plusieurs éléments, formant ainsi une mini base de donnée . Le format de représentation de chaque noeud peut être défini, et cette représentation peut être affichée sur l'écran, imprimée ou exportée dans un fichier HTML.</Text>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<Topic>C'est gratuit</Topic>
+<Text>Comme je ne suis pas dans le développement logiciels, je livre ce logiciel libre  à l'utilisation, la distribution et  la modification, tant qu'il n'est pas incorporé dans un programme propriétaire quel qu'il soit  - voir le paragraphe &lt;a href=&quot;#contact&quot;&gt;Questions, Commentaires, Critiques?&lt;/a&gt; ci-dessous pour me contacter.</Text>
+</TEXT_PARA>
+</HEADING2>
+<HEADING2 item="y">
+<Name>Fonctionalités</Name>
+<Ref>features</Ref>
+<HEADING4 item="y"
+line0="{*Name*}"
+line1="&lt;h4&gt;{*Name*}&lt;/h4&gt;"
+childtype="TEXT_BULLETS">
+<Name type="Text">Généralité</Name>
+<Ref type="Text" ref="y"></Ref>
+<TEXT_BULLETS item="y"
+line0="{*Topic*}"
+line1="&lt;li&gt;{*Text*}&lt;/li&gt;"
+sibprefix="&lt;ul&gt;"
+sibsuffix="&lt;/ul&gt;">
+<Topic type="Text">Gestion d'information</Topic>
+<Text type="Text" html="y" lines="7">Gère pratiquement n'importe quel type d'information, y compris le texte ordinaire, HTML, les nombres, dates, heures, booléens, URLs, etc.</Text>
+<Ref type="Text" ref="y"></Ref>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Structure en arborescence</Topic>
+<Text>La structure en arborescence permet d'organiser les données.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Champs</Topic>
+<Text>Chaque noeud peut comporter plusieurs éléments qui forment une mini base de données</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Types de noeud</Topic>
+<Text>Plusieurs types de noeud, avec différents groupes de champs peuvent être inclues dans le fichier.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Format de représentation</Topic>
+<Text>Un format de noeud , comportant ses champs, ses représentations et l'icône du volet d'exploration, peut être défini pour chaque type de noeud.</Text>
+</TEXT_BULLETS>
+</HEADING4>
+<HEADING4 item="y">
+<Name>Visualisations</Name>
+<TEXT_BULLETS item="y">
+<Topic>Vue de gauche</Topic>
+<Text>Par défaut , La vue de gauche montre l'arborescence général . Celle ci peut aussi montrer la liste des fils descendants du noeud courrant</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Filtre</Topic>
+<Text>le vue plate permet aussi de montrer le résultat d'opération de filtrage</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Vue de droite</Topic>
+<Text>La vue de droite peut afficher l'un des trois volets - volet de &quot;Données&quot;, volet &quot;Editeur de Données&quot; pour modifier les données du noeud, et volet &quot;Liste des Titres&quot; pour modifier les titres des noeuds.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Volets des parents et enfants</Topic>
+<Text>la vue de droite se sépare en deux volets , l'une montrant les données du parents , l'autre celle des enfants</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Vue de selection multiples</Topic>
+<Text>Si de multiples noeuds sont sélectionnés , le volet de droite montre toutes leurs données respectives</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Sortie de données des descendants</Topic>
+<Text>La vue de la sortie des données peut être paramétrée afin de montrer toutes les sorties de données indentées de tous les noeuds descendants</Text>
+</TEXT_BULLETS>
+</HEADING4>
+<HEADING4 item="y">
+<Name>Navigation</Name>
+<TEXT_BULLETS item="y">
+<Topic>Recherche incrémentale</Topic>
+<Text>Il y a une commande de recherche incrémentale pour trouver le titre du noeud correspondant</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Commande de recherche</Topic>
+<Text>Il y a une commande qui permet de chercher à travers toutes  les données de tous les noeuds</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>navigation de sélection</Topic>
+<Text>les flèches de sélections précédente et suivante  permettent de se déplacer  rapidement entre les différentes parties d'une arborescence</Text>
+</TEXT_BULLETS>
+</HEADING4>
+<HEADING4 item="y">
+<Name>Formatage</Name>
+<TEXT_BULLETS item="y">
+<Topic>Format des boîtes de dialogues</Topic>
+<Text>La boîte de dialogue pour la configuration des paramètres des types de données possède plusieurs onglets qui permettent de facilement configurer les différents types , champs , et paramètres de sorties</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Copies des formats</Topic>
+<Text>Les informations de formatage peuvent être copiées à partir d'un autre fichier TreeLine.</Text>
+</TEXT_BULLETS>
+</HEADING4>
+<HEADING4 item="y">
+<Name>Gestion de fichiers</Name>
+<TEXT_BULLETS item="y">
+<Topic>Annuler/Rétablir</Topic>
+<Text>Les commandes annuler et rétablir sont disponibles pour toutes les opérations de modification.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Formats de fichier</Topic>
+<Text>Les fichiers TreeLine sont en XML par défaut, mais il existe des options pour compresser ou crypter automatiquement ceux-ci.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Modèles de documents</Topic>
+<Text>les modèles de documents sont des gabaris préformatés couvrant quelques besoins de base.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Impression</Topic>
+<Text>Les données formatées peuvent être imprimées avec des lignes père/fils et des en-têtes et pieds de page.</Text>
+</TEXT_BULLETS>
+</HEADING4>
+<HEADING4 item="y">
+<Name>Importation et exportation de fichiers</Name>
+<TEXT_BULLETS item="y">
+<Topic>Export HTML</Topic>
+<Text>Les données peuvent être exportées en HTML.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Export XSLT</Topic>
+<Text>Un fichier XSLT peut être exporté pour être utilisé avec le fichier XML TreeLine.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Import et export de texte</Topic>
+<Text>Les fichiers tableau délimités par des tabulations et le fichiers texte indentés par des tabulations peuvent être importés et exportés.  Les fichiers texte ordinaire et les fichiers Treepad peuvent être importés.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Import/export de favoris</Topic>
+<Text>Les fichiers de favoris Mozilla et XBEL peuvent être importés et exportés.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Import/export de fichiers génériques XML</Topic>
+<Text>Les fichiers génériques XML peuvent être importés et exportés, permettant ainsi à Treeline de fonctionner comme un éditeur XML sommaire.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>import et export en ODF</Topic>
+<Text>Les fichiers au format libres ODF (OpenOffice Document Format) peuvent être importés et exportés en tant qu'esquisses (outlines)</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Traitement par lots</Topic>
+<Text>Les conversions de fichiers peuvent être effectuées en traitement par lots à partir d'une ligne de commande.</Text>
+</TEXT_BULLETS>
+</HEADING4>
+<HEADING4 item="y">
+<Name>Lier les objets</Name>
+<TEXT_BULLETS item="y">
+<Topic>Liens URL</Topic>
+<Text>Cliquer sur un élément URL dans le volet de données ouvre ce lien dans un navigateur Internet externe.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Liens internes</Topic>
+<Text>Les liens internes sélectionnent un autre noeud suivant une référence ou un mot clé.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Liens exécutables</Topic>
+<Text>Un lien exécutable permet d'exécuter un programme externe ou d'ouvrir un fichier quand on clique dessus.</Text>
+</TEXT_BULLETS>
+</HEADING4>
+<HEADING4 item="y">
+<Name>Manipulations de données</Name>
+<TEXT_BULLETS item="y">
+<Topic>Tri</Topic>
+<Text>Il existe plusieurs options de tri.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Filtrage</Topic>
+<Text>Les noeuds peuvent être filtrés.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Types Conditionnels</Topic>
+<Text>L'icône d'un noeud et son format de représentation peuvent être mis à jour conditionnellement suivant la valeur des ses données.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Vérification Orthographique</Topic>
+<Text>Les données texte peuvent être vérifiées orthographiquement (requiert un programme externe - voir le paragraphe &lt;a href=&quot;#sysreq&quot;&gt;Spécifications minimales système&lt;/a&gt;).</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Réorganisation des données</Topic>
+<Text>Les données peuvent être automatiquement réorganisées en utilisant soit des références de parent ou des classements à partir deschamps de données.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Numérotation</Topic>
+<Text>Il existe une fonctionalité de numérotation de type outline.</Text>
+</TEXT_BULLETS>
+</HEADING4>
+<HEADING4 item="y">
+<Name>Personnalisations</Name>
+<TEXT_BULLETS item="y">
+<Topic>Personnalisation</Topic>
+<Text>Il existe de nombreuses possibilités pour personnnaliser TreeLine, autant des options générales que des attributs de fichiers</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>raccourcis claviers et barre d'outils</Topic>
+<Text>Il existe un éditeur pour personnalisé les raccourcis claviers et la barre d'outils</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Internationalisation</Topic>
+<Text>L'interface utilisateur et la documentation sont disponibles en Anglais, Français et Allemand</Text>
+</TEXT_BULLETS>
+</HEADING4>
+</HEADING2>
+<HEADING2 item="y">
+<Name>Avis juridique</Name>
+<Ref>legal</Ref>
+<TEXT_PARA item="y">
+<Topic>Logiciel libre</Topic>
+<Text>TreeLine est un logiciel libre; vous pouvez le redistribuer et/ou le modifier en respectant les termes de la licence GNU General Public License telle qu'elle est publiée par la Free Software Foundation; soit la Version 2 de cette License, ou (à votre choix) n'importe quelle version ultérieure.</Text>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<Topic>Pas de garantie</Topic>
+<Text>Ce programme est distribué dans l'espoir qu'il puisse être utile, mais SANS AUCUNE GARANTIE.  Voir le fichier LICENSE fourni avec ce programme pour plus d'information.</Text>
+</TEXT_PARA>
+</HEADING2>
+<HEADING2 item="y">
+<Name>Spécifications minimales système</Name>
+<Ref>sysreq</Ref>
+<HEADING4 item="y">
+<Name>Linux</Name>
+<Ref>linux-sys</Ref>
+<TEXT_PARA item="y">
+<Topic>Librairies</Topic>
+<Text>TreeLine requiert les programmes et librairies suivants:</Text>
+<TEXT_BULLETS item="y">
+<Topic>Qt</Topic>
+<Text>Qt (Version 4.4 ou ultérieur )</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Python</Topic>
+<Text>Python (Version 2.4, 2.5 ou 2.6 )</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>PyQt</Topic>
+<Text>PyQt (Version 4.4.0 ou ultérieur - voir &lt;a href=&quot;http://www.riverbankcomputing.co.uk&quot;&gt; www.riverbankcomputing.co.uk&lt;/a&gt; pour plus d'information)</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Analizeur XML</Topic>
+<Text>Un analizeur XML est requis, tel que la librairie expat ou le package PyXML</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>Vérification Orthographique</Topic>
+<Text>Si l'on désire utiliser la vérification orthographique, le programme aspell (préférable) ou le programme ispell est requis (ils sont inclus dans la plupart des distributions)</Text>
+</TEXT_BULLETS>
+</TEXT_PARA>
+</HEADING4>
+<HEADING4 item="y">
+<Name>Windows</Name>
+<Ref>win-sys</Ref>
+<TEXT_PARA item="y">
+<Topic>Binaires</Topic>
+<Text>En utilisant les fichiers fournis avec le programme d'installation, TreeLine doit fonctionner sur tout ordinateur utilisant le système d'exploitation Win 95, 98, NT, 2000, XP ou Vista.</Text>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<Topic>Vérification Orthographique</Topic>
+<Text>Si l'on désire utiliser la vérification orthographique, le programme aspell (préférable) ou le programme ispell doit être installé.  Voir &lt;a href=&quot;http://aspell.net/win32/&quot;&gt; aspell.net/win32/&lt;/a&gt; ou &lt;a href=&quot;http://www.luziusschneider.com/Speller/English/&quot;&gt; www.luziusschneider.com/Speller/English/&lt;/a&gt; pour télécharger l'un de ces programmes et ses dictionaires pour n'importe quel language.</Text>
+</TEXT_PARA>
+</HEADING4>
+</HEADING2>
+<HEADING2 item="y">
+<Name>Installation</Name>
+<Ref>install</Ref>
+<HEADING4 item="y">
+<Name>Linux</Name>
+<Ref>linux-inst</Ref>
+<TEXT_PARA item="y">
+<Topic>Installation standard</Topic>
+<Text>Extraire les fichiers sources de l'archive  .tar TreeLine, et ensuite se déplacer dans le dossier TreeLine en utilisant un terminal.  Pour effectuer une installation standard, exécuter simplement la commande suivante en tant qu'utilisateur root:  &quot;python install.py&quot;</Text>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<Topic>Options d'installation</Topic>
+<Text>Pour voir toutes les options d'installation, utiliser: &quot;python install.py -h&quot;&lt;br /&gt;&lt;br /&gt;
+
+Pour installer TreeLine avec un préfixe différent (le défaut est /usr/local), utiliser:  &quot;python install.py -p /prefix/path&quot;</Text>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<Topic>Internationalisation</Topic>
+<Text>Pour installer les traductions pour TreeLine, télécharger l'archive .tar &quot;treeline-i18n-...&quot; ayant le même numéro de version que celui de TreeLine installé (ignorer la lettre suffixe du numéro de version de l'archive tar).  Pour installer le programme et les fichiers de traduction simultanément, extraire les fichiers de traduction à partir du même dossier où a été extrait le fichier TreeLine d'installation et exécuter la commande d'installation comme décrit ci-dessus.  Si TreeLine est déja installé, extraire les fichiers de traduction de n'importe quel dossier  et exécuter la commande d'installation comme décrit ci-dessus.</Text>
+</TEXT_PARA>
+</HEADING4>
+<HEADING4 item="y">
+<Name>Windows</Name>
+<Ref>win-inst</Ref>
+<TEXT_PARA item="y">
+<Topic>Installation standard</Topic>
+<Text>Exécuter tout simplement le fichier d'installation TreeLine (treeline-x.x.x-install.exe).  Cela va installer le programme et ses librairie, et optionnellement créer les associations de fichiers et les raccourcis.</Text>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<Topic>Vérification Orthographique</Topic>
+<Text>Pour utiliser TreeLine's avec un vérificateur orthographique, un programme externe (aspell ou ispell) doit être installé (voir le paragraphe &lt;a href=&quot;#sysreq&quot;&gt;Spécifications minimales système&lt;/a&gt;).</Text>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<Topic>Internationalisation</Topic>
+<Text>Pour installer les traductions pour TreeLine, télécharger le fichier exe &quot;treeline-i18n-...&quot; ayant le même numéro de version que celui de TreeLine installé (ignorer la lettre suffixe du numéro de version du fichier de traductions).  Pour installer les fichier de traduction exécuter tout simplement ce fichier exe.</Text>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<Topic>Modification du code source</Topic>
+<Text>Si vous souhaitez modifier le code source ou écrire vos propres programmes PyQt pour Windows, n'utilisez pas la procédure décrite précédemment. A la place, vous devez installer Python (voir &lt;a href=&quot;http://www.python.org&quot;&gt; www.python.org&lt;/a&gt;), Qt (voir &lt;a href=&quot;http://www.trolltech.com&quot;&gt; www.trolltech.com&lt;/a&gt;), et PyQt (voir &lt;a href=&quot;http://www.riverbankcomputing.co.uk&quot;&gt; www.riverbankcomputing.co.uk&lt;/a&gt;). Ensuite extrayez les fichiers code source de la version Linux (fichier tar treeline) dans un dossier de votre choix et exécuter le fichier treeline.py</Text>
+</TEXT_PARA>
+</HEADING4>
+</HEADING2>
+<HEADING2 item="y">
+<Name>Utilisation de TreeLine</Name>
+<Ref>using</Ref>
+<HEADING3 item="y"
+line0="{*Name*}"
+line1="&lt;hr /&gt;&lt;h3&gt;{*Name*}&lt;/h3&gt;"
+childtype="HEADING4">
+<Name type="Text">Contenus</Name>
+<Ref type="Text" ref="y"></Ref>
+<CONTENTS_LINK item="y">
+<Name>Présentation</Name>
+<Link>start</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Introduction</Name>
+<Link>start-intro</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Modèles</Name>
+<Link>start-templates</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Fichiers d'examples</Name>
+<Link>start-example</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Introduction</Name>
+<Link>basics</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Volet de gauche</Name>
+<Link>basics-left</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Volet de droite</Name>
+<Link>basics-right</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Commandes</Name>
+<Link>basics-cmds</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Link>basics-wins</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Navigation dans le volet Exloration</Name>
+<Link>nav</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Raccourcis clavier</Name>
+<Link>nav-keys</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Sélection</Name>
+<Link>nav-select</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Recherche</Name>
+<Link>nav-search</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Edition de l'Arbre</Name>
+<Link>edit</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Menu Editer</Name>
+<Link>edit-menu</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Raccourcis</Name>
+<Link>edit-shortcuts</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Vues de droite</Name>
+<Link>edit-view</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Vérification Orthographique</Name>
+<Link>edit-spell</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Formats et Types de Noeud</Name>
+<Link>format</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Configurer les Noeuds avec un Type</Name>
+<Link>format-set</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Type de liste</Name>
+<Link>format-type</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Type de configuration</Name>
+<Link>format-config</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Champ de liste</Name>
+<Link>format-fields</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Champ de configuration</Name>
+<Link>format-fieldconf</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Sortie</Name>
+<Link>format-output</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Format du Titre</Name>
+<Link>format-title</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Lignes Ignorées</Name>
+<Link>format-skip</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Balises HTML</Name>
+<Link>format-html</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Exemples de Formats</Name>
+<Link>format-example</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Autres Eléments</Name>
+<Link>format-refs</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Les préfixes et suffixes frères</Name>
+<Link>format-sibling-text</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Champ pour les liens réferentielles</Name>
+<Link>format-link-ref</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Types génériques et dérivés</Name>
+<Link>format-derived</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Types Conditionnels</Name>
+<Link>format-condition</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Copie de Formats</Name>
+<Link>format-copy</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Types d'Eléments</Name>
+<Link>fields</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Options de champ</Name>
+<Link>field-options</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Type Texte</Name>
+<Link>field-text</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Types Choix, Combinaison et Booléen</Name>
+<Link>field-choice</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Type Nombre</Name>
+<Link>field-number</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Type Date et Heure</Name>
+<Link>field-date</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Types Liens</Name>
+<Link>field-link</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Type d'étiquette (ID) unique</Name>
+<Link>field-unique</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Options Avancées</Name>
+<Link>field-advanced</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Manipulation des Données de l'arborescence</Name>
+<Link>data</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Commandes de Classement</Name>
+<Link>data-category</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Commandes basées sur les Références</Name>
+<Link>data-ref</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Tri</Name>
+<Link>data-sort</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Filtres</Name>
+<Link>data-filter</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Numérotation</Name>
+<Link>data-number</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Changer les Sélections</Name>
+<Link>data-change</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Impression</Name>
+<Link>print</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Options d'Impression</Name>
+<Link>print-options</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Paramètre de la page</Name>
+<Link>print-setup</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Police d'impression</Name>
+<Link>print-font</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>En-tête et Pied de page</Name>
+<Link>print-header</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Aperçu avant Impression</Name>
+<Link>print-preview</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Problèmes à l'Impression</Name>
+<Link>print-problems</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Gestion de Fichier</Name>
+<Link>file</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Compression de Fichier</Name>
+<Link>file-comp</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Cryptage de Fichier</Name>
+<Link>file-enc</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Sauvegarde Automatique</Name>
+<Link>file-auto-save</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Sauvegarde des Etats de l'arborescence</Name>
+<Link>file-states</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Ligne de Commande</Name>
+<Link>file-cmdline</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Importation de Fichier</Name>
+<Link>import</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Informations générales</Name>
+<Link>import-general</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Texte Délimité</Name>
+<Link>import-delim</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Texte Ordinaire</Name>
+<Link>import-plain</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Fichiers Treepad</Name>
+<Link>import-treepad</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Fichiers de Favoris</Name>
+<Link>import-bookmarks</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Fichiers Génériques XML</Name>
+<Link>import-xml</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Document texte ODF</Name>
+<Link>import-odf</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Exportation de Fichier</Name>
+<Link>export</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Informations générales</Name>
+<Link>export-general</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>HTML</Name>
+<Link>export-html</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Texte Délimité</Name>
+<Link>export-delim</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Fichiers de Favoris</Name>
+<Link>export-bookmarks</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Fichiers Génériques XML</Name>
+<Link>export-xml</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>XSLT</Name>
+<Link>export-xslt</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Document texte ODF</Name>
+<Link>export-odf</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Personnalisations</Name>
+<Link>custom</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Options</Name>
+<Link>custom-options</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Polices de caractères</Name>
+<Link>custom-fonts</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>raccourcis clavier</Name>
+<Link>custom-keys</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Barre d'outils</Name>
+<Link>custom-tools</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Couleurs</Name>
+<Link>custom-color</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Icones d'arborescence</Name>
+<Link>custom-icons</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Plugins</Name>
+<Link>plugins</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Description</Name>
+<Link>plugins-intro</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Installation</Name>
+<Link>plugins-install</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Interface</Name>
+<Link>plugins-intrf</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+<CONTENTS_LINK item="y">
+<Name>Problèmes courants</Name>
+<Link>errors</Link>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Panneaux fermés</Name>
+<Link>errors-panes</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Erreur XML</Name>
+<Link>errors-xml</Link>
+</CONTENTS_LINK_INDENT>
+<CONTENTS_LINK_INDENT item="y">
+<Name>Impression</Name>
+<Link>errors-print</Link>
+</CONTENTS_LINK_INDENT>
+</CONTENTS_LINK>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Présentation</Name>
+<Ref>start</Ref>
+<TEXT_HEAD item="y"
+line0="{*Topic*}"
+line1="&lt;h4&gt;{*Topic*}&lt;/h4&gt;"
+line2="&lt;p&gt;{*Text*}&lt;/p&gt;">
+<Topic type="Text">Introduction</Topic>
+<Text type="Text" html="y" lines="12">TreeLine est un programme plus compliqué qu'il n'y paraît au premier coup d'oeil.  La lecture exhaustive de cette documentation pour apprendre à utiliser TreeLine de manière efficace est très recommandée.&lt;br /&gt;&lt;br /&gt;
+
+Le chapitre &lt;a href=&quot;#basics&quot;&gt;Introduction&lt;/a&gt; décrit les vues et les sélections.  Pour apprendre à se déplacer et à modifier l'arbre, se référer aux chapitres &lt;a href=&quot;#nav&quot;&gt;Navigation dans le volet Exloration&lt;/a&gt; et &lt;a href=&quot;#edit&quot;&gt;Edition de l'Arbre&lt;/a&gt;.  Ensuite, on peut poursuivre l'apprentissage de TreeLine au-delà d'une simple ligne de texte par noeud.  Pour apprendre comment configurer les données pour chaque noeud , se référer aux chapitres &lt;a href=&quot;#format&quot;&gt;Formats et Types de noeud&lt;/a&gt; et &lt;a href=&quot;#fields&quot;&gt;Types de champs  &lt;/a&gt;.</Text>
+<Ref type="Text" ref="y">start-intro</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Modèles</Topic>
+<Text>Lorsque vous créer un nouveau fichier , la boîte de dialogue vous donne le choix des noeuds entre une seule ligne de texte ou un long texte .Le modèle &quot;une seule ligne&quot; ne comporte qu'un noeud titre , tandis qu'un long texte comporte un titre et de multiple champ de texte pour chaque noeud . Pour un long texte , vous pouvez aussi choisir entre un texte plein , qui garde les sauts à la ligne, et le texte de type  HTML , qui permet des formatages plus complexe &lt;br /&gt;&lt;br /&gt;
+
+Il y a encore plusieurs options spécifiques , incluant des modèle pour la gestion de contacts personnelles , une liste de livre et une liste de tâches</Text>
+<Ref>start-templates</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Example de fichiers</Topic>
+<Text>Divers exemples de fichiers peuvent être ouvert en utilisant la commande &quot;Fichier-&amp;gt;Ouvrir Exemple&quot; .  Cela inclue (par ordre de complexité croissante ) :</Text>
+<Ref>start-example</Ref>
+<TEXT_BULLETS item="y">
+<Topic>sample_basic_contacts</Topic>
+<Text>Le fichier &quot;sample_basic_contacts&quot; est un format qui permet d'enregistrer des informations de type carnet d'adresses.  Plusieurs champs sont utilisés pour plusieurs types d'information.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>sample_basic_booklist</Topic>
+<Text>Le fichier &quot;sample_basic_booklist&quot; est une liste de livres, illustrant un example de configuration de noeuds pouvant contenir des données.  Plusieurs champs sont utilisés pour créer les types de données auteur et livre.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>sample_basic_longtext</Topic>
+<Text>Le fichier &quot;sample_basic_longtext&quot; contient un champ texte long sous chaque noeud, comme avec le programme Treepad.  Il montre également la différence entre le type de champ texte normal et le type de champ HTML.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>sample_color_items</Topic>
+<Text>Le fichier &quot;sample_color_items&quot; utilise des balises HTML dans les formats de types de données pour mettre de la couleur dans les données. Voir aussi le paragraphe &lt;a href=&quot;#format-html&quot;&gt;Balises HTML&lt;/a&gt;.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>sample_char_format</Topic>
+<Text>Le fichier &quot;sample_char_format&quot; est un example d'utilisation de balises HTML dans les données pour le contrôle des polices de caractère.  Voir aussi le paragraphe &lt;a href=&quot;#field-options&quot;&gt;Options d'élément&lt;/a&gt;.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>sample_bookmarks</Topic>
+<Text>Le fichier &quot;sample_bookmarks&quot; est un example d'utilisation de liens HTMLs.  C'est le type de configuration qui est utilisé quand on importe ou exporte des fichiers de favoris.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>sample_intern_links</Topic>
+<Text>Le fichier &quot;sample_intern_links&quot; montre comment créer des liens qui pointent ailleurs dans le fichier TreeLine.  Voir aussi le paragraphe &lt;a href=&quot;#field-link&quot;&gt;Types Liens&lt;/a&gt;.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>sample_table_booklist</Topic>
+<Text>Le fichier &quot;sample_table_booklist&quot; montre comment utiliser des préfixes et suffixes frères pour créer des tables.  Voir aussi le paragraphe &lt;a href=&quot;#format-advanced&quot;&gt;Configuration Avancée&lt;/a&gt;.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>sample_other_fields</Topic>
+<Text>Le fichier &quot;sample_other_fields&quot; est un example de références à des champs autres, incluant des références à des nodes parents, fils ou de type fichier.  Voir aussi le paragraphe &lt;a href=&quot;#format-refs&quot;&gt;Références d'autres champs&lt;/a&gt;.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>sample_conditional_todo</Topic>
+<Text>Le fichier &quot;sample_conditional_todo&quot; montre comment utiliser les types conditionnels pour modifier la représentation des données en fonction de leur contenu.  Voir aussi le paragraphe &lt;a href=&quot;#format-derived&quot;&gt;Types Conditionnels&lt;/a&gt;.</Text>
+</TEXT_BULLETS>
+<TEXT_BULLETS item="y">
+<Topic>LisezMoi</Topic>
+<Text>Le fichie LisezMoi (readme) lui-même montre beaucoup de types de formats , incluants des en-têtes , des listes à puces , des liens internes et des images.</Text>
+</TEXT_BULLETS>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Introduction</Name>
+<Ref>basics</Ref>
+<TEXT_HEAD item="y">
+<Topic>Vue du panneau de gauche</Topic>
+<Text>La vue par défaut du panneau de gauche est l'arborescence . Les noeuds parents peuvent  être ouvert et fermé pour afficher ou cacher leurs noeuds descendants indentés &lt;br /&gt;&lt;br /&gt;
+
+L'autre onglet dans le volet de gauche est la vue applatie . Il affiche tous les descendants du noeud sélectionné dans ll'onglet &quot; vue de l'arbre&quot;  en une liste applatie . Il montre aussi le résultat des opérations de filtrages (voir la section  &lt;a href=&quot;#data-filter&quot;&gt;Filtres&lt;/a&gt; ).</Text>
+<Ref>basics-left</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Vues</Topic>
+<Text>Le volet de droite possède des onglets et permet d'afficher un des trois différents volets de données. Le volet &quot;Sortie de données&quot; affiche une représentation formatée des données pour chaque noeud et est en lecture seule (voir &lt;a href=&quot;#fig-1&quot;&gt;Figure 1&lt;/a&gt;). Le volet &quot;Edition de données&quot; affiche une boîte d'édition pour chacun des éléments du noeud (voir &lt;a href=&quot;#fig-2&quot;&gt;Figure 2&lt;/a&gt;) Le volet &quot;Liste des titres&quot; affiche la liste des titres qui peuvent être modifiés via l'edition de données &lt;br /&gt;&lt;br /&gt;
+
+
+Par défaut, le volet de droite affiche le noeud sélectionné dans la partie supérieure et les fils du noeud dans la partie inférieure. En sélectionnant &quot;Affichage-&amp;gt;Affiche Node Sélectionné&quot; on affiche seulement le noeud sélectionné. Quand il y a de nombreux fils, la vue combinée noeud-fils peut ralentir le traitement, spécialement dans le volet &quot;Editeur de Données&quot;. Dans ce cas, il est plus efficace d'afficher seulement le noeud sélectionné. La commande &quot;Affichage-&amp;gt;Montrer le panneau des enfants&quot; va basculer l'affichange vers les noeuds enfants. . Si le noeud sélectionné ne comporte pas d'enfants , l'affichage sera un panneau seul comportant seulement les informations du noeud seléctionné .&lt;br /&gt;&lt;br /&gt;
+
+Lorsque de multiples noeuds sont sélectionnés dans l'arborescence , la vue de doite ne vas pas affichée simultanéments toutes les informations . A la place elle va montrer des informations noeud par noeud .&lt;br /&gt;&lt;br /&gt;
+
+Lorsque le boutton &quot;Affichage-&amp;gt;Montrer les sorties pour les descendants&quot; est pressé , l'onglet de &quot;Sortie de donnés&quot; va montré une liste indenté d'informations à propos de chaque descendants d'un seul noeud sélectionné .&lt;br /&gt;&lt;br /&gt;
+
+L'état initial de la vue peut être controlé dans &quot;Outils-&amp;gt;Options Générales&quot;.&lt;br /&gt;&lt;br /&gt;
+
+Par défaut, le nombres de noeuds affichés simultanément dans l'édition de données est limité . Il  a néanmoins des flèches  de navigations qui permets d'affiché les noeuds précédents et suivants . Cela permet d'avoir une manière confortable de navigation , sans ralentir le programme , en essayant d'afficher trop de champs . Néanmoins le boutton Tous , permet d'afficher tous les noeuds et champs descendants en une seule page si nécessaire . Le nombre de page à affiché peut être paramétré dans &quot;Outils-&amp;gt;Options  Générales&quot;.</Text>
+<Ref>basics-right</Ref>
+<FIGURE item="y"
+line0="{*Topic*}"
+line1="&lt;p&gt;{*Picture*}&lt;/p&gt;"
+line2="&lt;p&gt;&lt;b&gt;{*Caption*}&lt;/b&gt;&lt;/p&gt;">
+<Topic type="Text">Tableau d'affichage d'image</Topic>
+<Caption type="Text" html="y" lines="2"></Caption>
+<Picture type="Picture" html="y">doc_main.png</Picture>
+<Ref type="Text" ref="y">fig-1</Ref>
+</FIGURE>
+<FIGURE item="y">
+<Topic>Tableau d'edition d'image</Topic>
+<Picture>doc_edit.png</Picture>
+<Ref>fig-2</Ref>
+</FIGURE>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Commandes</Topic>
+<Text>La plupart des commandes du menu et des barres d'outils s'appliquent aux éléments sélectionnés dans la vue de gauche (en arborescence ) . En général, elles exécutent une opération sur les noeuds eux-mêmes ou sur les descendants de ces noeuds. Plusieurs noeuds peuvent être sélectionnés en même temps en appuyant sur &quot;Ctrl&quot; et &quot;Touche-Majuscule&quot; (Shift)  tout en cliquant avec la souris. Mais quelques commandes, telles que &quot;Fichier-&amp;gt;Exporter&quot; et &quot;Fichier-&amp;gt;Imprimer&quot;, concernent seulement le node actif, qui est celui qui est entouré d'un rectangle .&lt;br /&gt;&lt;br /&gt;
+
+Pour ajouter une nouvelle information au document TreeLine, utiliser la commande &quot;Editer-&amp;gt;Ajouter Fils&quot; pour créer un nouveau noeud. Et une combinaison des commandes d'ajout et d'insertion peut être utilisée pour les noeuds additionels. Par ailleurs, les titres de nouveaux noeuds peuvent être tapés dans le volet de droite &quot;Liste des Titres&quot;.</Text>
+<Ref>basics-cmds</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Ref>basics-wins</Ref>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Navigation dans le volet Exloration</Name>
+<Ref>nav</Ref>
+<TEXT_HEAD item="y">
+<Topic>Raccourcis Clavier</Topic>
+<Text>Il existe plusieurs touches du clavier qui peuvent être utilisées pour la navigation dans l'arbre. Les flêches vers le haut et vers le bas déplacent la sélection dans cette direction. Les flêches vers la gauche et vers la droite ouvrent et ferment le node actif. En maintenant la touche CTRL appuyée avec les flêches vers le haut et vers le bas on déplace la sélection entre les frères, sans s'arrêter aux fils. La touche CTRL avec la touche &quot;U&quot; déplace la sélection vers l'item parent. Les touches &quot;Accueil&quot;, &quot;Fin&quot;, &quot;Page Haut&quot; et &quot;Page Bas&quot; peuvent être utilisées pour se déplacer rapidement. En maintenant la touche SHIFT appuyée avec la touche &quot;Page Haut&quot; et &quot;Page Bas&quot; on fait défiler dans la vue de droite, les fils.&lt;br /&gt;&lt;br /&gt;
+
+Toutes ces touches, ainsi que les raccourcis associés aux menus, peuvent être personnalisés via la commande &quot;Outils-&amp;gt;Paramètres Raccourcis claviers&quot; L'éditeur de raccourcis possède des onglets  pour les éléments du menu et ceux qui ne sont pas dans le menu . Tapez simplement la nouvelle séquence dans le champ approprié &lt;br /&gt;&lt;br /&gt;
+
+ 
+Une autre façon de se déplacer est de taper la première lettre du titre d'un noeud visible. Une lettre majuscule déplace vers le haut, une lettre minuscule vers le bas. En appuyant à nouveau sur la même lettre on se déplace vers l'occurence suivante.</Text>
+<Ref>nav-keys</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Sélection</Topic>
+<Text>De multiples noeuds peuvent  sélectionnés en gardant enfoncé la touche CTRL ou SHIFT lors du changement de noeud . Les noeuds individuelle peuvent être ajouté our retiré de la selection tant que la touche CTRL ou SHIFT est maintenu. La sélection de tous les noeuds entre les anciens et les nouveaux noeuds actifs peuvent se repositionnés tant que la touche SHIFT est maintenu. Le noeud actif peut être changé en utilisant la souris ou en utilisant n'importe quel méthode de navigation via le clavier . &lt;br /&gt;&lt;br /&gt;
+
+La commande  &quot;Affichage-&amp;gt; Sélection précédente&quot;  et  &quot;Affichage &amp;gt;Sélection suivante &quot; peut être utilisé pour se positionné  plus rapidement à travers l'historique des sélections dans l'arborescence &lt;br /&gt;&lt;br /&gt;
+
+Par défaut ,la séquence de sélection n'importe pas . Néanmoins , si dans les options générales la sélection multiples est changé en &quot;Ordre de Sélection&quot; , les noeuds sélectionnés avec la touche CTRL maintenu seront affichés dans l'ordre de selection .</Text>
+<Ref>nav-select</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Recherche</Topic>
+<Text>Il existe deux manières de rechercher des nodes. Ces méthodes permettent de retrouver des nodes profondément enfouis dans la structure de l'arbre. La première est la commande &quot;Outils-&amp;gt;Chercher&quot;. Les mots clés peuvent être entrés dans la boîte de dialogue. Un node est trouvé quand les mots clés correspondent dans un des éléments du node. La méthodes suivante est une méthode de recherche incrémentale. Taper &quot;/&quot; suivi de la chaîne de caractères à chercher. La recherche va se dérouler pendant que les caractères sont entrés. La recherche incrémentale concerne seulement les titres de node.  La recherche précédente peut être réitérée avec la touche &quot;F3&quot; et en arrière avec les touches &quot;Touche Majuscule-F3&quot;.&lt;br /&gt;&lt;br /&gt;
+
+Par défaut, les nodes parents sont automatiquement ouverts puis fermés quand ils sont trouvés avec les méthodes de recherche, ou bien lorsque l'on tape la première lettre du node, et avec la commande &quot;frère suivant&quot;. Ce comportement peut être désactivé dans &quot;Outils-&amp;gt;Options Générales&quot;.</Text>
+<Ref>nav-search</Ref>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Edition de l'Arbre</Name>
+<Ref>edit</Ref>
+<TEXT_HEAD item="y">
+<Topic>Menu Editer</Topic>
+<Text>Les commandes dans le menu &quot;Editer&quot; (à part annuler et rétablir) opèrent sur les nodes sélectionnés dans la vue de gauche. Les commandes couper, copier et coller peuvent aussi être considérées comme une exception à cette règle, puisqu'elles opèrent sur la vue de droite quand l'objet sélectionné s'y trouve. Et n'oubliez pas que, en général, les descendants des nodes sélectionnés sont aussi affectés par ces commandes.&lt;br /&gt;&lt;br /&gt;
+
+Coller ajoute les nodes copiés à la fin de la liste des fils du node actif. Si plus d'un noeud est sélectionné , les copies seront ajoutées en dessous de chaque noeud sélectionné. Par ailleurs, la commande &quot;Editer-&amp;gt;Copier Texte du Node&quot; renomme en fait la sélection en se basant sur le premier node qui se trouve dans le presse-papiers.</Text>
+<Ref>edit-menu</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Raccourcis</Topic>
+<Text>Il existe plusieurs raccourcis utilisables pour éditer l'arbre. Glisser-déposer déplace ou copie des nodes qui deviennent des fils du node de destination. Cliquer sur un node permet de le renommer. Appuyer sur la touche entrée insère un nouveau node, et appuyer sur la touche &quot;Suppr&quot; supprime les nodes sélectionnés. Si on le souhaite, ces raccourcis peuvent être désactivés dans &quot;Outils-&amp;gt;Options Générales&quot;.</Text>
+<Ref>edit-shortcuts</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Vues de droite</Topic>
+<Text>Dans la vue de droite, le volet &quot;Editeur de Données&quot; offre le moyen le plus direct pour modifier les données relatives à un node. Si l'élément en cours de modification est utilisé dans le format du titre, le titre du node dans l'arbre est mis à jour. L'éditeur d'élément peut défiler, permettant ainsi l'édition de plusieurs lignes de texte.&lt;br /&gt;&lt;br /&gt;
+
+Le menu contextuel dans le volet &quot;Editeur de Données&quot; permet d'ajouter des balises de police HTML autour d'une partie de texte sélectionné. Ces balises comprennent le gras, l'italique, le sous-ligné, la taille et la couleur. Notez que l'élément en question doit être configuré pour afficher de l'HTML (voir le paragraphe &lt;a href=&quot;#fields&quot;&gt;Types d'Eléménts&lt;/a&gt; ci-dessous) pour que cela soit effectif.&lt;br /&gt;&lt;br /&gt;
+
+Un éditeur externe peut aussi être invoqué à partir du menu contextuel du volet &quot;Editeur de Données&quot;.   Après que cet éditeur ait sauvegardé les modifications apportées et se soit fermé, le nouveau texte est affiché dans la boîte d'édition TreeLine.  La variable d'environnement EDITOR peut être utilisée pour définir comment démarrer l'éditeur externe, ou bien, si cette variable n'existe pas, TreeLine demande quel exécutable configurer comme éditeur externe par défaut.&lt;br /&gt;&lt;br /&gt;
+
+Se trouvant aussi dans la vue de droite, le volet &quot;Liste des Titres&quot; est utile pour renommer rapidement les titres des fils ou pour ajouter de nouveaux nodes fils. Un texte fait d'une liste de nouveaux nodes peut même être collé directement dans ce volet.</Text>
+<Ref>edit-view</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Vérification Orthographique</Topic>
+<Text>Il y a une commande de vérification orthographique dans le menu &quot;Outils&quot;.  L'utilisation de cette commande nécessite qu'un programme externe ait été installé (voir le paragraphe &lt;a href=&quot;#sysreq&quot;&gt;Spécifications minimales système&lt;/a&gt;).  Lorsqu'il y a des mots mal orthographiés dans la branche sélectionnée, une boîte de dialogue permet d'ignorer le mot, de l'ajouter au dictionaire, de le remplacer par un mot suggéré ou de le modifier.  La commande véfifie l'orthographe du texte dans tous les éléments de données de chaque node.&lt;br /&gt;&lt;br /&gt;
+
+Par défaut, la vérification orthographique utilise les dictionnaires pour le langage configuré pour le système d'exploitation .  Quand on utilise aspell, il existe une option sous &quot;Outils-&amp;gt;Options de fichiers&quot; pour spécifier un autre code de langage à deux lettres pour le fichier TreeLine utilisé.  Notez que les fichiers de dictionnaire appropriés doivent être installés et que cette option n'est pas fonctionnelle pour ispell.</Text>
+<Ref>edit-spell</Ref>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Formats et Types de Noeud</Name>
+<Ref>format</Ref>
+<TEXT_HEAD item="y">
+<Topic>Configuration des Nodes à un Type</Topic>
+<Text>Par défaut, un nouveau document TreeLine contient deux typesde node: &quot;RACINE&quot; et &quot;DEFAUT&quot;. Le nom du type est affiché au sommet de chaque node dans le volet &quot;Editeur de Données&quot; de la vue de droite. La création de nouveaux types de données et la personnalisation des ces types est décrite ci-dessous. Pour configurer un node avec un type donné, utiliser le menu &quot;Données-&amp;gt;Configurer le Type du Node&quot;. Par ailleurs, pour configurer un ensemble de nodes fils et descendants avec un type donné, utiliser la commande &quot;Données-&amp;gt;Configurer le Type des Descendants&quot;. La boîte de dialogue qui s'affiche alors permet de configurer les nodes sélectionnés, leurs fils, tous les descendants, ou encore les descendants satisfaisant à une expression logique. Cette boîte de dialogue peut être laissée ouverte tout en modifiant la sélection des nodes dans l'arbre pour en ajouter d'autres par exemple.</Text>
+<Ref>format-set</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Listes des types</Topic>
+<Text>La liste des types est  le premier onglet de la boite de dialogue &quot;Données -&amp;gt;Paramètres du types de données&quot; . La liste des types de données peuvent être modifié par les boutons de droites  . De nouveaux types peuvent être ajoutés, et les types existant peuvent être copiés , renommés ou supprimés</Text>
+<Ref>format-type</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Configuration du type</Topic>
+<Text>&quot;Configuration du type&quot; est le deuxième onglet de la boite de dialogue &quot;Données -&amp;gt;Paramètres du types de données&quot; . Il contient une selection par défaut des types de données enfants . Si le paramètre est mis sur &quot;[Aucun]&quot; , les enfants par défaut auront le types soit de leurs frères soit de leurs parents &lt;br /&gt;&lt;br /&gt;
+
+Le bouton &quot;Modifier l'icone&quot; permet la sélection d'une icone personnalisé pour le type de données. Le bouton &quot;Effacé la sélection&quot; de la boite de dialogue de l'icone peut être utilisé pour mettre la valeur de l'icone à &quot;[Aucun]&quot; . Ainsi aucune icones ne sera affiché pour ce type . Pour n'afficher aucune icone dans l'arborescence , vous pouvez décochez l'option &quot;Afficher les icones dans le volets d'exploration&quot; du menu Outils -&gt; Options Générales ...</Text>
+<Ref>format-config</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Liste des champs</Topic>
+<Text>&quot;Liste des champs&quot; est le troisième onglet de &quot;Données -&amp;gt;Paramètres du types de données&quot; , La liste des champs avec un type de données peut être modifié en utilisant les boutons de droites. De nouveaux champs peuvent être ajoutés , les champs existant montés et descendus dans la liste , renommés ou supprimés</Text>
+<Ref>format-fields</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Configurations des champs</Topic>
+<Text>&quot;Configurations des champs&quot; est le troisième onglet de &quot;Données -&amp;gt;Paramètres du types de données&quot;  (voir &lt;a href=&quot;#fig-3&quot;&gt;Figure 3&lt;/a&gt;). le type de champs et ses formats d'affichages (préfixes , suffixes ) peuvent être paramétrés. Des suppléments de préfixes et sufixes peuvent être ajoutés à la sorties du champ qui est paramétrés et des valeurs par défauts pour les nouveaux noeuds peuvent être entrés. Il y a un choix entre le texte brute , qui préserve le saut à la ligne , et le texte HTML , qui autorise divers options de formattages . Enfin le nombre de ligne affiché dans l'éditeur pour un champ peut être spécifé .</Text>
+<Ref>format-fieldconf</Ref>
+<FIGURE item="y">
+<Topic>Configuration des champs images</Topic>
+<Caption>Figure 3:  onglet de configuration des champs</Caption>
+<Picture>doc_fieldconf.png</Picture>
+<Ref>fig-3</Ref>
+</FIGURE>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Sortie</Topic>
+<Text>&quot;Sortie &quot; est le dernier onglet de &quot;Données -&amp;gt;Paramètres du types de données&quot;  (voir &lt;a href=&quot;#fig-4&quot;&gt;Figure 4&lt;/a&gt;). La partie de gauche montre les champs . La partie de droite montre leur formatage pour le titre (utilisé dans les noeuds textes dans l'arborescence ) et leur affichage . Le formatage consiste en des lignes de textes ou sont incrusté les champs . Le champ est déterminé par &quot;{*nom_de_champ*}&quot; . Le champ qui est sélectionné dans la liste de gauche, peut être ajouté aux formattage à la position ou se situe le curseur avec le bouton &quot;&amp;gt;&amp;gt;&quot; . Le champ de référence ou se situe le curseur peut se supprimé par le bouton &quot;&amp;lt;&amp;lt;&quot; .</Text>
+<Ref>format-output</Ref>
+<FIGURE item="y">
+<Topic>Onglet de sortie image</Topic>
+<Picture>doc_output.png</Picture>
+<Ref>fig-4</Ref>
+</FIGURE>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Format du Titre</Topic>
+<Text>Quand un noeud est renommé, le programme tente de faire correspondre le nouveau titre avec le champ correspondant  pour mettre à jour les éléments qui le constitue. Si le format du titre est trop complexe, il peut ne pas avoir correctement deviné vos intentions. Des choses telles que des champs adjacents sans aucun caratère pour les séparer doivent être évitées à moins que vous n'ayez pas l'intention de renommer les titres de noeuds à partir de l'arbre.&lt;br /&gt;&lt;br /&gt;
+
+Lorsque l'élément texte utilisé pour le titre comporte plusieurs lignes, seule la première ligne est utilisée pour le titre.</Text>
+<Ref>format-title</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Lignes ignorées</Topic>
+<Text>Lorsqu'une ligne du format de données comporte un ou plusieurs champs et que tous ces champs pour un noeud donné sont vides, alors la ligne est ignorée. Aucune ligne, même vide ne sera affichée correspondant à cette ligne. Notez que cela ne s'applique pas à une ligne ne comportant aucun champ (avec du texte seul). De même, quand une ligne se termine avec la balise &amp;lt;br/&amp;gt; ou &amp;lt;hr/&amp;gt; et si la ligne est ignorée, la balise est néanmoins conservée.</Text>
+<Ref>format-skip</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Balises HTML</Topic>
+<Text>Les balises HTML simples peuvent être utilisées dans le format de données. Les balises courantes comprennent &quot;&amp;lt;b&amp;gt;gras&amp;lt;/b&amp;gt;&quot;, &quot;&amp;lt;u&amp;gt;sous-ligné&amp;lt;/u&amp;gt;&quot;, &quot;retour chariot&amp;lt;br/&amp;gt;&quot;, &quot;&amp;lt;hr/&amp;gt;trait horizontal&quot;, et diverses balises de police. Les balises complexes doivent être en général évitées. Quand l'option de fichier &quot;Autoriser HTML dans les formats&quot; est désactivée, les balises sont traitées comme du texte ordinaire. Pour des exemples de ces champs, voir le fichier &quot;sample_color_items&quot; (en utilisant la commande &quot;Fichier-&amp;gt;Ouvrir Exemple&quot;).&lt;br /&gt;&lt;br /&gt;;
+
+
+
+Un retour chariot est automatiquement généré à la fin de chaque ligne, à moins que l'option de fichier &quot;Ajouter des retour chariot après chaque ligne&quot; ait été désactivée.  De plus, l'option de fichier &quot;Ajouter des lignes vides entre les noeuds&quot; détermine si une ligne blanche est ajoutée entre chaque ligne. Une balise retour chariot (&quot;&amp;lt;br&amp;gt;&quot;) peut être ajoutée à la fin du format pour obtenir le même effet, ou encore, un trait horizontal (&quot;&amp;lt;hr&amp;gt;&quot;) peut être utilisé pour séparer les noeuds.</Text>
+<Ref>format-html</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Exemples de formats</Topic>
+<Text>Voici un exemple de format pour une liste de livres:&lt;br /&gt;&lt;br /&gt;
+
+&amp;lt;hr/&amp;gt;&quot;{*Titre*}&quot;&lt;br /&gt;
+(c) {*Copyright*}, Notation: {*Notation*}&lt;br /&gt;
+{*Résumé*}&lt;br /&gt;&lt;br /&gt;
+
+Des fichiers exemples avec différents types de formats sont inclus dans la distribution de TreeLine.  Ils peuvent être ouverts en utilisant la commande &quot;Fichier-&amp;gt;Ouvrir Exemple&quot;.  Ils sont également listés dans le paragraphe &lt;a href=&quot;#start-example&quot;&gt;Fichiers exemples&lt;/a&gt;.</Text>
+<Ref>format-example</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Références d'Autres Eléments</Topic>
+<Text>Les références qui ne sont pas contenu dans les noeuds peuvent être ajoutés à la sortie. En appuyant sur le bouton &quot; Montrer les options avancés &quot; qui est dans l'onglet &quot;Sortie&quot; de la boîte de dialogue rend visible les niveaux de référence pouvant être sélectionné.&lt;br /&gt;&lt;br /&gt;
+
+Si le niveau de référence est changé en &quot;Référence du Fichier &quot; , les champs contenant des méta-données peuvent être ajouté à la sortie . Cela inclues le nom du fichier , le chemin d'accès , la taille , la date de la dernière modification. Ceux ci sont montré dans &quot;{*?nom_champ*}&quot; dans le titre et l'editeur de format de sortie.
+
+
+Les champs de références au divers  noeuds ancêtres (parents , grands parents , etc ... ) nécessite que les types de données de la référence soit spécifié . Ces sélection détermine le nom du champ qui sont disponible , mais les données de n'importe quel type ayant un nom de  champ compatible sera visualisé en sortie. Les références aux champs des noeuds parents et  grand-parents sont représentées comme &quot;{**nom_champ*}&quot; et &quot;{***nom_champ*}&quot;, respectivement. Il existe aussi des références générales à des champs de noeuds ancêtres, représentées comme &quot;{*?nom_champ*}&quot;, et qui référencent les données du noeud ancêtre ayant un champ du même type.&lt;br /&gt;&lt;br /&gt;
+
+
+Des références aux noeuds fils peuvent aussi être ajoutées . Cela nécessite que les types de données fils soit spécifié. Les données fils s'intègre dans la sortie parent. Les données enfants sont délimité par un caractère de séparation qui est définie comme une options de fichier . Le séparateurs par défaut est la virgule , et l'espace , mais d'autres peuvent être configurés en &amp;lt;br&amp;gt; ou n'importe quel autre.&lt;br /&gt;&lt;br /&gt;
+
+Finalement , une référence &quot;Nombre d'enfant&quot; peut être ajouté. Ce champ va montrer le nombre d'enfant (champ &quot;de niveau 1&quot;) ou d'arrière petits enfants (champ &quot;de niveau 2&quot;) d'un noeud. Cela permet de visualiser {*#Niveau1*} dans l'editeur de format 
+
+Pour des exemples de ces champs, voir le fichier &quot;sample_other_fields&quot; (en utilisant la commande &quot;Fichier-&amp;gt;Ouvrir Exemple&quot;).</Text>
+<Ref>format-refs</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Configuration Avancée</Topic>
+<Text>Le bouton &quot;Montrer les options avancé&quot; de l'onglet  &quot;configuration du type&quot; fournit des possibilités de configuration supplémentaires.  La première permet de choisir l'un des champs comme champ de référence, qui est utilisée pour les commandes organiser et aplatir par références et également pour les références de liens internes. Par défaut le champ de référence est le premier élément.&lt;br /&gt;&lt;br /&gt;
+
+La boîte de dialogue permet aussi la configuration des balises préfixe et suffixe de frères.  Ces balises peuvent le plus souvent être laissées vides, mais sont utiles pour créer des tableaux et des listes.  Ces balises seront placées avant et après les groupes de frères du type approprié.  Par exemple, pour créer un tableau, la balise préfixe pourrait être &quot;&amp;lt;table border=&quot;1&quot;&amp;gt;&quot; et le suffixe &quot;&amp;lt;/table&amp;gt;&quot;.  Ensuite, le format de données pourrait être:&lt;br /&gt;&lt;br /&gt;
+
+
+
+&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&quot;{*Titre*}&quot;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;(c)  {*Copyright*}&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&lt;br /&gt;&lt;br /&gt;
+
+Voir également le fichier exemple &quot;sample_table_booklist&quot; (en utilisant la commande &quot;Fichier-&amp;gt;Ouvrir Exemple&quot;).&lt;br /&gt;&lt;br /&gt;
+
+Les frères devraient généralement être du même type, ou au moins avoir les mêmes balises préfixes et suffixes.</Text>
+<Ref>format-sibling-text</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Champ avec liens de référence</Topic>
+<Text>C'est l'un des champs pour chaque type désigné comme champ de liens de référence . Par défaut, c'est le premier champ de la liste . En appuyant sur le bouton &quot;Montrer les options avancés&quot; de l'onglet &quot;Configuration du type&quot; cela affiche une liste de sélection pour ce champ.&lt;br /&gt;&lt;br /&gt;
+
+Le champ avec liens de référence est utilisé pour les liens internes , et pour organiser et applatir via la commande de référence. Le contenu de ce champ devrait généralement être unique si l'usiage de ces fonctions est prévues .</Text>
+<Ref>format-link-ref</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Les types dérivés et génériques</Topic>
+<Text>Les types de données peuvent être configuré pour hériter leurs paramètres de  champs d'un type générique . Cela permet que des types avec des formattages différents de pouvoir  conserver les mêmes groupes de champs . Tous changements dans un types génériques changera l'ensemble des champs héritiers . Cela ne s'applique pas au formattage d'affichage , ceux ci sont définis de manière indépendante &lt;br /&gt;&lt;br /&gt;
+
+Il  y a deux méthodes pour créer des types dérivés . La première , une option dérivé peut  être sélectionné lorsqu'on copie un type de l'onglet  &quot;liste des types&quot; de &quot;Données -&amp;gt;Paramètres du types de données&quot; ,  L'autre alternative ; un type générique peut être spécifié d'un type dérivé dans l'onglet &quot;Configurations des types&quot; si la fonction avancé est sélectionné .</Text>
+<Ref>format-derived</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Types Conditionnels</Topic>
+<Text>Les expressions conditionnelles peuvent être utilisées pour affecter automatiquement un type de donnée basé sur le contenu du noeud.  Les conditions peuvent être affectées seulement aux types génériques et à leurs types dérivés.  Cela permet l'affectation automatique de différent formats de représentation ou différents icônes selon le contenu de chaque noeud.&lt;br /&gt;&lt;br /&gt;
+
+La boîte de dialogue est accédée à partir d'un bouton de la boîte de dialogue &quot;Configuration Avancée&quot; d'un type.  Chaque ligne de la condition inclue un champ, un opérateur et une valeur de comparaison (voir &lt;a href=&quot;#fig-2&quot;&gt;Figure 2&lt;/a&gt;).  Les opérateurs possibles comprennent l'égalité, supérieur à, inférieur à, commence par, finit par, et contient.  Il y a aussi les opérateurs Vrai et Faux qui changent le type des tous les nodes simultanément.&lt;br /&gt;&lt;br /&gt;
+
+Pour les champs spéciaux comme les dates, les heures, et les booléens La valeur de comparaison devrait être entrée sous la même forme que avec la fenètre d'édition des données.  En général, les opérateurs commence par, finit par, et contient ne devraient pas être  utilisés avec ces champs spéciaux, puisque la comparaison est faite en utilisant un format interne.  Les dates et les heures peuvent être utilisées aussi avec la valeur de comparaison &quot;Maintenant&quot;, qui est toujours interprétée comme la date et l'heure actuelle.&lt;br /&gt;&lt;br /&gt;
+
+Le bouton &quot;Ajouter Nouvelle Règle&quot; est utilisé pour ajouter de nouvelles conditions.  Ces lignes peuvent être liées par les opérateurs &quot;et&quot; ou &quot;ou&quot;.  Le bouton &quot;Supprimer Règle&quot; supprime la dernière ligne de condition.  Si une seule ligne est présente, le bouton &quot;Supprime Règle&quot; supprime complètement la condition.&lt;br /&gt;&lt;br /&gt;
+
+Les conditions n'ont pas besoin d'être toutes positionnées dans une famille.  Si aucune condition n'est vraie pour un noeud, le programme choisira une condition nulle de préférence à une condition fausse.&lt;br /&gt;&lt;br /&gt;
+
+Pour un exemple, voir le fichier &quot;sample_conditional_todo&quot; (en utilisant la commande &quot;Fichier-&amp;gt;Ouvrir Example&quot;).</Text>
+<Ref>format-condition</Ref>
+<FIGURE item="y">
+<Topic>Figure boîte de dialogue conditionnelle</Topic>
+<Caption>Figure 2:  boîte de dialogue conditions</Caption>
+<Picture>doc_condition.png</Picture>
+<Ref>fig-5</Ref>
+</FIGURE>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Copie de formats</Topic>
+<Text>Une autre méthode pour changer les formats des types de données consiste en copier les formats à partir d'un autre fichier TreeLine. Cela est réalisé par la commande &quot;Données-&amp;gt;Copier Types à partir du Fichier&quot;. Tous les types de données du fichier choisi sont copiés. Les types du fichier courant sont écrasés par les types du fichier copié ayant le même nom, mais les types avec un nom différent sont conservés.</Text>
+<Ref>format-copy</Ref>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Types de champs</Name>
+<Ref>fields</Ref>
+<TEXT_HEAD item="y">
+<Topic>Options de champ</Topic>
+<Text>Dans la boîte de dialogue &quot;Paramètres du Type de Données&quot;, l'onglet &quot;Confinguration des champs&quot; , le bouton &quot;Type de champ&quot; affiche une liste de sélection qui permet de définir le format du champ. Le type de champ peut être configuré à texte, nombre, choix, combinaison, choix automatique, date, heure, booléen, URL, chemin, lien interne, lien exécutable, courrier, ou image. Un préfixe et un suffixe peuvent être entrés et s'afficheront si la donnée n'est pas vide.&lt;br /&gt;&lt;br /&gt;
+
+Il existe aussi une configuration de la manière dont le contenu est présenté qui peut être du HTML ou qui préserve les retours chariot (ignorant ainsi le code HTML). Lorsque HTML est utilisé, les retours chariot sont ignorés et les caractères &quot;&amp;lt;&quot;, &quot;&amp;gt;&quot; et &quot;&amp;amp;&quot; qui ne sont pas encodés en HTML, ne sont pas affichés. Il y a également une option générale qui rend les nouveaux éléments présentés en HTML par défaut.  Pour un exemple d'utilisation de HTML, voir le fichier &quot;sample_char_format&quot; (en utilisant la commande &quot;Fichier-&amp;gt;Ouvrir Exemple&quot;).&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+
+Plusieurs des types d'éléments utilisent un format spécifique pour leur affichage. Pour obtenir la liste des caractères de format disponibles, utiliser le bouton &quot;Aide Format&quot;. Une donnée entrée avec l'éditeur de données ne correspondant pas au format de champ est signalée par le label de l'élément affiché en caractères gras, et l'entrée est affichée comme &quot;#####&quot;.</Text>
+<Ref>field-options</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Le Type Texte</Topic>
+<Text>Le type par défaut est le type texte. Les champs de ce type sont édités avec une boîte de dialogue dans l'éditeur de données. La boîte d'édition s'élargit quand elle est réaffichée et qu'elle comporte plusieurs lignes de texte. La hauteur de cette boîte de dialogue peut aussi être configurée dans l'onglet &quot;Configuration du champ&quot;</Text>
+<Ref>field-text</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Types choix, combinaison et booléen</Topic>
+<Text>Les types de champ &quot; choix &quot; et &quot;combinaison&quot; permettent la sélection d'objets en utilisant une boîte déroulante. Le format dans ce cas consiste en la liste des objets séparés par le caratère &quot;/&quot; (utiliser &quot;//&quot; pour obtenir le caratère &quot;/&quot; quand il fait partie intégrante de l'objet). Le choix est utilisé pour sélectionner un seul objet et combinaison pour sélectionner plusieurs objets. La boîte déroulante dans le cas de la combinaison autorise l'ajout et la suppression d'objets. De plus, il est possible de ne taper uniquement que la partie initiale de l'objets.&lt;br /&gt;&lt;br /&gt;
+
+Le type booléen est identique au type choix, mais utilise les objets &quot;Vrai/Faux&quot;, &quot;oui/non&quot; et &quot;1/0&quot;.&lt;br /&gt;&lt;br /&gt;
+
+Il existe également un type de champs &quot;choix automatique&quot;.  Comme le choix il permet la sélection dans une boîte déroulante, mais il n'est pas associé à un format.  La boîte déroulante est automatiquement remplie par tous les choix ayant été faits précédemment.</Text>
+<Ref>field-choice</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Le Type Nombre</Topic>
+<Text>Pour le type nombre, des caratère spéciaux dans le format permettent de spécifier le format d'affichage du nombre dans l'éditeur de données.  Le format utilise une chaîne de caractères faite de &quot;#&quot; (chiffre optionel) et &quot;0&quot; (chiffre requis) pour définir le format de représentation. Par exemple, pi formaté avec &quot;#.#&quot; est &quot;3.1&quot; et formaté avec &quot;00.00&quot; est &quot;03.14&quot;. Quelque soit le format, les chiffres à gauche de la virgule ne sont pas tronqués, puisque cela reviendrait à afficher une valeur inexacte.  Mais prenez soin d'afficher suffisamment de chiffres après la virgule (optionel ou requis) pour éviter les problèmes d'arrondis.&lt;br /&gt;&lt;br /&gt;
+
+Le caratère radical peut être défini comme &quot;.&quot; ou &quot;,&quot; pour tenir compte de l'internationalisation.  Pour les séparateurs de milliers, utiliser &quot;\,&quot; ou &quot;\.&quot;.  Par exemple, un nombre élevé peut être représenté comme &quot;#\,###\,###.##&quot; ou &quot;#\.###\.###,##&quot;.  Utiliser le bouton &quot;Aide Format&quot; de la boîte de dialogue &quot;Format de champs&quot; pour obtenir des détails.&lt;br /&gt;&lt;br /&gt;
+
+Contrairement à la plupart des autres formats, le type de champ &quot;nombre&quot; utilise aussi le format de données pour l'affichage dans l'éditeur de données.  Bien sûr, toute nouvelle entrée avec un format raisonnable est correctement interprétée (mais le caratère radical doit être le bon).</Text>
+<Ref>field-number</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Types Date et Heure</Topic>
+<Text>Pour les types date et heure, les caractères spéciaux du format sont remplacés par la valeur de certains champs de la donnée, un peu comme pour le type nombre.  Utiliser le bouton &quot;Aide Format&quot; pour obtenir tous les détails.&lt;br /&gt;&lt;br /&gt;
+
+Ces caractères sont aussi utilisés dans la boîte de dialogue &quot;Outils-&amp;gt;Options Générales-&amp;gt;Formats de l'éditeur de données&quot;. Ces formats spécifient comment ces champs sont affichés dans l'éditeur de données. Généralement, les données entrées avec l'éditeur de données seront correctement interprétées quelque soit cette configuration, mais les dates doivent suivre l'ordre jour-mois-année spécifié. Notez également que l'éditeur de données ne supporte pas l'utilisation des jours de la semaine.  Quand une donnée ne peut pas être correctement interprétée le label de champ est afffiché en caractères gras.&lt;br /&gt;&lt;br /&gt;
+
+Une valeur par défaut à la création d'un nouveau noeud peut être configurée, par exemple &quot;Maintenant&quot;.</Text>
+<Ref>field-date</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Types Liens</Topic>
+<Text>Les types URL, chemin, et email sont utilisés pour créer des liens qui sont actifs dans le volet de Données. Un URL correspond à un lien sur le web (par défaut http:// à moins que cela ne soit spécifié différemment), chemin correspond au chemin pour accéder à un fichier (par défaut file:///), et email correspond à un lien email (par défaut mailto:). Quand ils sont cliqués dans le volet de Données, ces liens permettent d'ouvrir le navigateur ou le courrier à l'adresse indiquée. Quand on effectue une opération d'export, ces liens sont des liens HTML standard. Entrer tout simplement l'adresse complète (comme par exemple &quot;www.bellz.org/treeline/index.html&quot;) dans l'éditeur de données. Sous Linux, en positionnant la variable d'environnement &quot;BROWSER&quot; à une valeur telle que &quot;mozilla %s&quot; permet de lancer le navigateur de son choix (mozilla en l'occurrence).&lt;br /&gt;&lt;br /&gt;
+
+Il existe aussi un lien de type interne. Un lien de ce type spécifie un lien que l'on peut cliquer dans le volet de Données et qui sélectionne alors le premier noeud dont le texte de champ de référence correspond à la valeur du lien interne. Si ce champ de référence ou bien le lien interne comporte plusieurs ligness, chaque ligne est traitée comme une référence ou un lien distinct, respectivement. Quand cela est souhaité, le même champ peut servir à la fois de référence et de lien, si bien que en cliquant sur un mot clé du lien on sélectionne le noeud suivant ayant ce même mot clé dans l'élément de référence. Quand le fichier TreeLine est exporté en HTML, les liens internes correspondent aux liens HTML de pages, mais, dans les cas de références multiples, ils sélectionnent seulement le lien qui se trouve le plus haut dans la page HTML au lieu du lien suivant.  Pour un exemple, voir le fichier &quot;sample_intern_links&quot; (en utilisant la commande &quot;Fichier-&amp;gt;Ouvrir Exemple&quot;).&lt;br /&gt;&lt;br /&gt;
+
+Un champ de type lien exécutable exécute un programme externe lorsqu'il est cliqué.  La commande à lancer est spécifiée par le contenu du champ.  Ou alors le préfixe du champ qui peut contenir le nom du programme, pour que le contenu de champ soit utilisé comme arguments de la commande.  Une option générale peut désactiver ces liens pour des raisons de sécurité.&lt;br /&gt;&lt;br /&gt;
+
+Le champ de type image permet d'afficher une image dans le volet de Données. Entrer le chemin complet du fichier image comme texte du champ. Pour Qt2 (utilisé pour TreeLine sous Windows) le volet de données supporte uniquement les images au format GIF et PNG. Pour Qt3, les images JPEG et d'autres types d'images sont supportés. Bien sûr, lors de l'opération d'export en HTML, cette image est affichée pour autant que le navigateur Internet supporte le format de l'image.</Text>
+<Ref>field-link</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Type d'identifiant unique (ID)</Topic>
+<Text>Un champ d'identifiant unique est automatiquement chargée avec des nombres uniques . Ceci est souvent utiles pour s'assurer que le champ des liens référentielles soit toujours unique &lt;br /&gt;&lt;br /&gt;
+
+
+le format du champ est paramétré sur le premier nombre désiré de la série , commençant par un zéros facultatif , et des débuts facultatifs ou des des caractères mobiles . Le nmbre initial et les caractères extra sont utiles pour éviter la duplication des nombres dans les différents fichiers . Tous les noeds du types de données vont automatiquement recevoir un identifiant (ID) . Le format du champ affiche toujours le prochain nombre disponible , celui qui sera donnée au prochain nouveau noeud de ce type</Text>
+<Ref>field-unique</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Options Avancées</Topic>
+<Text>Le bouton &quot;Montrer les options avancé&quot; dans la boîte de dialogue &quot;Paramètres du Type de Données&quot; permet des configurations supplémentaires.  Une valeur par défaut à la création peut être positionné pour le type de de champ. Tout nouveau noeud acquiert, à la création ,  cette valeur pour son type de champ concerné .&lt;br /&gt;&lt;br /&gt;
+
+Les champs de type lien peuvent avoir un texte de remplacement associé à l'URL. Cela est permit en spécifiant un champ de texte alternatif&lt;br /&gt;&lt;br /&gt;
+
+Il y a aussi une case à cocher si l'on souhaite spécifier que le champs est obligatoire. Les  champs obligatoire sont indiqués avec un astérisque dans l'éditeur de données.&lt;br /&gt;&lt;br /&gt;
+
+Les champs peuvent être également cachés si l'on ne souhaite  pas les afficher dand l'éditeur de données.</Text>
+<Ref>field-advanced</Ref>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Manipulation des Données de l'Arbre</Name>
+<Ref>data</Ref>
+<TEXT_HEAD item="y">
+<Topic>Commandes de classement</Topic>
+<Text>Le menu &quot;Données&quot; comporte des commandes pour organiser et aplatir les données par catégorie et par référence. Ces méthodes sont utilisées pour ajouter ou supprimer automatiquement des niveaux de noeuds situés en dessous du noeud sélectionné de l'arborescence.&lt;br /&gt;&lt;br /&gt;
+
+La commande &quot;Ajouter un Niveau de Classement&quot; permet de sélectionner un ou plusieurs des champs que les fils ont en commun. Ces éléments sont utilisés pour créer de nouveaux noeuds parents à partir des fils, en les groupant par catégories. Par exemple, dans une liste de livres, en choisissant les champs &quot;nom_auteur&quot; et &quot;prénom_auteur&quot; on obtient une structure hiérarchique dans lequel les livres sont classés par auteur.&lt;br /&gt;&lt;br /&gt;
+
+La commande &quot;Aplatir par classement&quot; est pratiquement la commande inverse de la précédente &quot;Ajouter un Niveau de Classement&quot;. Elle élimine tous les noeuds ayant des fils, tout en transférant leurs champs de données vers leurs fils. Ces champs sont renommés plutôt que d'écraser d'autres champs ayant le même nom, mais cette commande est la plus utile quand parents et fils ont chacun des champs de noms et types différents.</Text>
+<Ref>data-category</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Commandes basées sur les références</Topic>
+<Text>Les commandes &quot;Organiser par Référence&quot; et &quot;Aplatir par Référence&quot; réorganisent les noeuds en utilisant des pointeurs sur la valeur des champs de références de leurs parents. Ces commandes présupposent que l'on utilise des valeurs uniques dans les champs références, comme un numéro d'identification unique . La commande &quot;Aplatir par Référence&quot; ajoute un champ contenant l'identification unique du parent à chacun des noeuds descendants. Il place alors tous ces noeuds sous le noeud-racine sélectionné. La commande &quot;Organiser par Référence&quot; exécute l'opération inverse, en plaçant chaque noeud avec le parent correspondant à l'identification de référence. Si il y a plusieurs noeuds avec la même identification, le noeud le plus proche au-dessus du fils est choisi. Tout noeud trouvé sans parent (orphelin)  est placé directement sous le noeud sélectionné.&lt;br /&gt;&lt;br /&gt;
+
+La commande &quot;Mise à jour par Référence&quot; utilise un autre fichier pour mettre à jour les valeurs des champs manquants. Les valeurs uniques sont mises en correspondance dans les champs de référence. Tout champ d'un noeud du fichier qui ne se trouve pas dans le noeud original est ajouté. Des éléments peuvent être supprimés dans le fichier original pour forcer la mise à jour, puisque le champ doit être manquant et non pas seulement vide.</Text>
+<Ref>data-ref</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Trie</Topic>
+<Text>La commande &quot;Données-&amp;gt;trier les noeuds&quot; ouvre une boîte de dialogue contenant des options permettant de trier soit l'entièreté de l'arbre , les branches sélectionnées , les enfants sélectionnés ou les frères séléctionnés . Le trie peut être basé sur des champs spécifiques au sein de types spécifiques ou seulement sur des titres .&lt;br /&gt;&lt;br /&gt;
+
+Trier par types permet la sélection de plusieurs champs à utilisé en tant que première clés , deuxième clés etc  ... Plusieurs types peuvent êtres selectionné dans la liste de gauche . Les champs ayant un types en commun sont listé à droite. Les champs utilisé en tant que clés sont choisis dans l'ordre avec le bouton de gauche de la souris et la direction peut être changé avec le bouton droit de la souris
+
+#####
+
+les commandes &quot;Trier les Fils du Noeud&quot;, &quot;Trier un Type dans la branche&quot; et &quot;Trier la Branche par le Titre&quot;. Les deux premières commandes permettent la sélection des champs qui vont être utilisés comme clés pour le tri.  Ces clés sont sélectionnés dans l'ordre avec le bouton gauche de la souris et la direction de recherche est changée avec le bouton droit.  La commande &quot;Trier les Fils du Noeud&quot; trie uniquement les fils du node, tandis que la commande &quot;Trier un Type dans la branche&quot; trie tous les descendant d'un type donné.  La commande &quot;Trier la Branche par le Titre&quot; trie tous les descendant par le titre.</Text>
+<Ref>data-sort</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Filtres</Topic>
+<Text>La commande &quot;Données-&amp;gt;Filtre conditionel&quot; limite l'affichage de noeuds ans la &quot;vue à plat&quot; en se basant sur des règles définies par l'utilisateur. Premièrement , le type à filtrer est selectionné . Ensuite , les règles logiques peuvent être entré basé sur n'importe quel type de champs (similaire à &lt;a href=&quot;#fig-5&quot;&gt;Figure 5&lt;/a&gt;) . De multiples règles peuvent être lié par les opérateurs &quot;et &quot;  , &quot; ou&quot;  (en appuyant sur le bouton &quot;Ajouter règle&quot;). La règle &quot;Vrai&quot; peut être utilisé pour afficher tous les noeuds d'un types données. Seuls les noeuds descendants qui correspondent au criètres seront affiché dans le panneau &quot;Vue à plat&quot; . Le document courant sera renommé avec le suffixe &quot;_filter&quot; ajouté pour éviter d'écraser le document original. Si ce document avait été déja modifié auparavant, une boîte de dialogue s'affiche permettant la sauvegarde du document non filtré.  Le filtrage garde son effet pour le panneau de la &quot; vue à plat &quot; jusqu'a ce que la commande de nettoyageait été activé via  &quot;Donnée-&amp;gt;purger le système de filtrage&quot;.
+
+
+La commande-&amp;gt;Filtre de texte&quot; travaille de manière similaire sauf qu'il ne demande qu'une chaine de texte en entrée. Seules les noeuds qui ont cette chaine de texte quelque part dans leurs champs de données sont affichés dans la &quot;vue à palt&quot; . De même , l'effet du filtre est conservé pour le panneau de vue à plat jusqu'a ce que celui ci ait été nettoyé via la commande &quot;Donnée-&amp;gt;purger le système de filtrage&quot;</Text>
+<Ref>data-filter</Ref>
+<FIGURE item="y">
+<Topic>Filtre d'images</Topic>
+<Picture>doc_filter.png</Picture>
+<Ref>fig-6</Ref>
+</FIGURE>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Numérotation</Topic>
+<Text>La commande &quot;Numérotation&quot; est utilisée pour ajouter un champ numérique aux noeuds descendants. Le champ numérique n'est pas mis à jour automatiquement quand l'arbre est modifié - la commande &quot;Numérotation&quot; doit être répétée. Dans la boîte de dialogue, un nouveau champ ou un champ existant est entré, et le noeud sélectionné peut être inclus dans la numérotation si cela est souhaité. Un parmi trois types de numérotation peut être choisi: le type outline redémarre la numérotation pour chaque nouveau groupe de fils, le type section ajoute le numéro du fils au numéro du parent, et le type niveau unique numérote seulement le premier niveau des fils. Les formats par défaut peuvent être utilisés (&quot;I, II..., A, B..., 1, 2...&quot; pour les types outlines; &quot;1, 2..., 1.1, 1.2...&quot; pour les types sections), ou bien des formats configurés peuvent être spécifiés pour chaque niveau. Les formats configurés doivent contenir l'un des caractères suivants: &quot;1&quot;, &quot;A&quot;, &quot;a&quot;, &quot;I&quot;, ou &quot;i&quot;. Les séries continueront à partir d'ici (utilisant les nombres, les lettres ou les chiffres romains, respectivement). La dernière occurrence de l'un de ces caractères est celle qui est utilisée - les occurrences précédentes sont considérées comme faisant partie du format.</Text>
+<Ref>data-number</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Modification des Données Sélectionnées</Topic>
+<Text>Et enfin, la commande &quot;Modifier les Données Sélectionnées&quot; permet de modifier la valeur d'un  champ simultanément pour tous les noeuds sélectionnés. Sélectionner tout simplement le champ souhaité et entrer la nouvelle valeur. Pour effacer les valeurs d'un champ , entrer un nouveaux caractères , ensuite supprimer le - cela permet d'indiquer que l'on souhaite un champ blanc.</Text>
+<Ref>data-change</Ref>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Imprimer</Name>
+<Ref>print</Ref>
+<TEXT_HEAD item="y">
+<Topic>Options d'Impression</Topic>
+<Text>Dans le menu &quot;Fichier-&amp;gt;Options d'impression&quot; , sous le premier onglet  nommé &quot;Options générales&quot; , sur la guache , on peut choisir soit d'imprimer l'arbre entier , soit les noeuds sélectionné ,  ou soit les branches sélectionnés . Le deux premières options permettent d'imprimer tous les descendants avec l'indentation des enfants &lt;br /&gt;&lt;br /&gt;
+
+
+Les options à droite  permettent de dessiner les lignes de l'aborescence , incluants le noeud racine , et incluant seuelemnt les enfants ouvert et gardant le premier enfant avec ses parents . L'arborescence est dessiner pour connecter les noeuds parents et efnats . Cela permet de visualiser plus  facilement les relations enfants / parents , spécialement à travers de multiples pages . Ces traits peuvent ne pas être imprimés correctement quand on utilise certaines balises HTML.&lt;br /&gt;&lt;br /&gt;
+
+Par défaut, TreeLine évite d'insérer un saut de page entre un parent et ses premiers fils.  Ce comportement peut être désactivé dans l'option d'impression &quot;Garder le premier fils avec le parent&quot;.</Text>
+<Ref>print-options</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Disposition de la page</Topic>
+<Text>Le deuxième onglet de la boîte de dialogue &quot;Options d'impression&quot; est  &quot;Disposition de la page&quot; . Sur la gauche sont disposé les paramètres concernant la taille de la page, son orientation et son unité de mesure . Sur la droite les paramètres pour les colonnes , l'indentation d'offset , et les marges .</Text>
+<Ref>print-setup</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Polices de caractères d'impression</Topic>
+<Text>Le troisième onglet de la boîte de dialogue &quot;Options d'impression&quot; est  &quot;Sélection Police&quot; . L'impresson va utilise la même police que le panneaux des  &quot;Police pour sorties de données&quot; si celle ci est coché . Si celle ci n'est pas coché une police spécifique peut être sélectionné pour l'impression</Text>
+<Ref>print-font</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>En-tête et pied de page</Topic>
+<Text>Dans la boîte de dialogue options d'impression le troisième onglet est utilisé pour configurer les en-têtes et pieds de page. Ce bouton fait apparaître une nouvelle boîte de dialogue avec le nom des champs du fichier dans la partie gauche et six boîtes d'édition en-tête/pied de page (justification à gauche, au centre et à droite) sur la droite. Ces champs peuvent être ajoutés et combinés avec du texte entré dans les boîtes d'édition, exactement comme dans la boîte de dialogue &quot;Données-&amp;gt;Paramètres du Type de Données&quot;. La configuration en-tête/pied de page est sauvegardée avec le fichier TreeLine.</Text>
+<Ref>print-header</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Aperçu avant impression</Topic>
+<Text>Un aperçu peut être vue en utilisant le menu &quot;Fichier-&amp;gt;Aperçu avant impression&quot; ou le même bouton  de la boite de dialogue  &quot;Options d'impressions&quot; . Les boutons sur la fenêtre sont utilisé pour naviguer entre les pages , ouvrir la boîte de dialogue '&quot;Options d'impression&quot;, ou ouvrir la boîte de dialogue d'impression . Un aperçu avant impression est affiché avant l'impression (mais après avoir cliqué sur 'OK' dans la boîte de dialogue impression). La fenêtre d'aperçu avant impression montre plus de détails quand elle est agrandie.</Text>
+<Ref>print-preview</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Problèmes à l'Impression</Topic>
+<Text>Quelques uns de problèmes d'impression, tout spécialement les problèmes liés aux marges et à la césure des mots, peuvent être éliminés en utilisant la police qui est la mieux adaptée à l'imprimante utilisée.</Text>
+<Ref>print-problems</Ref>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Gestion de Fichiers</Name>
+<Ref>file</Ref>
+<TEXT_HEAD item="y">
+<Topic>Compression de Fichier</Topic>
+<Text>Un fichier TreeLine est au format XML. Il est également possible de travailler avec des fichiers compressés (au format gzip) pour économiser de la place. Les fichiers peuvent être configurés comme étant compressés avec le menu &quot;Options-&amp;gt;Options de Fichier&quot; ou à partir de la boîte de dialogue &quot;Enregistrer Sous&quot;. Il existe aussi une option générale pour configurer ce mode pour tous les nouveaux fichiers TreeLine.</Text>
+<Ref>file-comp</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Cryptage de Fichier</Topic>
+<Text>Il existe une option pour crypter avec un mot de passe les fichiers TreeLine. Les fichiers peuvent être configurés comme étant cryptés avec le menu &quot;Options-&amp;gt;Options de Fichier&quot; ou à partir de la boîte de dialogue &quot;Enregistrer Sous&quot;. Il existe aussi une option générale pour configurer ce mode pour tous les nouveaux fichiers TreeLine. Le cryptage utilise une fonction de hashage SHA - elle peut être considérée comme relativement sûre.</Text>
+<Ref>file-enc</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Sauvegarde Automatique</Topic>
+<Text>Un mécanisme de sauvegarde automatique sauvegarde le fichier en ajoutant au nom de fichier le suffixe &quot;~&quot; (tilde). Ce fichier est automatiquement supprimé quand le fichier est sauvegardé par l'utilisateur. Le délai de sauvegarde automatique est configuré dans les options générales. En configurant ce délai à zéro, on désactive cette fonctionalité.</Text>
+<Ref>file-auto-save</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Etat de l'arbre sauvegardé</Topic>
+<Text>Quand un fichier TreeLine récent est ouvert, TreeLine restaure les états des noeuds ouverts et sélectionnés. Cette information est sauvegardée dans le fichier de configuration TreeLine de l'utilisateur. Si cela est souhaité, cette fonctionalité peut être désactivée avec une option générale.</Text>
+<Ref>file-states</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Ligne de Commande</Topic>
+<Text>Les options de la ligne de commande permet d'effectuer des opérations non interactives d'export et d'import de fichiers. Cela permet le traitement par lots. Pour plus de détails, exécuter &quot;treeline -h&quot; à partir de la ligne de commande.  Sous Windows, il n'y a pas d'affichage sur la console et en conséquence celui-ci doit être redirigé vers un fichier: (&quot;treeline -h &amp;gt; log.txt&quot;).</Text>
+<Ref>file-cmdline</Ref>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Importation de Fichier</Name>
+<Ref>import</Ref>
+<TEXT_HEAD item="y">
+<Topic>Texte Délimité</Topic>
+<Text>Un fichier TreeLine est au format XML. Les autres types de fichiers peuvent être importés simplement en les ouvrant. Ouvrir un fichier qui n'est pas un fichier XML TreeLine affiche une boîte de dialogue qui permet de définir le type de fichier à importer.&lt;br /&gt;&lt;br /&gt;</Text>
+<Ref>import-general</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Texte Délimité</Topic>
+<Text>TreeLine peut importer un fichier texte structuré hiérarchiquement par des tabulations. Dans ce cas, seul le noeud titre est importé, et les éléments supplémentaires sont ignorés. Cette méthode est utilisée pour ouvrir les fichiers TreeLine créés par de vieilles versions de TreeLine.&lt;br /&gt;&lt;br /&gt;
+
+Un tableau délimité par des tabulations peut aussi être importé. Il devient un arbre avec un seul niveau de fils, chaque noeud contenant les éléments de chaque colonne du tableau. La première ligne du tableau est utilisée pour les noms d'éléments et chaque ligne suivante devient un noeud.</Text>
+<Ref>import-delim</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Texte Ordinaire</Topic>
+<Text>Il y a deux types d'importation de texte ordinaire. L'un crée un noeud pour chaque ligne du texte. L'autre crée un noeud par paragraphe, on suppose ici que les paragraphes sont séparés par une ligne vide . Dans les deux cas, le fichier TreeLine résultant est tel que tout le texte se trouve sous un seul parent, mais c'est un bon point de départ. Des éléments de structure peuvent être rajoutés plus tard.</Text>
+<Ref>import-plain</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Fichiers Treepad</Topic>
+<Text>Il existe aussi un filtre pour importer des fichiers au format Treepad.  Seuls les nodes Treepad de type texte sont supportés.</Text>
+<Ref>import-treepad</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Fichiers de Favoris</Topic>
+<Text>TreeLine importe les fichiers de favoris au format Mozilla HTML (navigateurs Mozilla, Firefox et Netscape) et au format XBEL (navigateurs Konqueror, Galeon et Elinks). Chaque favori devient un noeud avec un élément nom et un élément lien. Les informations de ces fichier de type date et référence d'icône ne sont pas importées.  Pour un exemple, voir le fichier &quot;sample_bookmarks&quot; (en utilisant la commande &quot;Fichier-&amp;gt;Ouvrir Exemple&quot;).</Text>
+<Ref>import-bookmarks</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>XML Générique</Topic>
+<Text>TreeLine importe et exporte les fichiers génériques XML. Cette méthode n'est pas sophistiquée - chaque noeud  devient un élément XML et chaque champ devient un attribut XML sauf pour les champs nommé  &quot;Element_Data&quot; qui devient un élément texte. Cela permet d'utiliser TreeLine comme un éditeur XML rudimentaire.</Text>
+<Ref>import-xml</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Document texte ODF</Topic>
+<Text>Treeline peut importer les texte de type Open Document Format (ODF ), de logiciel tels qu'OpenOffice.org et Kword . La strucuture du noeud formé est basé sur les styles d'en-tête assigné du document d'origine. Tous textes en dessous des styles d' en-têtes devient un textes de cet en-tête. Le filtre d'import seulement  destiné à  des usages simples . Le formatage n'est pas maintenu , les objets tel que les tableaux et les images ne sont pas importés .</Text>
+<Ref>import-odf</Ref>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Exportation de Fichier</Name>
+<Ref>export</Ref>
+<TEXT_HEAD item="y">
+<Topic>HTML</Topic>
+<Text>Les fichiers sont exportés en utilisant la commande &quot;Fichier-&amp;gt;Exporter&quot;. Une boîte de dialogue s'affiche avec les types d'export disponibles et les options.&lt;br /&gt;&lt;br /&gt;</Text>
+<Ref>export-general</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>HTML</Topic>
+<Text>L'export en fichier HTML est identique à 'impression avec les mêmes options. Il peut inclure l'en-tête et pied de page d'impression et il est possible de configurer le nombre de colonnes.&lt;br /&gt;&lt;br /&gt;
+
+Il existe aussi un export de fichiers HTML multiples qui crée une arborescense de dossiers. Les dossiers sont nommés en utilisant le contenu du premier champ, celui-ci doit contenir des caractères légaux utilisables dans les noms de dossiers et il ne doit pas y avoir de contenus identiques sous le même parent. Chaque fichier HTML est un tableau de données pour un ensemble de frères, avec des liens vers le parent et le fils.</Text>
+<Ref>export-html</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Texte Délimité</Topic>
+<Text>Les données peuvent être exportées vers du texte tabulé (le vieux format TreeLine) et des tableaux délimités par des tabulations. Ces formats sont les mêmes que les formats d'import correspondant. Lorsqu'on exporte vers un tableau, seul le premier niveau de fils est utilisé, aussi vous pouvez peut-être aplatir les données avant de les exporter.</Text>
+<Ref>export-delim</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Fichiers de Favoris</Topic>
+<Text>TreeLine exporte les fichiers de favoris au format HTML Mozilla (navigateurs Mozilla, Firefox et Netscape) et au format XBEL (navigateurs Konqueror, Galeon et Elinks).</Text>
+<Ref>export-bookmarks</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>XML Générique</Topic>
+<Text>TreeLine importe et exporte les fichiers génériques XML. Cette méthode n'est pas sophistiquée - chaque noeud  devient un élément XML et chaque champ devient un attribut XML sauf pour les champs nommé  &quot;Element_Data&quot; qui devient un élément texte. Cela permet d'utiliser TreeLine comme un éditeur XML rudimentaire.</Text>
+<Ref>export-xml</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>XSLT</Topic>
+<Text>En plus d'exporter les données, le format d'un fichier peut être exporté vers un fichier XSLT . Cela peut être utilisé pour afficher des données XML à partir d'un fichier TreeLine dans un navigateur sans exporter les données en HTML. Les versions récentes de la plupart des navigateurs supportent le format XSLT. Notez que le formattage de types de champs complexes est ignoré par XSLT.&lt;br /&gt;&lt;br /&gt;
+
+Lors de l'export en XSLT, un lien vers le fichier XSL est ajouté au fichier TreeLine. Dés lors le fichier TreeLine doit être sauvé. En général , le fichier Treeline devrait avoir une extention en &quot;.xml&quot; , ainsi TreeLine pourra les ouvrir directement dans un navigateur standardisé. Après , le fichier XSL ne nécéssite plus d'être re-exporté pour le changement de données (seulement le changement de formatage ). &lt;br /&gt;&lt;br /&gt;
+
+Les balises HTML qui sont utilisées dans les formats et qui seront exportés en XSLT, doivent utiliser le style xHTML (&amp;lt;br /&amp;gt; au lieu de &amp;lt;br&amp;gt; par exemple). A l'exportation, TreeLine demande le nom d'une feuille de style optionnelle (css). Ce nom est enregistré dans le fichier TreeLine comme une valeur par défaut pour les opérations d'export ultérieures. De même, la référence au fichier XSLT dans le fichier TreeLine peut être supprimée avec la commande &quot;Outils-&amp;gt;Supprimer Ref XSLT&quot;.</Text>
+<Ref>export-xslt</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Docuemnt texte ODF</Topic>
+<Text>Treeline peut exporté un titre dans un le format texte de document ODF , qui est compatible avec OpenOffice.org et Kword. Au  titre de chaque noeud est assigné un style d'en-tête de niveau apprprié . Tout texte d'affichage de la sortie de chaque noeud devient un texte normal sous les en-têtes . Le filtre d'export est seulement à destination  de titres simples . Tout formattage HTML est enlevés , et tout objets tel que des tables et des  images ne sont pas supportés .</Text>
+<Ref>export-odf</Ref>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Personnalisations</Name>
+<Ref>custom</Ref>
+<TEXT_HEAD item="y">
+<Topic>Options</Topic>
+<Text>Le comportement de Treeline peut être modifié par plusieurs paramètres disponibles dans &quot;Outils -&amp;gt; Options Générales&quot; . La plupart de ses options sont abordées dans une section de ce document</Text>
+<Ref>custom-options</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Polices de caractères</Topic>
+<Text>Les polices de caractères utilisé dans l'arborescence , l'affichage et l'éditeur peuvent être configuré dans le menu &quot;Outils-&amp;gt; Fixer les polices&quot;.</Text>
+<Ref>custom-fonts</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Raccourcis clavier</Topic>
+<Text>Les raccourcis clavier peuvent être personnalisé en utilisant la commande &quot;Outils-&amp;gt; Fixé les raccourcis clavier &quot; . Les raccourcis éditeur ont un onlet pour les commandes du menu et celles qui ne sont pas du menu . Simplemenet presser la nouvelle séquence de touches dans le champ approprié sélectionné.</Text>
+<Ref>custom-keys</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Barre d'outils</Topic>
+<Text>Un editeur pour personnalisé la barre d'outils est disponible dans &quot;Outils-&amp;gt; Personnalise les barre d'outils&quot;. Le nombre de barre d'outil peut  être configuré et les boutons de chacune d'entres-elles définis .</Text>
+<Ref>custom-tools</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Couleurs</Topic>
+<Text>La couleur de l'interface utilisateur peut être configuré en utilisant les trois derniers éléments dans le menu &quot;Outils&quot; . Si la commande &quot;Utilise les couleurs par défaut du système &quot; est activé , les paramètres utilisateurs des couleurs de fonds et de textes sont écrasés .</Text>
+<Ref>custom-color</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Icones de l'arborescence</Topic>
+<Text>Il y a un répertoire d'icones dans le repertoire de configuration utilisateur  (&quot;~/.treeline-1.x/icons&quot; sous Linux, &quot;Documents and Settings\&amp;lt;user&amp;gt;\Application Data\bellz\treeline-1.x\icons&quot; sur Windows) . Les fichiers images (PNG ou BMP ) placés dans ce répertoire deviennent disponibles  en tant qu'icones d'arborescence .</Text>
+<Ref>custom-icons</Ref>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Plugins</Name>
+<Ref>plugins</Ref>
+<TEXT_HEAD item="y">
+<Topic>Description</Topic>
+<Text>TreeLine possède une interface permettant d'ajouter des modules plugins. Cela permet d'ajouter des extensions à TreeLine qui implémentent des fonctionnalités utilisées par quelques utilisateurs sans encombrer le code principal de TreeLine. Les plugins peuvent ajouter des menus, accéder aux données TreeLine et lire et écrire les fichiers TreeLine.&lt;br /&gt;&lt;br /&gt;
+
+Les plugins disponibles sont affichés sur la page &quot;Downloads&quot; du site web de TreeLine.</Text>
+<Ref>plugins-intro</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Installation</Topic>
+<Text>Les plugins sont installés en copiant leurs fichiers Python (*.py) dans le dossier plugins (&quot;&amp;lt;préfixe&amp;gt;/lib/treeline/plugins/&quot; sous Linux ou &quot;TreeLine\lib\plugins\&quot; sous Windows). La liste des plugins chargés est obtenue avec la commande &quot;Aide-&amp;gt;A propos Plugins&quot;.&lt;br /&gt;&lt;br /&gt;
+
+Il existe aussi une configuration de fichier, &quot;DossierUtilisateurPlugins&quot;, qui permet de spécifier un autre emplacement pour les plugins. Cela permet d'installer des plugins sans avoir les droits d'accès root/administrateur.  Cette configuration peut seulement être modifiée en éditant le fichier de configuration (~/.treeline sur Linux, treeline.ini sur Windows).</Text>
+<Ref>plugins-install</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Interface</Topic>
+<Text>Les informations nécessaires pour écrire de nouveaux plugins peuvent être trouvées dans le fichier &quot;plugininterface.py&quot; dans le code source de TreeLine.</Text>
+<Ref>plugins-intrf</Ref>
+</TEXT_HEAD>
+</HEADING3>
+<HEADING3 item="y">
+<Name>Problèmes courants</Name>
+<Ref>errors</Ref>
+<TEXT_HEAD item="y">
+<Topic>Paneaux fermés</Topic>
+<Text>Si un volet n'est pas visible alors qu'il devrait contenir des données , il a probablement été réduit à une taille de zéro . Cela s'applique pour le volet de gauche et le volet bas de droite . Pour corriger cela, chercher une fine bordure aux frontières des panneaux qui peut être tiré pour ramener le volet dans sa position normal.</Text>
+<Ref>errors-panes</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Erreur XML</Topic>
+<Text>Un message d'erreur, &quot;Erreur en chargeant le Décodeur XML&quot;, signifie que TreeLine n'a pas pu trouver la librairie XML. Sous Linux, Python utilise une librairie externe pour décoder le XML. En installant soit la librairie expat ou la package PyXML on doit résoudre ce problème. Sous Windows, Python inclut le décodeur XML, de sorte que ce message ne devrait pas apparaître à moins que le fichier soit inexistant ou corrompu.</Text>
+<Ref>errors-xml</Ref>
+</TEXT_HEAD>
+<TEXT_HEAD item="y">
+<Topic>Impression</Topic>
+<Text>Quelques problèmes d'impression, spécialement les problèmes liés aux marges et à la césure des mots, peuvent être éliminés en choisissant une police mieux adaptée à l'imprimante utilisée.</Text>
+<Ref>errors-print</Ref>
+</TEXT_HEAD>
+</HEADING3>
+</HEADING2>
+<HEADING2 item="y">
+<Name>Historique des Révisions</Name>
+<Ref>revs</Ref>
+<TEXT_PARA item="y">
+<Topic>Historique des révisions</Topic>
+<Text>Voir la version anglaise de Treeline pour avoir accès à l'historique des révisions complète.</Text>
+</TEXT_PARA>
+</HEADING2>
+<HEADING2 item="y">
+<Name>Questions , commentaires , critique ?</Name>
+<Ref>contact</Ref>
+<TEXT_PARA item="y">
+<Topic>Liste de diffusions</Topic>
+<Text>Il y a une liste de diffusions pour tous les utilisateurs , discutants de toutes les facettes de Treeline. C'est aussi l'endroit idéal pour les discussions autours du developpement du logiciel (depuis la feuille de route en passant par les suggestions jusqu'aux béta tests )
+
+Pour vous inscrire , allez sur &lt;a href=&quot;https://lists.berlios.de/mailman/listinfo/treeline-users&quot;&gt; lists.berlios.de/mailman/listinfo/treeline-users&lt;/a&gt; . J'espere que cette liste de diffusion  restera dans de faibles volumes</Text>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<Topic>Email</Topic>
+<Text>Si vous ne souhaiter pas vous inscrire à la liste de diffusion , Je peux être contacté par email à : doug101 AROBASE bellz POINT org</Text>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<Topic>Mises à jours</Topic>
+<Text>Tous les retours d'experiences sont les bienvenues , incluant les reports de bugs de toutes sortes . Gardez un oeil périodiquement sur le site &lt;a href=&quot;http://treeline.bellz.org&quot;&gt;treeline.bellz.org&lt;/a&gt; pour toutes nouvelles mises à jours .</Text>
+</TEXT_PARA>
+</HEADING2>
+<TEXT_CNTR_TODO item="n"
+line0="{*Name_en*}"
+line1="&lt;center&gt;{*Name_en*}&lt;/center&gt;"
+generic="TEXT_CNTR"
+icon="bullet_1">
+<Name type="Text"></Name>
+<Ref type="Text" ref="y"></Ref>
+</TEXT_CNTR_TODO>
+<CONTENTS_LINK_INDENT_TODO item="n"
+line0="{*Name_en*}"
+line1="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;{*Link*}&lt;br /&gt;"
+generic="CONTENTS_LINK_INDENT"
+icon="bullet_1">
+<Name type="Text"></Name>
+<Link type="InternalLink" html="y" linkalt="Name_en"></Link>
+<Ref type="Text" ref="y"></Ref>
+</CONTENTS_LINK_INDENT_TODO>
+<TEXT_BULLETS_TODO item="n"
+line0="{*Topic_en*}"
+line1="&lt;li&gt;{*Text_en*}&lt;/li&gt;"
+generic="TEXT_BULLETS"
+sibprefix="&lt;ul&gt;"
+sibsuffix="&lt;/ul&gt;"
+icon="bullet_1">
+<Topic type="Text"></Topic>
+<Text type="Text" html="y" lines="7"></Text>
+<Ref type="Text" ref="y"></Ref>
+</TEXT_BULLETS_TODO>
+<HEADING4_TODO item="n"
+line0="{*Name_en*}"
+line1="&lt;h4&gt;{*Name_en*}&lt;/h4&gt;"
+childtype="TEXT_PARA"
+generic="HEADING4"
+icon="bullet_1">
+<Name type="Text"></Name>
+<Ref type="Text" ref="y"></Ref>
+</HEADING4_TODO>
+<TEXT_PARA_TODO item="n"
+line0="{*Topic_en*}"
+line1="&lt;p&gt;{*Text_en*}&lt;/p&gt;"
+generic="TEXT_PARA"
+icon="bullet_1">
+<Topic type="Text"></Topic>
+<Text type="Text" html="y" lines="12"></Text>
+<Ref type="Text" ref="y"></Ref>
+</TEXT_PARA_TODO>
+<TEXT_HEAD_TODO item="n"
+line0="{*Topic_en*}"
+line1="&lt;h4&gt;{*Topic_en*}&lt;/h4&gt;"
+line2="&lt;p&gt;{*Text_en*}&lt;/p&gt;"
+generic="TEXT_HEAD"
+icon="bullet_1">
+<Topic type="Text"></Topic>
+<Text type="Text" html="y" lines="12"></Text>
+<Ref type="Text" ref="y"></Ref>
+</TEXT_HEAD_TODO>
+<FIGURE_TODO item="n"
+line0="{*Topic_en*}"
+line1="&lt;p&gt;{*Picture_en*}&lt;/p&gt;"
+line2="&lt;p&gt;&lt;b&gt;{*Caption_en*}&lt;/b&gt;&lt;/p&gt;"
+generic="FIGURE"
+icon="bullet_1">
+<Topic type="Text"></Topic>
+<Caption type="Text" html="y" lines="2"></Caption>
+<Picture type="Picture" html="y"></Picture>
+<Ref type="Text" ref="y"></Ref>
+</FIGURE_TODO>
+<HEADING3_TODO item="n"
+line0="{*Name_en*}"
+line1="&lt;hr /&gt;&lt;h3&gt;{*Name_en*}&lt;/h3&gt;"
+childtype="HEADING4"
+generic="HEADING3"
+icon="bullet_1">
+<Name type="Text"></Name>
+<Ref type="Text" ref="y"></Ref>
+</HEADING3_TODO>
+<HEADING_CNTR_TODO item="n"
+line0="{*Name_en*}"
+line1="&lt;center&gt;&lt;h2&gt;{*Name_en*}&lt;/h2&gt;&lt;/center&gt;"
+childtype="TEXT_PARA"
+generic="HEADING_CNTR"
+icon="bullet_1">
+<Name type="Text"></Name>
+<Ref type="Text" ref="y"></Ref>
+</HEADING_CNTR_TODO>
+<HEADING1_TODO item="n"
+line0="{*Name_en*}"
+line1="&lt;center&gt;&lt;h1&gt;{*Name_en*}&lt;/h1&gt;&lt;/center&gt;"
+childtype="HEADING2"
+generic="HEADING1"
+icon="bullet_1">
+<Name type="Text"></Name>
+<Ref type="Text" ref="y"></Ref>
+</HEADING1_TODO>
+<CONTENTS_LINK_TODO item="n"
+line0="{*Name_en*}"
+line1="&lt;br /&gt;{*Link*}&lt;br /&gt;"
+generic="CONTENTS_LINK"
+icon="bullet_1">
+<Name type="Text"></Name>
+<Link type="InternalLink" html="y" linkalt="Name_en"></Link>
+<Ref type="Text" ref="y"></Ref>
+</CONTENTS_LINK_TODO>
+<HEADING2_TODO item="n"
+line0="{*Name_en*}"
+line1="&lt;hr /&gt;&lt;h2&gt;{*Name_en*}&lt;/h2&gt;"
+childtype="HEADING3"
+generic="HEADING2"
+icon="bullet_1">
+<Name type="Text"></Name>
+<Ref type="Text" ref="y"></Ref>
+</HEADING2_TODO>
+</HEADING1>

@@ -838,7 +838,7 @@ class ExportDlg(QtGui.QDialog):
     """Dialog for selecting type of file export"""
     htmlType, dirTableType, dirPageType, xsltType, trlType, textType, \
               tableType, xbelType, mozType, xmlType, odfType = range(11)
-    exportType = htmlType
+    exportType = dirPageType
     entireTree, selectBranch, selectNode = range(3)
     exportWhat = entireTree
     includeRoot = False

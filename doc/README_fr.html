@@ -1,0 +1,2190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>README_fr</title>
+  <style type="text/css">
+<!--
+  div {margin-left: 20px}
+  td {padding: 10px}
+  tr {vertical-align: top}
+  -->
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        <center>
+          <h1>Fichier LisezMoi pour TreeLine</h1>
+        </center>
+
+        <center>
+          <h2>Un logiciel libre de gestion d'information</h2>
+        </center>
+
+        <center>
+          par Doug Bell
+        </center>
+
+        <center>
+          Version 1.4.1
+        </center>
+
+        <center>
+          11 novembre 2011
+        </center>
+        <hr>
+
+        <h2>Contenus</h2>
+
+        <div>
+          <br>
+          <a href="#background">Portée</a><br>
+          <br>
+          <a href="#features">Fonctionalités</a><br>
+          <br>
+          <a href="#legal">Avis juridique</a><br>
+          <br>
+          <a href="#sysreq">Configuration minimales système</a><br>
+
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#linux-sys">Linux</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#win-sys">Windows</a><br>
+          </div><br>
+          <a href="#install">Installation</a><br>
+
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#linux-inst">Linux</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#win-inst">Windows</a><br>
+          </div><br>
+          <a href="#using">Utilisation de Treeline</a><br>
+          <br>
+          <a href="#revs">Historique des Révisions</a><br>
+          <br>
+          <a href="#contact">Questions, Commentaires, Critiques?</a><br>
+        </div><a id="background" name="background">
+        <hr>
+
+        <h2>Portée</h2>
+
+        <div>
+          <p>Avez-vous tout un tas de notes éparpillées un peu partout
+          contenant des informations utiles? Ou de nombreuses listes de
+          livres, films, liens, sites web, adresses personnelles ou encore
+          listes de choses à faire? Les trouvez-vous quand vous en avez
+          besoin? Et bien, ce n'est pas souvent mon cas. Alors voilà ma
+          réponse.</p>
+
+          <p>D'aucuns appeleraient TreeLine un "Outliner", d'autres
+          l'appelent un outil PIM (outil de gestion de données personnelles).
+          En fait, TreeLine gère tout simplement pratiquement n'importe
+          quelle sorte d'information. Une structure hiérarchique en forme
+          d'arbre permet d'organiser simplement les choses. Et chaque noeud
+          dans l'arbre peut contenir plusieurs éléments, formant ainsi une
+          mini base de donnée . Le format de représentation de chaque noeud
+          peut être défini, et cette représentation peut être affichée sur
+          l'écran, imprimée ou exportée dans un fichier HTML.</p>
+
+          <p>Comme je ne suis pas dans le développement logiciels, je livre
+          ce logiciel libre à l'utilisation, la distribution et la
+          modification, tant qu'il n'est pas incorporé dans un programme
+          propriétaire quel qu'il soit - voir le paragraphe <a href=
+          "#contact">Questions, Commentaires, Critiques?</a> ci-dessous pour
+          me contacter.</p>
+        </div><a id="features" name="features">
+        <hr>
+
+        <h2>Fonctionalités</h2>
+
+        <div>
+          <h4>Généralité</h4>
+
+          <div>
+            <ul>
+              <li>Gère pratiquement n'importe quel type d'information, y
+              compris le texte ordinaire, HTML, les nombres, dates, heures,
+              booléens, URLs, etc.</li>
+
+              <li>La structure en arborescence permet d'organiser les
+              données.</li>
+
+              <li>Chaque noeud peut comporter plusieurs éléments qui forment
+              une mini base de données</li>
+
+              <li>Plusieurs types de noeud, avec différents groupes de champs
+              peuvent être inclues dans le fichier.</li>
+
+              <li>Un format de noeud , comportant ses champs, ses
+              représentations et l'icône du volet d'exploration, peut être
+              défini pour chaque type de noeud.</li>
+            </ul>
+          </div>
+
+          <h4>Visualisations</h4>
+
+          <div>
+            <ul>
+              <li>Par défaut , La vue de gauche montre l'arborescence général
+              . Celle ci peut aussi montrer la liste des fils descendants du
+              noeud courrant</li>
+
+              <li>le vue plate permet aussi de montrer le résultat
+              d'opération de filtrage</li>
+
+              <li>La vue de droite peut afficher l'un des trois volets -
+              volet de "Données", volet "Editeur de Données" pour modifier
+              les données du noeud, et volet "Liste des Titres" pour modifier
+              les titres des noeuds.</li>
+
+              <li>la vue de droite se sépare en deux volets , l'une montrant
+              les données du parents , l'autre celle des enfants</li>
+
+              <li>Si de multiples noeuds sont sélectionnés , le volet de
+              droite montre toutes leurs données respectives</li>
+
+              <li>La vue de la sortie des données peut être paramétrée afin
+              de montrer toutes les sorties de données indentées de tous les
+              noeuds descendants</li>
+            </ul>
+          </div>
+
+          <h4>Navigation</h4>
+
+          <div>
+            <ul>
+              <li>Il y a une commande de recherche incrémentale pour trouver
+              le titre du noeud correspondant</li>
+
+              <li>Il y a une commande qui permet de chercher à travers toutes
+              les données de tous les noeuds</li>
+
+              <li>les flèches de sélections précédente et suivante permettent
+              de se déplacer rapidement entre les différentes parties d'une
+              arborescence</li>
+            </ul>
+          </div>
+
+          <h4>Formatage</h4>
+
+          <div>
+            <ul>
+              <li>La boîte de dialogue pour la configuration des paramètres
+              des types de données possède plusieurs onglets qui permettent
+              de facilement configurer les différents types , champs , et
+              paramètres de sorties</li>
+
+              <li>Les informations de formatage peuvent être copiées à partir
+              d'un autre fichier TreeLine.</li>
+            </ul>
+          </div>
+
+          <h4>Gestion de fichiers</h4>
+
+          <div>
+            <ul>
+              <li>Les commandes annuler et rétablir sont disponibles pour
+              toutes les opérations de modification.</li>
+
+              <li>Les fichiers TreeLine sont en XML par défaut, mais il
+              existe des options pour compresser ou crypter automatiquement
+              ceux-ci.</li>
+
+              <li>les modèles de documents sont des gabaris préformatés
+              couvrant quelques besoins de base.</li>
+
+              <li>Les données formatées peuvent être imprimées avec des
+              lignes père/fils et des en-têtes et pieds de page.</li>
+            </ul>
+          </div>
+
+          <h4>Importation et exportation de fichiers</h4>
+
+          <div>
+            <ul>
+              <li>Les données peuvent être exportées en HTML.</li>
+
+              <li>Un fichier XSLT peut être exporté pour être utilisé avec le
+              fichier XML TreeLine.</li>
+
+              <li>Les fichiers tableau délimités par des tabulations et le
+              fichiers texte indentés par des tabulations peuvent être
+              importés et exportés. Les fichiers texte ordinaire et les
+              fichiers Treepad peuvent être importés.</li>
+
+              <li>Les fichiers de favoris Mozilla et XBEL peuvent être
+              importés et exportés.</li>
+
+              <li>Les fichiers génériques XML peuvent être importés et
+              exportés, permettant ainsi à Treeline de fonctionner comme un
+              éditeur XML sommaire.</li>
+
+              <li>Les fichiers au format libres ODF (OpenOffice Document
+              Format) peuvent être importés et exportés en tant qu'esquisses
+              (outlines)</li>
+
+              <li>Les conversions de fichiers peuvent être effectuées en
+              traitement par lots à partir d'une ligne de commande.</li>
+            </ul>
+          </div>
+
+          <h4>Lier les objets</h4>
+
+          <div>
+            <ul>
+              <li>Cliquer sur un élément URL dans le volet de données ouvre
+              ce lien dans un navigateur Internet externe.</li>
+
+              <li>Les liens internes sélectionnent un autre noeud suivant une
+              référence ou un mot clé.</li>
+
+              <li>Un lien exécutable permet d'exécuter un programme externe
+              ou d'ouvrir un fichier quand on clique dessus.</li>
+            </ul>
+          </div>
+
+          <h4>Manipulations de données</h4>
+
+          <div>
+            <ul>
+              <li>Il existe plusieurs options de tri.</li>
+
+              <li>Les noeuds peuvent être filtrés.</li>
+
+              <li>L'icône d'un noeud et son format de représentation peuvent
+              être mis à jour conditionnellement suivant la valeur des ses
+              données.</li>
+
+              <li>Les données texte peuvent être vérifiées orthographiquement
+              (requiert un programme externe - voir le paragraphe <a href=
+              "#sysreq">Spécifications minimales système</a>).</li>
+
+              <li>Les données peuvent être automatiquement réorganisées en
+              utilisant soit des références de parent ou des classements à
+              partir deschamps de données.</li>
+
+              <li>Il existe une fonctionalité de numérotation de type
+              outline.</li>
+            </ul>
+          </div>
+
+          <h4>Personnalisations</h4>
+
+          <div>
+            <ul>
+              <li>Il existe de nombreuses possibilités pour personnnaliser
+              TreeLine, autant des options générales que des attributs de
+              fichiers</li>
+
+              <li>Il existe un éditeur pour personnalisé les raccourcis
+              claviers et la barre d'outils</li>
+
+              <li>L'interface utilisateur et la documentation sont
+              disponibles en Anglais, Français et Allemand</li>
+            </ul>
+          </div>
+        </div><a id="legal" name="legal">
+        <hr>
+
+        <h2>Avis juridique</h2>
+
+        <div>
+          <p>TreeLine est un logiciel libre; vous pouvez le redistribuer
+          et/ou le modifier en respectant les termes de la licence GNU
+          General Public License telle qu'elle est publiée par la Free
+          Software Foundation; soit la Version 2 de cette License, ou (à
+          votre choix) n'importe quelle version ultérieure.</p>
+
+          <p>Ce programme est distribué dans l'espoir qu'il puisse être
+          utile, mais SANS AUCUNE GARANTIE. Voir le fichier LICENSE fourni
+          avec ce programme pour plus d'information.</p>
+        </div><a id="sysreq" name="sysreq">
+        <hr>
+
+        <h2>Spécifications minimales système</h2>
+
+        <div>
+          <a id="linux-sys" name="linux-sys">
+
+          <h4>Linux</h4>
+
+          <div>
+            <p>TreeLine requiert les programmes et librairies suivants:</p>
+
+            <div>
+              <ul>
+                <li>Qt (Version 4.4 ou ultérieur )</li>
+
+                <li>Python (Version 2.4, 2.5 ou 2.6 )</li>
+
+                <li>PyQt (Version 4.4.0 ou ultérieur - voir <a href=
+                "http://www.riverbankcomputing.co.uk">www.riverbankcomputing.co.uk</a>
+                pour plus d'information)</li>
+
+                <li>Un analizeur XML est requis, tel que la librairie expat
+                ou le package PyXML</li>
+
+                <li>Si l'on désire utiliser la vérification orthographique,
+                le programme aspell (préférable) ou le programme ispell est
+                requis (ils sont inclus dans la plupart des
+                distributions)</li>
+              </ul>
+            </div>
+          </div><a id="win-sys" name="win-sys">
+
+          <h4>Windows</h4>
+
+          <div>
+            <p>En utilisant les fichiers fournis avec le programme
+            d'installation, TreeLine doit fonctionner sur tout ordinateur
+            utilisant le système d'exploitation Win 95, 98, NT, 2000, XP ou
+            Vista.</p>
+
+            <p>Si l'on désire utiliser la vérification orthographique, le
+            programme aspell (préférable) ou le programme ispell doit être
+            installé. Voir <a href=
+            "http://aspell.net/win32/">aspell.net/win32/</a> ou <a href=
+            "http://www.luziusschneider.com/Speller/English/">www.luziusschneider.com/Speller/English/</a>
+            pour télécharger l'un de ces programmes et ses dictionaires pour
+            n'importe quel language.</p>
+          </div>
+        </div><a id="install" name="install">
+        <hr>
+
+        <h2>Installation</h2>
+
+        <div>
+          <a id="linux-inst" name="linux-inst">
+
+          <h4>Linux</h4>
+
+          <div>
+            <p>Extraire les fichiers sources de l'archive .tar TreeLine, et
+            ensuite se déplacer dans le dossier TreeLine en utilisant un
+            terminal. Pour effectuer une installation standard, exécuter
+            simplement la commande suivante en tant qu'utilisateur root:
+            "python install.py"</p>
+
+            <p>Pour voir toutes les options d'installation, utiliser: "python
+            install.py -h"<br>
+            <br>
+            Pour installer TreeLine avec un préfixe différent (le défaut est
+            /usr/local), utiliser: "python install.py -p /prefix/path"</p>
+
+            <p>Pour installer les traductions pour TreeLine, télécharger
+            l'archive .tar "treeline-i18n-..." ayant le même numéro de
+            version que celui de TreeLine installé (ignorer la lettre suffixe
+            du numéro de version de l'archive tar). Pour installer le
+            programme et les fichiers de traduction simultanément, extraire
+            les fichiers de traduction à partir du même dossier où a été
+            extrait le fichier TreeLine d'installation et exécuter la
+            commande d'installation comme décrit ci-dessus. Si TreeLine est
+            déja installé, extraire les fichiers de traduction de n'importe
+            quel dossier et exécuter la commande d'installation comme décrit
+            ci-dessus.</p>
+          </div><a id="win-inst" name="win-inst">
+
+          <h4>Windows</h4>
+
+          <div>
+            <p>Exécuter tout simplement le fichier d'installation TreeLine
+            (treeline-x.x.x-install.exe). Cela va installer le programme et
+            ses librairie, et optionnellement créer les associations de
+            fichiers et les raccourcis.</p>
+
+            <p>Pour utiliser TreeLine's avec un vérificateur orthographique,
+            un programme externe (aspell ou ispell) doit être installé (voir
+            le paragraphe <a href="#sysreq">Spécifications minimales
+            système</a>).</p>
+
+            <p>Pour installer les traductions pour TreeLine, télécharger le
+            fichier exe "treeline-i18n-..." ayant le même numéro de version
+            que celui de TreeLine installé (ignorer la lettre suffixe du
+            numéro de version du fichier de traductions). Pour installer les
+            fichier de traduction exécuter tout simplement ce fichier
+            exe.</p>
+
+            <p>Si vous souhaitez modifier le code source ou écrire vos
+            propres programmes PyQt pour Windows, n'utilisez pas la procédure
+            décrite précédemment. A la place, vous devez installer Python
+            (voir <a href="http://www.python.org">www.python.org</a>), Qt
+            (voir <a href="http://www.trolltech.com">www.trolltech.com</a>),
+            et PyQt (voir <a href=
+            "http://www.riverbankcomputing.co.uk">www.riverbankcomputing.co.uk</a>).
+            Ensuite extrayez les fichiers code source de la version Linux
+            (fichier tar treeline) dans un dossier de votre choix et exécuter
+            le fichier treeline.py</p>
+          </div>
+        </div><a id="using" name="using">
+        <hr>
+
+        <h2>Utilisation de TreeLine</h2>
+
+        <div>
+          <hr>
+
+          <h3>Contenus</h3>
+
+          <div>
+            <br>
+            <a href="#start">Présentation</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#start-intro">Introduction</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#start-templates">Modèles</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#start-example">Fichiers
+              d'examples</a><br>
+            </div><br>
+            <a href="#basics">Introduction</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#basics-left">Volet de
+              gauche</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#basics-right">Volet de
+              droite</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#basics-cmds">Commandes</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#basics-wins">basics-wins</a><br>
+            </div><br>
+            <a href="#nav">Navigation dans le volet Exloration</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#nav-keys">Raccourcis
+              clavier</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#nav-select">Sélection</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#nav-search">Recherche</a><br>
+            </div><br>
+            <a href="#edit">Edition de l'Arbre</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#edit-menu">Menu
+              Editer</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#edit-shortcuts">Raccourcis</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#edit-view">Vues de
+              droite</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#edit-spell">Vérification
+              Orthographique</a><br>
+            </div><br>
+            <a href="#format">Formats et Types de Noeud</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-set">Configurer les
+              Noeuds avec un Type</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-type">Type de
+              liste</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-config">Type de
+              configuration</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-fields">Champ de
+              liste</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-fieldconf">Champ de
+              configuration</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-output">Sortie</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-title">Format du
+              Titre</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-skip">Lignes
+              Ignorées</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-html">Balises
+              HTML</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-example">Exemples de
+              Formats</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-refs">Autres
+              Eléments</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-sibling-text">Les
+              préfixes et suffixes frères</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-link-ref">Champ pour
+              les liens réferentielles</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-derived">Types
+              génériques et dérivés</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-condition">Types
+              Conditionnels</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#format-copy">Copie de
+              Formats</a><br>
+            </div><br>
+            <a href="#fields">Types d'Eléments</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-options">Options de
+              champ</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-text">Type
+              Texte</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-choice">Types Choix,
+              Combinaison et Booléen</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-number">Type
+              Nombre</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-date">Type Date et
+              Heure</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-link">Types
+              Liens</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-unique">Type
+              d'étiquette (ID) unique</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#field-advanced">Options
+              Avancées</a><br>
+            </div><br>
+            <a href="#data">Manipulation des Données de
+            l'arborescence</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#data-category">Commandes de
+              Classement</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#data-ref">Commandes basées
+              sur les Références</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#data-sort">Tri</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#data-filter">Filtres</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#data-number">Numérotation</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#data-change">Changer les
+              Sélections</a><br>
+            </div><br>
+            <a href="#print">Impression</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#print-options">Options
+              d'Impression</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#print-setup">Paramètre de la
+              page</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#print-font">Police
+              d'impression</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#print-header">En-tête et Pied
+              de page</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#print-preview">Aperçu avant
+              Impression</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#print-problems">Problèmes à
+              l'Impression</a><br>
+            </div><br>
+            <a href="#file">Gestion de Fichier</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#file-comp">Compression de
+              Fichier</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#file-enc">Cryptage de
+              Fichier</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#file-auto-save">Sauvegarde
+              Automatique</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#file-states">Sauvegarde des
+              Etats de l'arborescence</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#file-cmdline">Ligne de
+              Commande</a><br>
+            </div><br>
+            <a href="#import">Importation de Fichier</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#import-general">Informations
+              générales</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#import-delim">Texte
+              Délimité</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#import-plain">Texte
+              Ordinaire</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#import-treepad">Fichiers
+              Treepad</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#import-bookmarks">Fichiers de
+              Favoris</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#import-xml">Fichiers
+              Génériques XML</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#import-odf">Document texte
+              ODF</a><br>
+            </div><br>
+            <a href="#export">Exportation de Fichier</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-general">Informations
+              générales</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-html">HTML</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-delim">Texte
+              Délimité</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-bookmarks">Fichiers de
+              Favoris</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-xml">Fichiers
+              Génériques XML</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-xslt">XSLT</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#export-odf">Document texte
+              ODF</a><br>
+            </div><br>
+            <a href="#custom">Personnalisations</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#custom-options">Options</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#custom-fonts">Polices de
+              caractères</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#custom-keys">raccourcis
+              clavier</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#custom-tools">Barre
+              d'outils</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#custom-color">Couleurs</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#custom-icons">Icones
+              d'arborescence</a><br>
+            </div><br>
+            <a href="#plugins">Plugins</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#plugins-intro">Description</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#plugins-install">Installation</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#plugins-intrf">Interface</a><br>
+            </div><br>
+            <a href="#errors">Problèmes courants</a><br>
+
+            <div>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#errors-panes">Panneaux
+              fermés</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="#errors-xml">Erreur
+              XML</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href=
+              "#errors-print">Impression</a><br>
+            </div>
+          </div><a id="start" name="start">
+          <hr>
+
+          <h3>Présentation</h3>
+
+          <div>
+            <a id="start-intro" name="start-intro">
+
+            <h4>Introduction</h4>
+
+            <p>TreeLine est un programme plus compliqué qu'il n'y paraît au
+            premier coup d'oeil. La lecture exhaustive de cette documentation
+            pour apprendre à utiliser TreeLine de manière efficace est très
+            recommandée.<br>
+            <br>
+            Le chapitre <a href="#basics">Introduction</a> décrit les vues et
+            les sélections. Pour apprendre à se déplacer et à modifier
+            l'arbre, se référer aux chapitres <a href="#nav">Navigation dans
+            le volet Exloration</a> et <a href="#edit">Edition de
+            l'Arbre</a>. Ensuite, on peut poursuivre l'apprentissage de
+            TreeLine au-delà d'une simple ligne de texte par noeud. Pour
+            apprendre comment configurer les données pour chaque noeud , se
+            référer aux chapitres <a href="#format">Formats et Types de
+            noeud</a> et <a href="#fields">Types de champs</a> .</p><a id=
+            "start-templates" name="start-templates">
+
+            <h4>Modèles</h4>
+
+            <p>Lorsque vous créer un nouveau fichier , la boîte de dialogue
+            vous donne le choix des noeuds entre une seule ligne de texte ou
+            un long texte .Le modèle "une seule ligne" ne comporte qu'un
+            noeud titre , tandis qu'un long texte comporte un titre et de
+            multiple champ de texte pour chaque noeud . Pour un long texte ,
+            vous pouvez aussi choisir entre un texte plein , qui garde les
+            sauts à la ligne, et le texte de type HTML , qui permet des
+            formatages plus complexe<br>
+            <br>
+            Il y a encore plusieurs options spécifiques , incluant des modèle
+            pour la gestion de contacts personnelles , une liste de livre et
+            une liste de tâches</p><a id="start-example" name=
+            "start-example">
+
+            <h4>Example de fichiers</h4>
+
+            <p>Divers exemples de fichiers peuvent être ouvert en utilisant
+            la commande "Fichier-&gt;Ouvrir Exemple" . Cela inclue (par ordre
+            de complexité croissante ) :</p>
+
+            <div>
+              <ul>
+                <li>Le fichier "sample_basic_contacts" est un format qui
+                permet d'enregistrer des informations de type carnet
+                d'adresses. Plusieurs champs sont utilisés pour plusieurs
+                types d'information.</li>
+
+                <li>Le fichier "sample_basic_booklist" est une liste de
+                livres, illustrant un example de configuration de noeuds
+                pouvant contenir des données. Plusieurs champs sont utilisés
+                pour créer les types de données auteur et livre.</li>
+
+                <li>Le fichier "sample_basic_longtext" contient un champ
+                texte long sous chaque noeud, comme avec le programme
+                Treepad. Il montre également la différence entre le type de
+                champ texte normal et le type de champ HTML.</li>
+
+                <li>Le fichier "sample_color_items" utilise des balises HTML
+                dans les formats de types de données pour mettre de la
+                couleur dans les données. Voir aussi le paragraphe <a href=
+                "#format-html">Balises HTML</a>.</li>
+
+                <li>Le fichier "sample_char_format" est un example
+                d'utilisation de balises HTML dans les données pour le
+                contrôle des polices de caractère. Voir aussi le paragraphe
+                <a href="#field-options">Options d'élément</a>.</li>
+
+                <li>Le fichier "sample_bookmarks" est un example
+                d'utilisation de liens HTMLs. C'est le type de configuration
+                qui est utilisé quand on importe ou exporte des fichiers de
+                favoris.</li>
+
+                <li>Le fichier "sample_intern_links" montre comment créer des
+                liens qui pointent ailleurs dans le fichier TreeLine. Voir
+                aussi le paragraphe <a href="#field-link">Types
+                Liens</a>.</li>
+
+                <li>Le fichier "sample_table_booklist" montre comment
+                utiliser des préfixes et suffixes frères pour créer des
+                tables. Voir aussi le paragraphe <a href=
+                "#format-advanced">Configuration Avancée</a>.</li>
+
+                <li>Le fichier "sample_other_fields" est un example de
+                références à des champs autres, incluant des références à des
+                nodes parents, fils ou de type fichier. Voir aussi le
+                paragraphe <a href="#format-refs">Références d'autres
+                champs</a>.</li>
+
+                <li>Le fichier "sample_conditional_todo" montre comment
+                utiliser les types conditionnels pour modifier la
+                représentation des données en fonction de leur contenu. Voir
+                aussi le paragraphe <a href="#format-derived">Types
+                Conditionnels</a>.</li>
+
+                <li>Le fichie LisezMoi (readme) lui-même montre beaucoup de
+                types de formats , incluants des en-têtes , des listes à
+                puces , des liens internes et des images.</li>
+              </ul>
+            </div>
+          </div><a id="basics" name="basics">
+          <hr>
+
+          <h3>Introduction</h3>
+
+          <div>
+            <a id="basics-left" name="basics-left">
+
+            <h4>Vue du panneau de gauche</h4>
+
+            <p>La vue par défaut du panneau de gauche est l'arborescence .
+            Les noeuds parents peuvent être ouvert et fermé pour afficher ou
+            cacher leurs noeuds descendants indentés<br>
+            <br>
+            L'autre onglet dans le volet de gauche est la vue applatie . Il
+            affiche tous les descendants du noeud sélectionné dans ll'onglet
+            " vue de l'arbre" en une liste applatie . Il montre aussi le
+            résultat des opérations de filtrages (voir la section <a href=
+            "#data-filter">Filtres</a> ).</p><a id="basics-right" name=
+            "basics-right">
+
+            <h4>Vues</h4>
+
+            <p>Le volet de droite possède des onglets et permet d'afficher un
+            des trois différents volets de données. Le volet "Sortie de
+            données" affiche une représentation formatée des données pour
+            chaque noeud et est en lecture seule (voir <a href=
+            "#fig-1">Figure 1</a>). Le volet "Edition de données" affiche une
+            boîte d'édition pour chacun des éléments du noeud (voir <a href=
+            "#fig-2">Figure 2</a>) Le volet "Liste des titres" affiche la
+            liste des titres qui peuvent être modifiés via l'edition de
+            données<br>
+            <br>
+            Par défaut, le volet de droite affiche le noeud sélectionné dans
+            la partie supérieure et les fils du noeud dans la partie
+            inférieure. En sélectionnant "Affichage-&gt;Affiche Node
+            Sélectionné" on affiche seulement le noeud sélectionné. Quand il
+            y a de nombreux fils, la vue combinée noeud-fils peut ralentir le
+            traitement, spécialement dans le volet "Editeur de Données". Dans
+            ce cas, il est plus efficace d'afficher seulement le noeud
+            sélectionné. La commande "Affichage-&gt;Montrer le panneau des
+            enfants" va basculer l'affichange vers les noeuds enfants. . Si
+            le noeud sélectionné ne comporte pas d'enfants , l'affichage sera
+            un panneau seul comportant seulement les informations du noeud
+            seléctionné .<br>
+            <br>
+            Lorsque de multiples noeuds sont sélectionnés dans l'arborescence
+            , la vue de doite ne vas pas affichée simultanéments toutes les
+            informations . A la place elle va montrer des informations noeud
+            par noeud .<br>
+            <br>
+            Lorsque le boutton "Affichage-&gt;Montrer les sorties pour les
+            descendants" est pressé , l'onglet de "Sortie de donnés" va
+            montré une liste indenté d'informations à propos de chaque
+            descendants d'un seul noeud sélectionné .<br>
+            <br>
+            L'état initial de la vue peut être controlé dans
+            "Outils-&gt;Options Générales".<br>
+            <br>
+            Par défaut, le nombres de noeuds affichés simultanément dans
+            l'édition de données est limité . Il a néanmoins des flèches de
+            navigations qui permets d'affiché les noeuds précédents et
+            suivants . Cela permet d'avoir une manière confortable de
+            navigation , sans ralentir le programme , en essayant d'afficher
+            trop de champs . Néanmoins le boutton Tous , permet d'afficher
+            tous les noeuds et champs descendants en une seule page si
+            nécessaire . Le nombre de page à affiché peut être paramétré dans
+            "Outils-&gt;Options Générales".</p>
+
+            <div>
+              <a id="fig-1" name="fig-1">
+
+              <p><img src="doc_main.png"></p><a id="fig-2" name="fig-2">
+
+              <p><img src="doc_edit.png"></p>
+            </div><a id="basics-cmds" name="basics-cmds">
+
+            <h4>Commandes</h4>
+
+            <p>La plupart des commandes du menu et des barres d'outils
+            s'appliquent aux éléments sélectionnés dans la vue de gauche (en
+            arborescence ) . En général, elles exécutent une opération sur
+            les noeuds eux-mêmes ou sur les descendants de ces noeuds.
+            Plusieurs noeuds peuvent être sélectionnés en même temps en
+            appuyant sur "Ctrl" et "Touche-Majuscule" (Shift) tout en
+            cliquant avec la souris. Mais quelques commandes, telles que
+            "Fichier-&gt;Exporter" et "Fichier-&gt;Imprimer", concernent
+            seulement le node actif, qui est celui qui est entouré d'un
+            rectangle .<br>
+            <br>
+            Pour ajouter une nouvelle information au document TreeLine,
+            utiliser la commande "Editer-&gt;Ajouter Fils" pour créer un
+            nouveau noeud. Et une combinaison des commandes d'ajout et
+            d'insertion peut être utilisée pour les noeuds additionels. Par
+            ailleurs, les titres de nouveaux noeuds peuvent être tapés dans
+            le volet de droite "Liste des Titres".</p><a id="basics-wins"
+            name="basics-wins">
+          </div><a id="nav" name="nav">
+          <hr>
+
+          <h3>Navigation dans le volet Exloration</h3>
+
+          <div>
+            <a id="nav-keys" name="nav-keys">
+
+            <h4>Raccourcis Clavier</h4>
+
+            <p>Il existe plusieurs touches du clavier qui peuvent être
+            utilisées pour la navigation dans l'arbre. Les flêches vers le
+            haut et vers le bas déplacent la sélection dans cette direction.
+            Les flêches vers la gauche et vers la droite ouvrent et ferment
+            le node actif. En maintenant la touche CTRL appuyée avec les
+            flêches vers le haut et vers le bas on déplace la sélection entre
+            les frères, sans s'arrêter aux fils. La touche CTRL avec la
+            touche "U" déplace la sélection vers l'item parent. Les touches
+            "Accueil", "Fin", "Page Haut" et "Page Bas" peuvent être
+            utilisées pour se déplacer rapidement. En maintenant la touche
+            SHIFT appuyée avec la touche "Page Haut" et "Page Bas" on fait
+            défiler dans la vue de droite, les fils.<br>
+            <br>
+            Toutes ces touches, ainsi que les raccourcis associés aux menus,
+            peuvent être personnalisés via la commande "Outils-&gt;Paramètres
+            Raccourcis claviers" L'éditeur de raccourcis possède des onglets
+            pour les éléments du menu et ceux qui ne sont pas dans le menu .
+            Tapez simplement la nouvelle séquence dans le champ approprié<br>
+            <br>
+            Une autre façon de se déplacer est de taper la première lettre du
+            titre d'un noeud visible. Une lettre majuscule déplace vers le
+            haut, une lettre minuscule vers le bas. En appuyant à nouveau sur
+            la même lettre on se déplace vers l'occurence suivante.</p><a id=
+            "nav-select" name="nav-select">
+
+            <h4>Sélection</h4>
+
+            <p>De multiples noeuds peuvent sélectionnés en gardant enfoncé la
+            touche CTRL ou SHIFT lors du changement de noeud . Les noeuds
+            individuelle peuvent être ajouté our retiré de la selection tant
+            que la touche CTRL ou SHIFT est maintenu. La sélection de tous
+            les noeuds entre les anciens et les nouveaux noeuds actifs
+            peuvent se repositionnés tant que la touche SHIFT est maintenu.
+            Le noeud actif peut être changé en utilisant la souris ou en
+            utilisant n'importe quel méthode de navigation via le clavier
+            .<br>
+            <br>
+            La commande "Affichage-&gt; Sélection précédente" et "Affichage
+            &gt;Sélection suivante " peut être utilisé pour se positionné
+            plus rapidement à travers l'historique des sélections dans
+            l'arborescence<br>
+            <br>
+            Par défaut ,la séquence de sélection n'importe pas . Néanmoins ,
+            si dans les options générales la sélection multiples est changé
+            en "Ordre de Sélection" , les noeuds sélectionnés avec la touche
+            CTRL maintenu seront affichés dans l'ordre de selection
+            .</p><a id="nav-search" name="nav-search">
+
+            <h4>Recherche</h4>
+
+            <p>Il existe deux manières de rechercher des nodes. Ces méthodes
+            permettent de retrouver des nodes profondément enfouis dans la
+            structure de l'arbre. La première est la commande
+            "Outils-&gt;Chercher". Les mots clés peuvent être entrés dans la
+            boîte de dialogue. Un node est trouvé quand les mots clés
+            correspondent dans un des éléments du node. La méthodes suivante
+            est une méthode de recherche incrémentale. Taper "/" suivi de la
+            chaîne de caractères à chercher. La recherche va se dérouler
+            pendant que les caractères sont entrés. La recherche incrémentale
+            concerne seulement les titres de node. La recherche précédente
+            peut être réitérée avec la touche "F3" et en arrière avec les
+            touches "Touche Majuscule-F3".<br>
+            <br>
+            Par défaut, les nodes parents sont automatiquement ouverts puis
+            fermés quand ils sont trouvés avec les méthodes de recherche, ou
+            bien lorsque l'on tape la première lettre du node, et avec la
+            commande "frère suivant". Ce comportement peut être désactivé
+            dans "Outils-&gt;Options Générales".</p>
+          </div><a id="edit" name="edit">
+          <hr>
+
+          <h3>Edition de l'Arbre</h3>
+
+          <div>
+            <a id="edit-menu" name="edit-menu">
+
+            <h4>Menu Editer</h4>
+
+            <p>Les commandes dans le menu "Editer" (à part annuler et
+            rétablir) opèrent sur les nodes sélectionnés dans la vue de
+            gauche. Les commandes couper, copier et coller peuvent aussi être
+            considérées comme une exception à cette règle, puisqu'elles
+            opèrent sur la vue de droite quand l'objet sélectionné s'y
+            trouve. Et n'oubliez pas que, en général, les descendants des
+            nodes sélectionnés sont aussi affectés par ces commandes.<br>
+            <br>
+            Coller ajoute les nodes copiés à la fin de la liste des fils du
+            node actif. Si plus d'un noeud est sélectionné , les copies
+            seront ajoutées en dessous de chaque noeud sélectionné. Par
+            ailleurs, la commande "Editer-&gt;Copier Texte du Node" renomme
+            en fait la sélection en se basant sur le premier node qui se
+            trouve dans le presse-papiers.</p><a id="edit-shortcuts" name=
+            "edit-shortcuts">
+
+            <h4>Raccourcis</h4>
+
+            <p>Il existe plusieurs raccourcis utilisables pour éditer
+            l'arbre. Glisser-déposer déplace ou copie des nodes qui
+            deviennent des fils du node de destination. Cliquer sur un node
+            permet de le renommer. Appuyer sur la touche entrée insère un
+            nouveau node, et appuyer sur la touche "Suppr" supprime les nodes
+            sélectionnés. Si on le souhaite, ces raccourcis peuvent être
+            désactivés dans "Outils-&gt;Options Générales".</p><a id=
+            "edit-view" name="edit-view">
+
+            <h4>Vues de droite</h4>
+
+            <p>Dans la vue de droite, le volet "Editeur de Données" offre le
+            moyen le plus direct pour modifier les données relatives à un
+            node. Si l'élément en cours de modification est utilisé dans le
+            format du titre, le titre du node dans l'arbre est mis à jour.
+            L'éditeur d'élément peut défiler, permettant ainsi l'édition de
+            plusieurs lignes de texte.<br>
+            <br>
+            Le menu contextuel dans le volet "Editeur de Données" permet
+            d'ajouter des balises de police HTML autour d'une partie de texte
+            sélectionné. Ces balises comprennent le gras, l'italique, le
+            sous-ligné, la taille et la couleur. Notez que l'élément en
+            question doit être configuré pour afficher de l'HTML (voir le
+            paragraphe <a href="#fields">Types d'Eléménts</a> ci-dessous)
+            pour que cela soit effectif.<br>
+            <br>
+            Un éditeur externe peut aussi être invoqué à partir du menu
+            contextuel du volet "Editeur de Données". Après que cet éditeur
+            ait sauvegardé les modifications apportées et se soit fermé, le
+            nouveau texte est affiché dans la boîte d'édition TreeLine. La
+            variable d'environnement EDITOR peut être utilisée pour définir
+            comment démarrer l'éditeur externe, ou bien, si cette variable
+            n'existe pas, TreeLine demande quel exécutable configurer comme
+            éditeur externe par défaut.<br>
+            <br>
+            Se trouvant aussi dans la vue de droite, le volet "Liste des
+            Titres" est utile pour renommer rapidement les titres des fils ou
+            pour ajouter de nouveaux nodes fils. Un texte fait d'une liste de
+            nouveaux nodes peut même être collé directement dans ce
+            volet.</p><a id="edit-spell" name="edit-spell">
+
+            <h4>Vérification Orthographique</h4>
+
+            <p>Il y a une commande de vérification orthographique dans le
+            menu "Outils". L'utilisation de cette commande nécessite qu'un
+            programme externe ait été installé (voir le paragraphe <a href=
+            "#sysreq">Spécifications minimales système</a>). Lorsqu'il y a
+            des mots mal orthographiés dans la branche sélectionnée, une
+            boîte de dialogue permet d'ignorer le mot, de l'ajouter au
+            dictionaire, de le remplacer par un mot suggéré ou de le
+            modifier. La commande véfifie l'orthographe du texte dans tous
+            les éléments de données de chaque node.<br>
+            <br>
+            Par défaut, la vérification orthographique utilise les
+            dictionnaires pour le langage configuré pour le système
+            d'exploitation . Quand on utilise aspell, il existe une option
+            sous "Outils-&gt;Options de fichiers" pour spécifier un autre
+            code de langage à deux lettres pour le fichier TreeLine utilisé.
+            Notez que les fichiers de dictionnaire appropriés doivent être
+            installés et que cette option n'est pas fonctionnelle pour
+            ispell.</p>
+          </div><a id="format" name="format">
+          <hr>
+
+          <h3>Formats et Types de Noeud</h3>
+
+          <div>
+            <a id="format-set" name="format-set">
+
+            <h4>Configuration des Nodes à un Type</h4>
+
+            <p>Par défaut, un nouveau document TreeLine contient deux typesde
+            node: "RACINE" et "DEFAUT". Le nom du type est affiché au sommet
+            de chaque node dans le volet "Editeur de Données" de la vue de
+            droite. La création de nouveaux types de données et la
+            personnalisation des ces types est décrite ci-dessous. Pour
+            configurer un node avec un type donné, utiliser le menu
+            "Données-&gt;Configurer le Type du Node". Par ailleurs, pour
+            configurer un ensemble de nodes fils et descendants avec un type
+            donné, utiliser la commande "Données-&gt;Configurer le Type des
+            Descendants". La boîte de dialogue qui s'affiche alors permet de
+            configurer les nodes sélectionnés, leurs fils, tous les
+            descendants, ou encore les descendants satisfaisant à une
+            expression logique. Cette boîte de dialogue peut être laissée
+            ouverte tout en modifiant la sélection des nodes dans l'arbre
+            pour en ajouter d'autres par exemple.</p><a id="format-type"
+            name="format-type">
+
+            <h4>Listes des types</h4>
+
+            <p>La liste des types est le premier onglet de la boite de
+            dialogue "Données -&gt;Paramètres du types de données" . La liste
+            des types de données peuvent être modifié par les boutons de
+            droites . De nouveaux types peuvent être ajoutés, et les types
+            existant peuvent être copiés , renommés ou supprimés</p><a id=
+            "format-config" name="format-config">
+
+            <h4>Configuration du type</h4>
+
+            <p>"Configuration du type" est le deuxième onglet de la boite de
+            dialogue "Données -&gt;Paramètres du types de données" . Il
+            contient une selection par défaut des types de données enfants .
+            Si le paramètre est mis sur "[Aucun]" , les enfants par défaut
+            auront le types soit de leurs frères soit de leurs parents<br>
+            <br>
+            Le bouton "Modifier l'icone" permet la sélection d'une icone
+            personnalisé pour le type de données. Le bouton "Effacé la
+            sélection" de la boite de dialogue de l'icone peut être utilisé
+            pour mettre la valeur de l'icone à "[Aucun]" . Ainsi aucune
+            icones ne sera affiché pour ce type . Pour n'afficher aucune
+            icone dans l'arborescence , vous pouvez décochez l'option
+            "Afficher les icones dans le volets d'exploration" du menu Outils
+            -&gt; Options Générales ...</p><a id="format-fields" name=
+            "format-fields">
+
+            <h4>Liste des champs</h4>
+
+            <p>"Liste des champs" est le troisième onglet de "Données
+            -&gt;Paramètres du types de données" , La liste des champs avec
+            un type de données peut être modifié en utilisant les boutons de
+            droites. De nouveaux champs peuvent être ajoutés , les champs
+            existant montés et descendus dans la liste , renommés ou
+            supprimés</p><a id="format-fieldconf" name="format-fieldconf">
+
+            <h4>Configurations des champs</h4>
+
+            <p>"Configurations des champs" est le troisième onglet de
+            "Données -&gt;Paramètres du types de données" (voir <a href=
+            "#fig-3">Figure 3</a>). le type de champs et ses formats
+            d'affichages (préfixes , suffixes ) peuvent être paramétrés. Des
+            suppléments de préfixes et sufixes peuvent être ajoutés à la
+            sorties du champ qui est paramétrés et des valeurs par défauts
+            pour les nouveaux noeuds peuvent être entrés. Il y a un choix
+            entre le texte brute , qui préserve le saut à la ligne , et le
+            texte HTML , qui autorise divers options de formattages . Enfin
+            le nombre de ligne affiché dans l'éditeur pour un champ peut être
+            spécifé .</p>
+
+            <div>
+              <a id="fig-3" name="fig-3">
+
+              <p><img src="doc_fieldconf.png"></p>
+
+              <p><b>Figure 3: onglet de configuration des champs</b></p>
+            </div><a id="format-output" name="format-output">
+
+            <h4>Sortie</h4>
+
+            <p>"Sortie " est le dernier onglet de "Données -&gt;Paramètres du
+            types de données" (voir <a href="#fig-4">Figure 4</a>). La partie
+            de gauche montre les champs . La partie de droite montre leur
+            formatage pour le titre (utilisé dans les noeuds textes dans
+            l'arborescence ) et leur affichage . Le formatage consiste en des
+            lignes de textes ou sont incrusté les champs . Le champ est
+            déterminé par "{*nom_de_champ*}" . Le champ qui est sélectionné
+            dans la liste de gauche, peut être ajouté aux formattage à la
+            position ou se situe le curseur avec le bouton "&gt;&gt;" . Le
+            champ de référence ou se situe le curseur peut se supprimé par le
+            bouton "&lt;&lt;" .</p>
+
+            <div>
+              <a id="fig-4" name="fig-4">
+
+              <p><img src="doc_output.png"></p>
+            </div><a id="format-title" name="format-title">
+
+            <h4>Format du Titre</h4>
+
+            <p>Quand un noeud est renommé, le programme tente de faire
+            correspondre le nouveau titre avec le champ correspondant pour
+            mettre à jour les éléments qui le constitue. Si le format du
+            titre est trop complexe, il peut ne pas avoir correctement deviné
+            vos intentions. Des choses telles que des champs adjacents sans
+            aucun caratère pour les séparer doivent être évitées à moins que
+            vous n'ayez pas l'intention de renommer les titres de noeuds à
+            partir de l'arbre.<br>
+            <br>
+            Lorsque l'élément texte utilisé pour le titre comporte plusieurs
+            lignes, seule la première ligne est utilisée pour le
+            titre.</p><a id="format-skip" name="format-skip">
+
+            <h4>Lignes ignorées</h4>
+
+            <p>Lorsqu'une ligne du format de données comporte un ou plusieurs
+            champs et que tous ces champs pour un noeud donné sont vides,
+            alors la ligne est ignorée. Aucune ligne, même vide ne sera
+            affichée correspondant à cette ligne. Notez que cela ne
+            s'applique pas à une ligne ne comportant aucun champ (avec du
+            texte seul). De même, quand une ligne se termine avec la balise
+            &lt;br/&gt; ou &lt;hr/&gt; et si la ligne est ignorée, la balise
+            est néanmoins conservée.</p><a id="format-html" name=
+            "format-html">
+
+            <h4>Balises HTML</h4>
+
+            <p>Les balises HTML simples peuvent être utilisées dans le format
+            de données. Les balises courantes comprennent
+            "&lt;b&gt;gras&lt;/b&gt;", "&lt;u&gt;sous-ligné&lt;/u&gt;",
+            "retour chariot&lt;br/&gt;", "&lt;hr/&gt;trait horizontal", et
+            diverses balises de police. Les balises complexes doivent être en
+            général évitées. Quand l'option de fichier "Autoriser HTML dans
+            les formats" est désactivée, les balises sont traitées comme du
+            texte ordinaire. Pour des exemples de ces champs, voir le fichier
+            "sample_color_items" (en utilisant la commande
+            "Fichier-&gt;Ouvrir Exemple").<br>
+            <br>
+            ; Un retour chariot est automatiquement généré à la fin de chaque
+            ligne, à moins que l'option de fichier "Ajouter des retour
+            chariot après chaque ligne" ait été désactivée. De plus, l'option
+            de fichier "Ajouter des lignes vides entre les noeuds" détermine
+            si une ligne blanche est ajoutée entre chaque ligne. Une balise
+            retour chariot ("&lt;br&gt;") peut être ajoutée à la fin du
+            format pour obtenir le même effet, ou encore, un trait horizontal
+            ("&lt;hr&gt;") peut être utilisé pour séparer les
+            noeuds.</p><a id="format-example" name="format-example">
+
+            <h4>Exemples de formats</h4>
+
+            <p>Voici un exemple de format pour une liste de livres:<br>
+            <br>
+            &lt;hr/&gt;"{*Titre*}"<br>
+            (c) {*Copyright*}, Notation: {*Notation*}<br>
+            {*Résumé*}<br>
+            <br>
+            Des fichiers exemples avec différents types de formats sont
+            inclus dans la distribution de TreeLine. Ils peuvent être ouverts
+            en utilisant la commande "Fichier-&gt;Ouvrir Exemple". Ils sont
+            également listés dans le paragraphe <a href=
+            "#start-example">Fichiers exemples</a>.</p><a id="format-refs"
+            name="format-refs">
+
+            <h4>Références d'Autres Eléments</h4>
+
+            <p>Les références qui ne sont pas contenu dans les noeuds peuvent
+            être ajoutés à la sortie. En appuyant sur le bouton " Montrer les
+            options avancés " qui est dans l'onglet "Sortie" de la boîte de
+            dialogue rend visible les niveaux de référence pouvant être
+            sélectionné.<br>
+            <br>
+            Si le niveau de référence est changé en "Référence du Fichier " ,
+            les champs contenant des méta-données peuvent être ajouté à la
+            sortie . Cela inclues le nom du fichier , le chemin d'accès , la
+            taille , la date de la dernière modification. Ceux ci sont montré
+            dans "{*?nom_champ*}" dans le titre et l'editeur de format de
+            sortie. Les champs de références au divers noeuds ancêtres
+            (parents , grands parents , etc ... ) nécessite que les types de
+            données de la référence soit spécifié . Ces sélection détermine
+            le nom du champ qui sont disponible , mais les données de
+            n'importe quel type ayant un nom de champ compatible sera
+            visualisé en sortie. Les références aux champs des noeuds parents
+            et grand-parents sont représentées comme "{**nom_champ*}" et
+            "{***nom_champ*}", respectivement. Il existe aussi des références
+            générales à des champs de noeuds ancêtres, représentées comme
+            "{*?nom_champ*}", et qui référencent les données du noeud ancêtre
+            ayant un champ du même type.<br>
+            <br>
+            Des références aux noeuds fils peuvent aussi être ajoutées . Cela
+            nécessite que les types de données fils soit spécifié. Les
+            données fils s'intègre dans la sortie parent. Les données enfants
+            sont délimité par un caractère de séparation qui est définie
+            comme une options de fichier . Le séparateurs par défaut est la
+            virgule , et l'espace , mais d'autres peuvent être configurés en
+            &lt;br&gt; ou n'importe quel autre.<br>
+            <br>
+            Finalement , une référence "Nombre d'enfant" peut être ajouté. Ce
+            champ va montrer le nombre d'enfant (champ "de niveau 1") ou
+            d'arrière petits enfants (champ "de niveau 2") d'un noeud. Cela
+            permet de visualiser {*#Niveau1*} dans l'editeur de format Pour
+            des exemples de ces champs, voir le fichier "sample_other_fields"
+            (en utilisant la commande "Fichier-&gt;Ouvrir
+            Exemple").</p><a id="format-sibling-text" name=
+            "format-sibling-text">
+
+            <h4>Configuration Avancée</h4>
+
+            <p>Le bouton "Montrer les options avancé" de l'onglet
+            "configuration du type" fournit des possibilités de configuration
+            supplémentaires. La première permet de choisir l'un des champs
+            comme champ de référence, qui est utilisée pour les commandes
+            organiser et aplatir par références et également pour les
+            références de liens internes. Par défaut le champ de référence
+            est le premier élément.<br>
+            <br>
+            La boîte de dialogue permet aussi la configuration des balises
+            préfixe et suffixe de frères. Ces balises peuvent le plus souvent
+            être laissées vides, mais sont utiles pour créer des tableaux et
+            des listes. Ces balises seront placées avant et après les groupes
+            de frères du type approprié. Par exemple, pour créer un tableau,
+            la balise préfixe pourrait être "&lt;table border="1"&gt;" et le
+            suffixe "&lt;/table&gt;". Ensuite, le format de données pourrait
+            être:<br>
+            <br>
+            &lt;tr&gt;&lt;td&gt;"{*Titre*}"&lt;/td&gt;&lt;td&gt;(c)
+            {*Copyright*}&lt;/td&gt;&lt;/tr&gt;<br>
+            <br>
+            Voir également le fichier exemple "sample_table_booklist" (en
+            utilisant la commande "Fichier-&gt;Ouvrir Exemple").<br>
+            <br>
+            Les frères devraient généralement être du même type, ou au moins
+            avoir les mêmes balises préfixes et suffixes.</p><a id=
+            "format-link-ref" name="format-link-ref">
+
+            <h4>Champ avec liens de référence</h4>
+
+            <p>C'est l'un des champs pour chaque type désigné comme champ de
+            liens de référence . Par défaut, c'est le premier champ de la
+            liste . En appuyant sur le bouton "Montrer les options avancés"
+            de l'onglet "Configuration du type" cela affiche une liste de
+            sélection pour ce champ.<br>
+            <br>
+            Le champ avec liens de référence est utilisé pour les liens
+            internes , et pour organiser et applatir via la commande de
+            référence. Le contenu de ce champ devrait généralement être
+            unique si l'usiage de ces fonctions est prévues .</p><a id=
+            "format-derived" name="format-derived">
+
+            <h4>Les types dérivés et génériques</h4>
+
+            <p>Les types de données peuvent être configuré pour hériter leurs
+            paramètres de champs d'un type générique . Cela permet que des
+            types avec des formattages différents de pouvoir conserver les
+            mêmes groupes de champs . Tous changements dans un types
+            génériques changera l'ensemble des champs héritiers . Cela ne
+            s'applique pas au formattage d'affichage , ceux ci sont définis
+            de manière indépendante<br>
+            <br>
+            Il y a deux méthodes pour créer des types dérivés . La première ,
+            une option dérivé peut être sélectionné lorsqu'on copie un type
+            de l'onglet "liste des types" de "Données -&gt;Paramètres du
+            types de données" , L'autre alternative ; un type générique peut
+            être spécifié d'un type dérivé dans l'onglet "Configurations des
+            types" si la fonction avancé est sélectionné .</p><a id=
+            "format-condition" name="format-condition">
+
+            <h4>Types Conditionnels</h4>
+
+            <p>Les expressions conditionnelles peuvent être utilisées pour
+            affecter automatiquement un type de donnée basé sur le contenu du
+            noeud. Les conditions peuvent être affectées seulement aux types
+            génériques et à leurs types dérivés. Cela permet l'affectation
+            automatique de différent formats de représentation ou différents
+            icônes selon le contenu de chaque noeud.<br>
+            <br>
+            La boîte de dialogue est accédée à partir d'un bouton de la boîte
+            de dialogue "Configuration Avancée" d'un type. Chaque ligne de la
+            condition inclue un champ, un opérateur et une valeur de
+            comparaison (voir <a href="#fig-2">Figure 2</a>). Les opérateurs
+            possibles comprennent l'égalité, supérieur à, inférieur à,
+            commence par, finit par, et contient. Il y a aussi les opérateurs
+            Vrai et Faux qui changent le type des tous les nodes
+            simultanément.<br>
+            <br>
+            Pour les champs spéciaux comme les dates, les heures, et les
+            booléens La valeur de comparaison devrait être entrée sous la
+            même forme que avec la fenètre d'édition des données. En général,
+            les opérateurs commence par, finit par, et contient ne devraient
+            pas être utilisés avec ces champs spéciaux, puisque la
+            comparaison est faite en utilisant un format interne. Les dates
+            et les heures peuvent être utilisées aussi avec la valeur de
+            comparaison "Maintenant", qui est toujours interprétée comme la
+            date et l'heure actuelle.<br>
+            <br>
+            Le bouton "Ajouter Nouvelle Règle" est utilisé pour ajouter de
+            nouvelles conditions. Ces lignes peuvent être liées par les
+            opérateurs "et" ou "ou". Le bouton "Supprimer Règle" supprime la
+            dernière ligne de condition. Si une seule ligne est présente, le
+            bouton "Supprime Règle" supprime complètement la condition.<br>
+            <br>
+            Les conditions n'ont pas besoin d'être toutes positionnées dans
+            une famille. Si aucune condition n'est vraie pour un noeud, le
+            programme choisira une condition nulle de préférence à une
+            condition fausse.<br>
+            <br>
+            Pour un exemple, voir le fichier "sample_conditional_todo" (en
+            utilisant la commande "Fichier-&gt;Ouvrir Example").</p>
+
+            <div>
+              <a id="fig-5" name="fig-5">
+
+              <p><img src="doc_condition.png"></p>
+
+              <p><b>Figure 2: boîte de dialogue conditions</b></p>
+            </div><a id="format-copy" name="format-copy">
+
+            <h4>Copie de formats</h4>
+
+            <p>Une autre méthode pour changer les formats des types de
+            données consiste en copier les formats à partir d'un autre
+            fichier TreeLine. Cela est réalisé par la commande
+            "Données-&gt;Copier Types à partir du Fichier". Tous les types de
+            données du fichier choisi sont copiés. Les types du fichier
+            courant sont écrasés par les types du fichier copié ayant le même
+            nom, mais les types avec un nom différent sont conservés.</p>
+          </div><a id="fields" name="fields">
+          <hr>
+
+          <h3>Types de champs</h3>
+
+          <div>
+            <a id="field-options" name="field-options">
+
+            <h4>Options de champ</h4>
+
+            <p>Dans la boîte de dialogue "Paramètres du Type de Données",
+            l'onglet "Confinguration des champs" , le bouton "Type de champ"
+            affiche une liste de sélection qui permet de définir le format du
+            champ. Le type de champ peut être configuré à texte, nombre,
+            choix, combinaison, choix automatique, date, heure, booléen, URL,
+            chemin, lien interne, lien exécutable, courrier, ou image. Un
+            préfixe et un suffixe peuvent être entrés et s'afficheront si la
+            donnée n'est pas vide.<br>
+            <br>
+            Il existe aussi une configuration de la manière dont le contenu
+            est présenté qui peut être du HTML ou qui préserve les retours
+            chariot (ignorant ainsi le code HTML). Lorsque HTML est utilisé,
+            les retours chariot sont ignorés et les caractères "&lt;", "&gt;"
+            et "&amp;" qui ne sont pas encodés en HTML, ne sont pas affichés.
+            Il y a également une option générale qui rend les nouveaux
+            éléments présentés en HTML par défaut. Pour un exemple
+            d'utilisation de HTML, voir le fichier "sample_char_format" (en
+            utilisant la commande "Fichier-&gt;Ouvrir Exemple").<br>
+            <br>
+            <br>
+            <br>
+            Plusieurs des types d'éléments utilisent un format spécifique
+            pour leur affichage. Pour obtenir la liste des caractères de
+            format disponibles, utiliser le bouton "Aide Format". Une donnée
+            entrée avec l'éditeur de données ne correspondant pas au format
+            de champ est signalée par le label de l'élément affiché en
+            caractères gras, et l'entrée est affichée comme
+            "#####".</p><a id="field-text" name="field-text">
+
+            <h4>Le Type Texte</h4>
+
+            <p>Le type par défaut est le type texte. Les champs de ce type
+            sont édités avec une boîte de dialogue dans l'éditeur de données.
+            La boîte d'édition s'élargit quand elle est réaffichée et qu'elle
+            comporte plusieurs lignes de texte. La hauteur de cette boîte de
+            dialogue peut aussi être configurée dans l'onglet "Configuration
+            du champ"</p><a id="field-choice" name="field-choice">
+
+            <h4>Types choix, combinaison et booléen</h4>
+
+            <p>Les types de champ " choix " et "combinaison" permettent la
+            sélection d'objets en utilisant une boîte déroulante. Le format
+            dans ce cas consiste en la liste des objets séparés par le
+            caratère "/" (utiliser "//" pour obtenir le caratère "/" quand il
+            fait partie intégrante de l'objet). Le choix est utilisé pour
+            sélectionner un seul objet et combinaison pour sélectionner
+            plusieurs objets. La boîte déroulante dans le cas de la
+            combinaison autorise l'ajout et la suppression d'objets. De plus,
+            il est possible de ne taper uniquement que la partie initiale de
+            l'objets.<br>
+            <br>
+            Le type booléen est identique au type choix, mais utilise les
+            objets "Vrai/Faux", "oui/non" et "1/0".<br>
+            <br>
+            Il existe également un type de champs "choix automatique". Comme
+            le choix il permet la sélection dans une boîte déroulante, mais
+            il n'est pas associé à un format. La boîte déroulante est
+            automatiquement remplie par tous les choix ayant été faits
+            précédemment.</p><a id="field-number" name="field-number">
+
+            <h4>Le Type Nombre</h4>
+
+            <p>Pour le type nombre, des caratère spéciaux dans le format
+            permettent de spécifier le format d'affichage du nombre dans
+            l'éditeur de données. Le format utilise une chaîne de caractères
+            faite de "#" (chiffre optionel) et "0" (chiffre requis) pour
+            définir le format de représentation. Par exemple, pi formaté avec
+            "#.#" est "3.1" et formaté avec "00.00" est "03.14". Quelque soit
+            le format, les chiffres à gauche de la virgule ne sont pas
+            tronqués, puisque cela reviendrait à afficher une valeur
+            inexacte. Mais prenez soin d'afficher suffisamment de chiffres
+            après la virgule (optionel ou requis) pour éviter les problèmes
+            d'arrondis.<br>
+            <br>
+            Le caratère radical peut être défini comme "." ou "," pour tenir
+            compte de l'internationalisation. Pour les séparateurs de
+            milliers, utiliser "\," ou "\.". Par exemple, un nombre élevé
+            peut être représenté comme "#\,###\,###.##" ou "#\.###\.###,##".
+            Utiliser le bouton "Aide Format" de la boîte de dialogue "Format
+            de champs" pour obtenir des détails.<br>
+            <br>
+            Contrairement à la plupart des autres formats, le type de champ
+            "nombre" utilise aussi le format de données pour l'affichage dans
+            l'éditeur de données. Bien sûr, toute nouvelle entrée avec un
+            format raisonnable est correctement interprétée (mais le caratère
+            radical doit être le bon).</p><a id="field-date" name=
+            "field-date">
+
+            <h4>Types Date et Heure</h4>
+
+            <p>Pour les types date et heure, les caractères spéciaux du
+            format sont remplacés par la valeur de certains champs de la
+            donnée, un peu comme pour le type nombre. Utiliser le bouton
+            "Aide Format" pour obtenir tous les détails.<br>
+            <br>
+            Ces caractères sont aussi utilisés dans la boîte de dialogue
+            "Outils-&gt;Options Générales-&gt;Formats de l'éditeur de
+            données". Ces formats spécifient comment ces champs sont affichés
+            dans l'éditeur de données. Généralement, les données entrées avec
+            l'éditeur de données seront correctement interprétées quelque
+            soit cette configuration, mais les dates doivent suivre l'ordre
+            jour-mois-année spécifié. Notez également que l'éditeur de
+            données ne supporte pas l'utilisation des jours de la semaine.
+            Quand une donnée ne peut pas être correctement interprétée le
+            label de champ est afffiché en caractères gras.<br>
+            <br>
+            Une valeur par défaut à la création d'un nouveau noeud peut être
+            configurée, par exemple "Maintenant".</p><a id="field-link" name=
+            "field-link">
+
+            <h4>Types Liens</h4>
+
+            <p>Les types URL, chemin, et email sont utilisés pour créer des
+            liens qui sont actifs dans le volet de Données. Un URL correspond
+            à un lien sur le web (par défaut http:// à moins que cela ne soit
+            spécifié différemment), chemin correspond au chemin pour accéder
+            à un fichier (par défaut file:///), et email correspond à un lien
+            email (par défaut mailto:). Quand ils sont cliqués dans le volet
+            de Données, ces liens permettent d'ouvrir le navigateur ou le
+            courrier à l'adresse indiquée. Quand on effectue une opération
+            d'export, ces liens sont des liens HTML standard. Entrer tout
+            simplement l'adresse complète (comme par exemple
+            "www.bellz.org/treeline/index.html") dans l'éditeur de données.
+            Sous Linux, en positionnant la variable d'environnement "BROWSER"
+            à une valeur telle que "mozilla %s" permet de lancer le
+            navigateur de son choix (mozilla en l'occurrence).<br>
+            <br>
+            Il existe aussi un lien de type interne. Un lien de ce type
+            spécifie un lien que l'on peut cliquer dans le volet de Données
+            et qui sélectionne alors le premier noeud dont le texte de champ
+            de référence correspond à la valeur du lien interne. Si ce champ
+            de référence ou bien le lien interne comporte plusieurs ligness,
+            chaque ligne est traitée comme une référence ou un lien distinct,
+            respectivement. Quand cela est souhaité, le même champ peut
+            servir à la fois de référence et de lien, si bien que en cliquant
+            sur un mot clé du lien on sélectionne le noeud suivant ayant ce
+            même mot clé dans l'élément de référence. Quand le fichier
+            TreeLine est exporté en HTML, les liens internes correspondent
+            aux liens HTML de pages, mais, dans les cas de références
+            multiples, ils sélectionnent seulement le lien qui se trouve le
+            plus haut dans la page HTML au lieu du lien suivant. Pour un
+            exemple, voir le fichier "sample_intern_links" (en utilisant la
+            commande "Fichier-&gt;Ouvrir Exemple").<br>
+            <br>
+            Un champ de type lien exécutable exécute un programme externe
+            lorsqu'il est cliqué. La commande à lancer est spécifiée par le
+            contenu du champ. Ou alors le préfixe du champ qui peut contenir
+            le nom du programme, pour que le contenu de champ soit utilisé
+            comme arguments de la commande. Une option générale peut
+            désactiver ces liens pour des raisons de sécurité.<br>
+            <br>
+            Le champ de type image permet d'afficher une image dans le volet
+            de Données. Entrer le chemin complet du fichier image comme texte
+            du champ. Pour Qt2 (utilisé pour TreeLine sous Windows) le volet
+            de données supporte uniquement les images au format GIF et PNG.
+            Pour Qt3, les images JPEG et d'autres types d'images sont
+            supportés. Bien sûr, lors de l'opération d'export en HTML, cette
+            image est affichée pour autant que le navigateur Internet
+            supporte le format de l'image.</p><a id="field-unique" name=
+            "field-unique">
+
+            <h4>Type d'identifiant unique (ID)</h4>
+
+            <p>Un champ d'identifiant unique est automatiquement chargée avec
+            des nombres uniques . Ceci est souvent utiles pour s'assurer que
+            le champ des liens référentielles soit toujours unique<br>
+            <br>
+            le format du champ est paramétré sur le premier nombre désiré de
+            la série , commençant par un zéros facultatif , et des débuts
+            facultatifs ou des des caractères mobiles . Le nmbre initial et
+            les caractères extra sont utiles pour éviter la duplication des
+            nombres dans les différents fichiers . Tous les noeds du types de
+            données vont automatiquement recevoir un identifiant (ID) . Le
+            format du champ affiche toujours le prochain nombre disponible ,
+            celui qui sera donnée au prochain nouveau noeud de ce
+            type</p><a id="field-advanced" name="field-advanced">
+
+            <h4>Options Avancées</h4>
+
+            <p>Le bouton "Montrer les options avancé" dans la boîte de
+            dialogue "Paramètres du Type de Données" permet des
+            configurations supplémentaires. Une valeur par défaut à la
+            création peut être positionné pour le type de de champ. Tout
+            nouveau noeud acquiert, à la création , cette valeur pour son
+            type de champ concerné .<br>
+            <br>
+            Les champs de type lien peuvent avoir un texte de remplacement
+            associé à l'URL. Cela est permit en spécifiant un champ de texte
+            alternatif<br>
+            <br>
+            Il y a aussi une case à cocher si l'on souhaite spécifier que le
+            champs est obligatoire. Les champs obligatoire sont indiqués avec
+            un astérisque dans l'éditeur de données.<br>
+            <br>
+            Les champs peuvent être également cachés si l'on ne souhaite pas
+            les afficher dand l'éditeur de données.</p>
+          </div><a id="data" name="data">
+          <hr>
+
+          <h3>Manipulation des Données de l'Arbre</h3>
+
+          <div>
+            <a id="data-category" name="data-category">
+
+            <h4>Commandes de classement</h4>
+
+            <p>Le menu "Données" comporte des commandes pour organiser et
+            aplatir les données par catégorie et par référence. Ces méthodes
+            sont utilisées pour ajouter ou supprimer automatiquement des
+            niveaux de noeuds situés en dessous du noeud sélectionné de
+            l'arborescence.<br>
+            <br>
+            La commande "Ajouter un Niveau de Classement" permet de
+            sélectionner un ou plusieurs des champs que les fils ont en
+            commun. Ces éléments sont utilisés pour créer de nouveaux noeuds
+            parents à partir des fils, en les groupant par catégories. Par
+            exemple, dans une liste de livres, en choisissant les champs
+            "nom_auteur" et "prénom_auteur" on obtient une structure
+            hiérarchique dans lequel les livres sont classés par auteur.<br>
+            <br>
+            La commande "Aplatir par classement" est pratiquement la commande
+            inverse de la précédente "Ajouter un Niveau de Classement". Elle
+            élimine tous les noeuds ayant des fils, tout en transférant leurs
+            champs de données vers leurs fils. Ces champs sont renommés
+            plutôt que d'écraser d'autres champs ayant le même nom, mais
+            cette commande est la plus utile quand parents et fils ont chacun
+            des champs de noms et types différents.</p><a id="data-ref" name=
+            "data-ref">
+
+            <h4>Commandes basées sur les références</h4>
+
+            <p>Les commandes "Organiser par Référence" et "Aplatir par
+            Référence" réorganisent les noeuds en utilisant des pointeurs sur
+            la valeur des champs de références de leurs parents. Ces
+            commandes présupposent que l'on utilise des valeurs uniques dans
+            les champs références, comme un numéro d'identification unique .
+            La commande "Aplatir par Référence" ajoute un champ contenant
+            l'identification unique du parent à chacun des noeuds
+            descendants. Il place alors tous ces noeuds sous le noeud-racine
+            sélectionné. La commande "Organiser par Référence" exécute
+            l'opération inverse, en plaçant chaque noeud avec le parent
+            correspondant à l'identification de référence. Si il y a
+            plusieurs noeuds avec la même identification, le noeud le plus
+            proche au-dessus du fils est choisi. Tout noeud trouvé sans
+            parent (orphelin) est placé directement sous le noeud
+            sélectionné.<br>
+            <br>
+            La commande "Mise à jour par Référence" utilise un autre fichier
+            pour mettre à jour les valeurs des champs manquants. Les valeurs
+            uniques sont mises en correspondance dans les champs de
+            référence. Tout champ d'un noeud du fichier qui ne se trouve pas
+            dans le noeud original est ajouté. Des éléments peuvent être
+            supprimés dans le fichier original pour forcer la mise à jour,
+            puisque le champ doit être manquant et non pas seulement
+            vide.</p><a id="data-sort" name="data-sort">
+
+            <h4>Trie</h4>
+
+            <p>La commande "Données-&gt;trier les noeuds" ouvre une boîte de
+            dialogue contenant des options permettant de trier soit
+            l'entièreté de l'arbre , les branches sélectionnées , les enfants
+            sélectionnés ou les frères séléctionnés . Le trie peut être basé
+            sur des champs spécifiques au sein de types spécifiques ou
+            seulement sur des titres .<br>
+            <br>
+            Trier par types permet la sélection de plusieurs champs à utilisé
+            en tant que première clés , deuxième clés etc ... Plusieurs types
+            peuvent êtres selectionné dans la liste de gauche . Les champs
+            ayant un types en commun sont listé à droite. Les champs utilisé
+            en tant que clés sont choisis dans l'ordre avec le bouton de
+            gauche de la souris et la direction peut être changé avec le
+            bouton droit de la souris ##### les commandes "Trier les Fils du
+            Noeud", "Trier un Type dans la branche" et "Trier la Branche par
+            le Titre". Les deux premières commandes permettent la sélection
+            des champs qui vont être utilisés comme clés pour le tri. Ces
+            clés sont sélectionnés dans l'ordre avec le bouton gauche de la
+            souris et la direction de recherche est changée avec le bouton
+            droit. La commande "Trier les Fils du Noeud" trie uniquement les
+            fils du node, tandis que la commande "Trier un Type dans la
+            branche" trie tous les descendant d'un type donné. La commande
+            "Trier la Branche par le Titre" trie tous les descendant par le
+            titre.</p><a id="data-filter" name="data-filter">
+
+            <h4>Filtres</h4>
+
+            <p>La commande "Données-&gt;Filtre conditionel" limite
+            l'affichage de noeuds ans la "vue à plat" en se basant sur des
+            règles définies par l'utilisateur. Premièrement , le type à
+            filtrer est selectionné . Ensuite , les règles logiques peuvent
+            être entré basé sur n'importe quel type de champs (similaire à
+            <a href="#fig-5">Figure 5</a>) . De multiples règles peuvent être
+            lié par les opérateurs "et " , " ou" (en appuyant sur le bouton
+            "Ajouter règle"). La règle "Vrai" peut être utilisé pour afficher
+            tous les noeuds d'un types données. Seuls les noeuds descendants
+            qui correspondent au criètres seront affiché dans le panneau "Vue
+            à plat" . Le document courant sera renommé avec le suffixe
+            "_filter" ajouté pour éviter d'écraser le document original. Si
+            ce document avait été déja modifié auparavant, une boîte de
+            dialogue s'affiche permettant la sauvegarde du document non
+            filtré. Le filtrage garde son effet pour le panneau de la " vue à
+            plat " jusqu'a ce que la commande de nettoyageait été activé via
+            "Donnée-&gt;purger le système de filtrage". La
+            commande-&gt;Filtre de texte" travaille de manière similaire sauf
+            qu'il ne demande qu'une chaine de texte en entrée. Seules les
+            noeuds qui ont cette chaine de texte quelque part dans leurs
+            champs de données sont affichés dans la "vue à palt" . De même ,
+            l'effet du filtre est conservé pour le panneau de vue à plat
+            jusqu'a ce que celui ci ait été nettoyé via la commande
+            "Donnée-&gt;purger le système de filtrage"</p>
+
+            <div>
+              <a id="fig-6" name="fig-6">
+
+              <p><img src="doc_filter.png"></p>
+            </div><a id="data-number" name="data-number">
+
+            <h4>Numérotation</h4>
+
+            <p>La commande "Numérotation" est utilisée pour ajouter un champ
+            numérique aux noeuds descendants. Le champ numérique n'est pas
+            mis à jour automatiquement quand l'arbre est modifié - la
+            commande "Numérotation" doit être répétée. Dans la boîte de
+            dialogue, un nouveau champ ou un champ existant est entré, et le
+            noeud sélectionné peut être inclus dans la numérotation si cela
+            est souhaité. Un parmi trois types de numérotation peut être
+            choisi: le type outline redémarre la numérotation pour chaque
+            nouveau groupe de fils, le type section ajoute le numéro du fils
+            au numéro du parent, et le type niveau unique numérote seulement
+            le premier niveau des fils. Les formats par défaut peuvent être
+            utilisés ("I, II..., A, B..., 1, 2..." pour les types outlines;
+            "1, 2..., 1.1, 1.2..." pour les types sections), ou bien des
+            formats configurés peuvent être spécifiés pour chaque niveau. Les
+            formats configurés doivent contenir l'un des caractères suivants:
+            "1", "A", "a", "I", ou "i". Les séries continueront à partir
+            d'ici (utilisant les nombres, les lettres ou les chiffres
+            romains, respectivement). La dernière occurrence de l'un de ces
+            caractères est celle qui est utilisée - les occurrences
+            précédentes sont considérées comme faisant partie du
+            format.</p><a id="data-change" name="data-change">
+
+            <h4>Modification des Données Sélectionnées</h4>
+
+            <p>Et enfin, la commande "Modifier les Données Sélectionnées"
+            permet de modifier la valeur d'un champ simultanément pour tous
+            les noeuds sélectionnés. Sélectionner tout simplement le champ
+            souhaité et entrer la nouvelle valeur. Pour effacer les valeurs
+            d'un champ , entrer un nouveaux caractères , ensuite supprimer le
+            - cela permet d'indiquer que l'on souhaite un champ blanc.</p>
+          </div><a id="print" name="print">
+          <hr>
+
+          <h3>Imprimer</h3>
+
+          <div>
+            <a id="print-options" name="print-options">
+
+            <h4>Options d'Impression</h4>
+
+            <p>Dans le menu "Fichier-&gt;Options d'impression" , sous le
+            premier onglet nommé "Options générales" , sur la guache , on
+            peut choisir soit d'imprimer l'arbre entier , soit les noeuds
+            sélectionné , ou soit les branches sélectionnés . Le deux
+            premières options permettent d'imprimer tous les descendants avec
+            l'indentation des enfants<br>
+            <br>
+            Les options à droite permettent de dessiner les lignes de
+            l'aborescence , incluants le noeud racine , et incluant seuelemnt
+            les enfants ouvert et gardant le premier enfant avec ses parents
+            . L'arborescence est dessiner pour connecter les noeuds parents
+            et efnats . Cela permet de visualiser plus facilement les
+            relations enfants / parents , spécialement à travers de multiples
+            pages . Ces traits peuvent ne pas être imprimés correctement
+            quand on utilise certaines balises HTML.<br>
+            <br>
+            Par défaut, TreeLine évite d'insérer un saut de page entre un
+            parent et ses premiers fils. Ce comportement peut être désactivé
+            dans l'option d'impression "Garder le premier fils avec le
+            parent".</p><a id="print-setup" name="print-setup">
+
+            <h4>Disposition de la page</h4>
+
+            <p>Le deuxième onglet de la boîte de dialogue "Options
+            d'impression" est "Disposition de la page" . Sur la gauche sont
+            disposé les paramètres concernant la taille de la page, son
+            orientation et son unité de mesure . Sur la droite les paramètres
+            pour les colonnes , l'indentation d'offset , et les marges
+            .</p><a id="print-font" name="print-font">
+
+            <h4>Polices de caractères d'impression</h4>
+
+            <p>Le troisième onglet de la boîte de dialogue "Options
+            d'impression" est "Sélection Police" . L'impresson va utilise la
+            même police que le panneaux des "Police pour sorties de données"
+            si celle ci est coché . Si celle ci n'est pas coché une police
+            spécifique peut être sélectionné pour l'impression</p><a id=
+            "print-header" name="print-header">
+
+            <h4>En-tête et pied de page</h4>
+
+            <p>Dans la boîte de dialogue options d'impression le troisième
+            onglet est utilisé pour configurer les en-têtes et pieds de page.
+            Ce bouton fait apparaître une nouvelle boîte de dialogue avec le
+            nom des champs du fichier dans la partie gauche et six boîtes
+            d'édition en-tête/pied de page (justification à gauche, au centre
+            et à droite) sur la droite. Ces champs peuvent être ajoutés et
+            combinés avec du texte entré dans les boîtes d'édition,
+            exactement comme dans la boîte de dialogue
+            "Données-&gt;Paramètres du Type de Données". La configuration
+            en-tête/pied de page est sauvegardée avec le fichier
+            TreeLine.</p><a id="print-preview" name="print-preview">
+
+            <h4>Aperçu avant impression</h4>
+
+            <p>Un aperçu peut être vue en utilisant le menu
+            "Fichier-&gt;Aperçu avant impression" ou le même bouton de la
+            boite de dialogue "Options d'impressions" . Les boutons sur la
+            fenêtre sont utilisé pour naviguer entre les pages , ouvrir la
+            boîte de dialogue '"Options d'impression", ou ouvrir la boîte de
+            dialogue d'impression . Un aperçu avant impression est affiché
+            avant l'impression (mais après avoir cliqué sur 'OK' dans la
+            boîte de dialogue impression). La fenêtre d'aperçu avant
+            impression montre plus de détails quand elle est
+            agrandie.</p><a id="print-problems" name="print-problems">
+
+            <h4>Problèmes à l'Impression</h4>
+
+            <p>Quelques uns de problèmes d'impression, tout spécialement les
+            problèmes liés aux marges et à la césure des mots, peuvent être
+            éliminés en utilisant la police qui est la mieux adaptée à
+            l'imprimante utilisée.</p>
+          </div><a id="file" name="file">
+          <hr>
+
+          <h3>Gestion de Fichiers</h3>
+
+          <div>
+            <a id="file-comp" name="file-comp">
+
+            <h4>Compression de Fichier</h4>
+
+            <p>Un fichier TreeLine est au format XML. Il est également
+            possible de travailler avec des fichiers compressés (au format
+            gzip) pour économiser de la place. Les fichiers peuvent être
+            configurés comme étant compressés avec le menu
+            "Options-&gt;Options de Fichier" ou à partir de la boîte de
+            dialogue "Enregistrer Sous". Il existe aussi une option générale
+            pour configurer ce mode pour tous les nouveaux fichiers
+            TreeLine.</p><a id="file-enc" name="file-enc">
+
+            <h4>Cryptage de Fichier</h4>
+
+            <p>Il existe une option pour crypter avec un mot de passe les
+            fichiers TreeLine. Les fichiers peuvent être configurés comme
+            étant cryptés avec le menu "Options-&gt;Options de Fichier" ou à
+            partir de la boîte de dialogue "Enregistrer Sous". Il existe
+            aussi une option générale pour configurer ce mode pour tous les
+            nouveaux fichiers TreeLine. Le cryptage utilise une fonction de
+            hashage SHA - elle peut être considérée comme relativement
+            sûre.</p><a id="file-auto-save" name="file-auto-save">
+
+            <h4>Sauvegarde Automatique</h4>
+
+            <p>Un mécanisme de sauvegarde automatique sauvegarde le fichier
+            en ajoutant au nom de fichier le suffixe "~" (tilde). Ce fichier
+            est automatiquement supprimé quand le fichier est sauvegardé par
+            l'utilisateur. Le délai de sauvegarde automatique est configuré
+            dans les options générales. En configurant ce délai à zéro, on
+            désactive cette fonctionalité.</p><a id="file-states" name=
+            "file-states">
+
+            <h4>Etat de l'arbre sauvegardé</h4>
+
+            <p>Quand un fichier TreeLine récent est ouvert, TreeLine restaure
+            les états des noeuds ouverts et sélectionnés. Cette information
+            est sauvegardée dans le fichier de configuration TreeLine de
+            l'utilisateur. Si cela est souhaité, cette fonctionalité peut
+            être désactivée avec une option générale.</p><a id="file-cmdline"
+            name="file-cmdline">
+
+            <h4>Ligne de Commande</h4>
+
+            <p>Les options de la ligne de commande permet d'effectuer des
+            opérations non interactives d'export et d'import de fichiers.
+            Cela permet le traitement par lots. Pour plus de détails,
+            exécuter "treeline -h" à partir de la ligne de commande. Sous
+            Windows, il n'y a pas d'affichage sur la console et en
+            conséquence celui-ci doit être redirigé vers un fichier:
+            ("treeline -h &gt; log.txt").</p>
+          </div><a id="import" name="import">
+          <hr>
+
+          <h3>Importation de Fichier</h3>
+
+          <div>
+            <a id="import-general" name="import-general">
+
+            <h4>Texte Délimité</h4>
+
+            <p>Un fichier TreeLine est au format XML. Les autres types de
+            fichiers peuvent être importés simplement en les ouvrant. Ouvrir
+            un fichier qui n'est pas un fichier XML TreeLine affiche une
+            boîte de dialogue qui permet de définir le type de fichier à
+            importer.<br>
+            <br></p><a id="import-delim" name="import-delim">
+
+            <h4>Texte Délimité</h4>
+
+            <p>TreeLine peut importer un fichier texte structuré
+            hiérarchiquement par des tabulations. Dans ce cas, seul le noeud
+            titre est importé, et les éléments supplémentaires sont ignorés.
+            Cette méthode est utilisée pour ouvrir les fichiers TreeLine
+            créés par de vieilles versions de TreeLine.<br>
+            <br>
+            Un tableau délimité par des tabulations peut aussi être importé.
+            Il devient un arbre avec un seul niveau de fils, chaque noeud
+            contenant les éléments de chaque colonne du tableau. La première
+            ligne du tableau est utilisée pour les noms d'éléments et chaque
+            ligne suivante devient un noeud.</p><a id="import-plain" name=
+            "import-plain">
+
+            <h4>Texte Ordinaire</h4>
+
+            <p>Il y a deux types d'importation de texte ordinaire. L'un crée
+            un noeud pour chaque ligne du texte. L'autre crée un noeud par
+            paragraphe, on suppose ici que les paragraphes sont séparés par
+            une ligne vide . Dans les deux cas, le fichier TreeLine résultant
+            est tel que tout le texte se trouve sous un seul parent, mais
+            c'est un bon point de départ. Des éléments de structure peuvent
+            être rajoutés plus tard.</p><a id="import-treepad" name=
+            "import-treepad">
+
+            <h4>Fichiers Treepad</h4>
+
+            <p>Il existe aussi un filtre pour importer des fichiers au format
+            Treepad. Seuls les nodes Treepad de type texte sont
+            supportés.</p><a id="import-bookmarks" name="import-bookmarks">
+
+            <h4>Fichiers de Favoris</h4>
+
+            <p>TreeLine importe les fichiers de favoris au format Mozilla
+            HTML (navigateurs Mozilla, Firefox et Netscape) et au format XBEL
+            (navigateurs Konqueror, Galeon et Elinks). Chaque favori devient
+            un noeud avec un élément nom et un élément lien. Les informations
+            de ces fichier de type date et référence d'icône ne sont pas
+            importées. Pour un exemple, voir le fichier "sample_bookmarks"
+            (en utilisant la commande "Fichier-&gt;Ouvrir
+            Exemple").</p><a id="import-xml" name="import-xml">
+
+            <h4>XML Générique</h4>
+
+            <p>TreeLine importe et exporte les fichiers génériques XML. Cette
+            méthode n'est pas sophistiquée - chaque noeud devient un élément
+            XML et chaque champ devient un attribut XML sauf pour les champs
+            nommé "Element_Data" qui devient un élément texte. Cela permet
+            d'utiliser TreeLine comme un éditeur XML rudimentaire.</p><a id=
+            "import-odf" name="import-odf">
+
+            <h4>Document texte ODF</h4>
+
+            <p>Treeline peut importer les texte de type Open Document Format
+            (ODF ), de logiciel tels qu'OpenOffice.org et Kword . La
+            strucuture du noeud formé est basé sur les styles d'en-tête
+            assigné du document d'origine. Tous textes en dessous des styles
+            d' en-têtes devient un textes de cet en-tête. Le filtre d'import
+            seulement destiné à des usages simples . Le formatage n'est pas
+            maintenu , les objets tel que les tableaux et les images ne sont
+            pas importés .</p>
+          </div><a id="export" name="export">
+          <hr>
+
+          <h3>Exportation de Fichier</h3>
+
+          <div>
+            <a id="export-general" name="export-general">
+
+            <h4>HTML</h4>
+
+            <p>Les fichiers sont exportés en utilisant la commande
+            "Fichier-&gt;Exporter". Une boîte de dialogue s'affiche avec les
+            types d'export disponibles et les options.<br>
+            <br></p><a id="export-html" name="export-html">
+
+            <h4>HTML</h4>
+
+            <p>L'export en fichier HTML est identique à 'impression avec les
+            mêmes options. Il peut inclure l'en-tête et pied de page
+            d'impression et il est possible de configurer le nombre de
+            colonnes.<br>
+            <br>
+            Il existe aussi un export de fichiers HTML multiples qui crée une
+            arborescense de dossiers. Les dossiers sont nommés en utilisant
+            le contenu du premier champ, celui-ci doit contenir des
+            caractères légaux utilisables dans les noms de dossiers et il ne
+            doit pas y avoir de contenus identiques sous le même parent.
+            Chaque fichier HTML est un tableau de données pour un ensemble de
+            frères, avec des liens vers le parent et le fils.</p><a id=
+            "export-delim" name="export-delim">
+
+            <h4>Texte Délimité</h4>
+
+            <p>Les données peuvent être exportées vers du texte tabulé (le
+            vieux format TreeLine) et des tableaux délimités par des
+            tabulations. Ces formats sont les mêmes que les formats d'import
+            correspondant. Lorsqu'on exporte vers un tableau, seul le premier
+            niveau de fils est utilisé, aussi vous pouvez peut-être aplatir
+            les données avant de les exporter.</p><a id="export-bookmarks"
+            name="export-bookmarks">
+
+            <h4>Fichiers de Favoris</h4>
+
+            <p>TreeLine exporte les fichiers de favoris au format HTML
+            Mozilla (navigateurs Mozilla, Firefox et Netscape) et au format
+            XBEL (navigateurs Konqueror, Galeon et Elinks).</p><a id=
+            "export-xml" name="export-xml">
+
+            <h4>XML Générique</h4>
+
+            <p>TreeLine importe et exporte les fichiers génériques XML. Cette
+            méthode n'est pas sophistiquée - chaque noeud devient un élément
+            XML et chaque champ devient un attribut XML sauf pour les champs
+            nommé "Element_Data" qui devient un élément texte. Cela permet
+            d'utiliser TreeLine comme un éditeur XML rudimentaire.</p><a id=
+            "export-xslt" name="export-xslt">
+
+            <h4>XSLT</h4>
+
+            <p>En plus d'exporter les données, le format d'un fichier peut
+            être exporté vers un fichier XSLT . Cela peut être utilisé pour
+            afficher des données XML à partir d'un fichier TreeLine dans un
+            navigateur sans exporter les données en HTML. Les versions
+            récentes de la plupart des navigateurs supportent le format XSLT.
+            Notez que le formattage de types de champs complexes est ignoré
+            par XSLT.<br>
+            <br>
+            Lors de l'export en XSLT, un lien vers le fichier XSL est ajouté
+            au fichier TreeLine. Dés lors le fichier TreeLine doit être
+            sauvé. En général , le fichier Treeline devrait avoir une
+            extention en ".xml" , ainsi TreeLine pourra les ouvrir
+            directement dans un navigateur standardisé. Après , le fichier
+            XSL ne nécéssite plus d'être re-exporté pour le changement de
+            données (seulement le changement de formatage ).<br>
+            <br>
+            Les balises HTML qui sont utilisées dans les formats et qui
+            seront exportés en XSLT, doivent utiliser le style xHTML (&lt;br
+            /&gt; au lieu de &lt;br&gt; par exemple). A l'exportation,
+            TreeLine demande le nom d'une feuille de style optionnelle (css).
+            Ce nom est enregistré dans le fichier TreeLine comme une valeur
+            par défaut pour les opérations d'export ultérieures. De même, la
+            référence au fichier XSLT dans le fichier TreeLine peut être
+            supprimée avec la commande "Outils-&gt;Supprimer Ref
+            XSLT".</p><a id="export-odf" name="export-odf">
+
+            <h4>Docuemnt texte ODF</h4>
+
+            <p>Treeline peut exporté un titre dans un le format texte de
+            document ODF , qui est compatible avec OpenOffice.org et Kword.
+            Au titre de chaque noeud est assigné un style d'en-tête de niveau
+            apprprié . Tout texte d'affichage de la sortie de chaque noeud
+            devient un texte normal sous les en-têtes . Le filtre d'export
+            est seulement à destination de titres simples . Tout formattage
+            HTML est enlevés , et tout objets tel que des tables et des
+            images ne sont pas supportés .</p>
+          </div><a id="custom" name="custom">
+          <hr>
+
+          <h3>Personnalisations</h3>
+
+          <div>
+            <a id="custom-options" name="custom-options">
+
+            <h4>Options</h4>
+
+            <p>Le comportement de Treeline peut être modifié par plusieurs
+            paramètres disponibles dans "Outils -&gt; Options Générales" . La
+            plupart de ses options sont abordées dans une section de ce
+            document</p><a id="custom-fonts" name="custom-fonts">
+
+            <h4>Polices de caractères</h4>
+
+            <p>Les polices de caractères utilisé dans l'arborescence ,
+            l'affichage et l'éditeur peuvent être configuré dans le menu
+            "Outils-&gt; Fixer les polices".</p><a id="custom-keys" name=
+            "custom-keys">
+
+            <h4>Raccourcis clavier</h4>
+
+            <p>Les raccourcis clavier peuvent être personnalisé en utilisant
+            la commande "Outils-&gt; Fixé les raccourcis clavier " . Les
+            raccourcis éditeur ont un onlet pour les commandes du menu et
+            celles qui ne sont pas du menu . Simplemenet presser la nouvelle
+            séquence de touches dans le champ approprié
+            sélectionné.</p><a id="custom-tools" name="custom-tools">
+
+            <h4>Barre d'outils</h4>
+
+            <p>Un editeur pour personnalisé la barre d'outils est disponible
+            dans "Outils-&gt; Personnalise les barre d'outils". Le nombre de
+            barre d'outil peut être configuré et les boutons de chacune
+            d'entres-elles définis .</p><a id="custom-color" name=
+            "custom-color">
+
+            <h4>Couleurs</h4>
+
+            <p>La couleur de l'interface utilisateur peut être configuré en
+            utilisant les trois derniers éléments dans le menu "Outils" . Si
+            la commande "Utilise les couleurs par défaut du système " est
+            activé , les paramètres utilisateurs des couleurs de fonds et de
+            textes sont écrasés .</p><a id="custom-icons" name=
+            "custom-icons">
+
+            <h4>Icones de l'arborescence</h4>
+
+            <p>Il y a un répertoire d'icones dans le repertoire de
+            configuration utilisateur ("~/.treeline-1.x/icons" sous Linux,
+            "Documents and Settings\&lt;user&gt;\Application
+            Data\bellz\treeline-1.x\icons" sur Windows) . Les fichiers images
+            (PNG ou BMP ) placés dans ce répertoire deviennent disponibles en
+            tant qu'icones d'arborescence .</p>
+          </div><a id="plugins" name="plugins">
+          <hr>
+
+          <h3>Plugins</h3>
+
+          <div>
+            <a id="plugins-intro" name="plugins-intro">
+
+            <h4>Description</h4>
+
+            <p>TreeLine possède une interface permettant d'ajouter des
+            modules plugins. Cela permet d'ajouter des extensions à TreeLine
+            qui implémentent des fonctionnalités utilisées par quelques
+            utilisateurs sans encombrer le code principal de TreeLine. Les
+            plugins peuvent ajouter des menus, accéder aux données TreeLine
+            et lire et écrire les fichiers TreeLine.<br>
+            <br>
+            Les plugins disponibles sont affichés sur la page "Downloads" du
+            site web de TreeLine.</p><a id="plugins-install" name=
+            "plugins-install">
+
+            <h4>Installation</h4>
+
+            <p>Les plugins sont installés en copiant leurs fichiers Python
+            (*.py) dans le dossier plugins
+            ("&lt;préfixe&gt;/lib/treeline/plugins/" sous Linux ou
+            "TreeLine\lib\plugins\" sous Windows). La liste des plugins
+            chargés est obtenue avec la commande "Aide-&gt;A propos
+            Plugins".<br>
+            <br>
+            Il existe aussi une configuration de fichier,
+            "DossierUtilisateurPlugins", qui permet de spécifier un autre
+            emplacement pour les plugins. Cela permet d'installer des plugins
+            sans avoir les droits d'accès root/administrateur. Cette
+            configuration peut seulement être modifiée en éditant le fichier
+            de configuration (~/.treeline sur Linux, treeline.ini sur
+            Windows).</p><a id="plugins-intrf" name="plugins-intrf">
+
+            <h4>Interface</h4>
+
+            <p>Les informations nécessaires pour écrire de nouveaux plugins
+            peuvent être trouvées dans le fichier "plugininterface.py" dans
+            le code source de TreeLine.</p>
+          </div><a id="errors" name="errors">
+          <hr>
+
+          <h3>Problèmes courants</h3>
+
+          <div>
+            <a id="errors-panes" name="errors-panes">
+
+            <h4>Paneaux fermés</h4>
+
+            <p>Si un volet n'est pas visible alors qu'il devrait contenir des
+            données , il a probablement été réduit à une taille de zéro .
+            Cela s'applique pour le volet de gauche et le volet bas de droite
+            . Pour corriger cela, chercher une fine bordure aux frontières
+            des panneaux qui peut être tiré pour ramener le volet dans sa
+            position normal.</p><a id="errors-xml" name="errors-xml">
+
+            <h4>Erreur XML</h4>
+
+            <p>Un message d'erreur, "Erreur en chargeant le Décodeur XML",
+            signifie que TreeLine n'a pas pu trouver la librairie XML. Sous
+            Linux, Python utilise une librairie externe pour décoder le XML.
+            En installant soit la librairie expat ou la package PyXML on doit
+            résoudre ce problème. Sous Windows, Python inclut le décodeur
+            XML, de sorte que ce message ne devrait pas apparaître à moins
+            que le fichier soit inexistant ou corrompu.</p><a id=
+            "errors-print" name="errors-print">
+
+            <h4>Impression</h4>
+
+            <p>Quelques problèmes d'impression, spécialement les problèmes
+            liés aux marges et à la césure des mots, peuvent être éliminés en
+            choisissant une police mieux adaptée à l'imprimante utilisée.</p>
+          </div>
+        </div><a id="revs" name="revs">
+        <hr>
+
+        <h2>Historique des Révisions</h2>
+
+        <div>
+          <p>Voir la version anglaise de Treeline pour avoir accès à
+          l'historique des révisions complète.</p>
+        </div><a id="contact" name="contact">
+        <hr>
+
+        <h2>Questions , commentaires , critique ?</h2>
+
+        <div>
+          <p>Il y a une liste de diffusions pour tous les utilisateurs ,
+          discutants de toutes les facettes de Treeline. C'est aussi
+          l'endroit idéal pour les discussions autours du developpement du
+          logiciel (depuis la feuille de route en passant par les suggestions
+          jusqu'aux béta tests ) Pour vous inscrire , allez sur <a href=
+          "https://lists.berlios.de/mailman/listinfo/treeline-users">lists.berlios.de/mailman/listinfo/treeline-users</a>
+          . J'espere que cette liste de diffusion restera dans de faibles
+          volumes</p>
+
+          <p>Si vous ne souhaiter pas vous inscrire à la liste de diffusion ,
+          Je peux être contacté par email à : doug101 AROBASE bellz POINT
+          org</p>
+
+          <p>Tous les retours d'experiences sont les bienvenues , incluant
+          les reports de bugs de toutes sortes . Gardez un oeil
+          périodiquement sur le site <a href=
+          "http://treeline.bellz.org">treeline.bellz.org</a> pour toutes
+          nouvelles mises à jours .</p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
