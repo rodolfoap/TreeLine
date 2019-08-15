@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DEFAULT item="y"
+line0="{*Name*}"
+line1="{*Name*}">
+<Name type="Text" ref="y">Main</Name>
+<DEFAULT item="y">
+<Name ref="y">Separate references and links</Name>
+<DEFAULT item="y">
+<Name ref="y">Group 1</Name>
+<SEP_LINKS item="y"
+line0="{*Name*}"
+line1="{*Name*}"
+line2="See also {*Link*}"
+icon="bullet_2">
+<Name type="Text" ref="y">Item 1.1</Name>
+<Link type="InternalLink" html="y">Item 2.2</Link>
+</SEP_LINKS>
+<SEP_LINKS item="y">
+<Name ref="y">Item 1.2</Name>
+<Link>Item 2.1</Link>
+</SEP_LINKS>
+</DEFAULT>
+<DEFAULT item="y">
+<Name ref="y">Group 2</Name>
+<SEP_LINKS item="y">
+<Name ref="y">Item 2.1</Name>
+<Link>Item 1.2</Link>
+</SEP_LINKS>
+<SEP_LINKS item="y">
+<Name ref="y">Item 2.2</Name>
+<Link>Item 1.1</Link>
+</SEP_LINKS>
+</DEFAULT>
+</DEFAULT>
+<DEFAULT item="y">
+<Name ref="y">Combined into keyword lists</Name>
+<COMB_LINKS item="y"
+line0="{*Name*}"
+line1="{*Name*}"
+line2="Keywords:"
+line3="{*Keywords*}"
+icon="bullet_1">
+<Name type="Text">Apples</Name>
+<Keywords type="InternalLink" html="y" ref="y">red
+large</Keywords>
+</COMB_LINKS>
+<COMB_LINKS item="y">
+<Name>Banannas</Name>
+<Keywords ref="y">yellow
+large</Keywords>
+</COMB_LINKS>
+<COMB_LINKS item="y">
+<Name>Cherries</Name>
+<Keywords ref="y">red
+small</Keywords>
+</COMB_LINKS>
+<COMB_LINKS item="y">
+<Name>Pears</Name>
+<Keywords ref="y">yellow
+large</Keywords>
+</COMB_LINKS>
+<COMB_LINKS item="y">
+<Name>Raspberries</Name>
+<Keywords ref="y">red
+small</Keywords>
+</COMB_LINKS>
+</DEFAULT>
+</DEFAULT>

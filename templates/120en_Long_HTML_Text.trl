@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LONG_TEXT item="y" tlversion="1.1.7"
+line0="{*Name*}"
+line1="{*Name*}"
+line2="{*Text*}">
+<Name type="Text" html="y" ref="y">Parent</Name>
+<Text type="Text" html="y" lines="7">Parent text</Text>
+<LONG_TEXT item="y">
+<Name>Child</Name>
+<Text>Child text</Text>
+</LONG_TEXT>
+</LONG_TEXT>

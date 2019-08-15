@@ -1,0 +1,24 @@
+TreeLine Installation Notes
+
+Extract the source files from the treeline tar file, then change to the
+'TreeLine' directory in a terminal.  For a basic installation, simply
+execute the following command as root:  'python install.py'
+
+To see all install options, use: 'python install.py -h'
+
+To install TreeLine with a different prefix (the default is
+'/usr/local'), use:  'python install.py -p /prefix/path'
+
+The old '~/.treeline' configuration file should be deleted or renamed if
+this is a major TreeLine upgrade (such as 0.5.x to 0.6.x) or if editing
+of new keyboard shortcuts is planned.
+
+To install language translations for TreeLine, download the
+"treeline-i18n-..." tar file that matches the version number of the main
+TreeLine file (ignore the letter suffix on the translation version
+number). To install the program and translation files simultaneously,
+extract the translation file from the same directory where the main
+treeline tar file was extracted and run the install command as described
+above. If TreeLine is already installed, extract the translation file to
+any directory and run the translation's install command as described
+above.

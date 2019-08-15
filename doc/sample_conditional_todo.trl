@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT item="y" tlversion="0.13.84"
+line0="{*Name*}"
+line1="{*Name*}"
+childtype="TASK_UNDONE">
+<Name type="Text" ref="y">Conditional Task List</Name>
+<ROOT item="y">
+<Name ref="y">Home Tasks</Name>
+<TASK_UNDONE item="y"
+line0="{*Name*}"
+line1="{*Name*}"
+generic="TASK_DONE"
+icon="smiley_2">
+<Name type="Text" ref="y">Mow lawn</Name>
+<Done type="Boolean" format="yes/no" init="false">false</Done>
+<Urgent type="Boolean" format="yes/no" init="false">false</Urgent>
+</TASK_UNDONE>
+<TASK_UNDONE item="y">
+<Name ref="y">Patch wall</Name>
+<Done>false</Done>
+<Urgent>false</Urgent>
+</TASK_UNDONE>
+<TASK_UNDONE item="y">
+<Name ref="y">Vacuum</Name>
+<Done>false</Done>
+<Urgent>false</Urgent>
+</TASK_UNDONE>
+<TASK_UNDONE_URGENT item="y"
+line0="{*Name*}!!!"
+line1="&lt;i&gt;{*Name*}&lt;/i&gt;"
+generic="TASK_DONE"
+condition="Done == &quot;false&quot; and Urgent == &quot;true&quot;"
+icon="smiley_5">
+<Name type="Text" ref="y">Walk dog</Name>
+<Done type="Boolean" format="yes/no" init="false">false</Done>
+<Urgent type="Boolean" format="yes/no" init="true">true</Urgent>
+</TASK_UNDONE_URGENT>
+<TASK_DONE item="y"
+line0="{*Name*}"
+line1="{*Name*}"
+condition="Done == &quot;true&quot;"
+icon="smiley_4">
+<Name type="Text" ref="y">Watch TV</Name>
+<Done type="Boolean" format="yes/no" init="false">true</Done>
+<Urgent type="Boolean" format="yes/no" init="false">false</Urgent>
+</TASK_DONE>
+</ROOT>
+<ROOT item="y">
+<Name ref="y">Work Tasks</Name>
+<TASK_DONE item="y">
+<Name ref="y">Play solitaire</Name>
+<Done>true</Done>
+<Urgent>false</Urgent>
+</TASK_DONE>
+<TASK_UNDONE item="y">
+<Name ref="y">Write documents</Name>
+<Done>false</Done>
+<Urgent>false</Urgent>
+</TASK_UNDONE>
+<TASK_DONE item="y">
+<Name ref="y">Eat lunch</Name>
+<Done>true</Done>
+<Urgent>false</Urgent>
+</TASK_DONE>
+<TASK_UNDONE_URGENT item="y">
+<Name ref="y">Compliment boss</Name>
+<Done>false</Done>
+<Urgent>true</Urgent>
+</TASK_UNDONE_URGENT>
+</ROOT>
+</ROOT>

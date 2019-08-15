@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="contact.xsl"?>
+<CATEGORY item="y" tlversion="1.1.7"
+line0="{*Type*}"
+line1="{*Type*}"
+childtype="PERSON">
+<Type type="Text" ref="y">Main</Type>
+<CATEGORY item="y">
+<Type>Friends</Type>
+<PERSON item="y"
+line0="{*FirstName*} {*LastName*}"
+line1="{*FirstName*} {*LastName*}"
+line2="{*Street*}"
+line3="{*City*}, {*State*} {*Zip*}"
+line4="{*HomePhone*} (H)"
+line5="{*WorkPhone*} (W)"
+line6="{*MobilePhone*} (M)"
+line7="DoB: {*Birthday*}"
+line8="{*Email*}">
+<FirstName type="Text" ref="y">John</FirstName>
+<LastName type="Text">Doe</LastName>
+<Street type="Text">1492 Columbus Lane</Street>
+<City type="Text">Atlantis</City>
+<State type="Text">CA</State>
+<Zip type="Text">98765</Zip>
+<HomePhone type="Text">(123) 555-4567</HomePhone>
+<WorkPhone type="Text">(123) 555-9876</WorkPhone>
+<MobilePhone type="Text"></MobilePhone>
+<Birthday type="Date" format="mmmm d, yyyy"></Birthday>
+<Email type="Text">john.doe@nowhere.com</Email>
+</PERSON>
+</CATEGORY>
+<CATEGORY item="y">
+<Type>Family</Type>
+<PERSON item="y">
+<FirstName>Jane</FirstName>
+<LastName>Roe</LastName>
+<Street>1812 War Lane</Street>
+<City>Britania</City>
+<State>NM</State>
+<Zip>87560</Zip>
+<HomePhone>(123) 490-4909</HomePhone>
+<Birthday>1933/03/13</Birthday>
+</PERSON>
+</CATEGORY>
+</CATEGORY>

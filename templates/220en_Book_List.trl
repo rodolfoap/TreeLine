@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CATEGORY item="y" tlversion="1.1.7"
+line0="{*NAME*}"
+line1="{*NAME*}"
+childtype="AUTHOR">
+<NAME type="Text" ref="y">SF Books</NAME>
+<AUTHOR item="y"
+line0="{*AuthorFirstName*} {*AuthorLastName*}"
+line1="{*AuthorFirstName*} {*AuthorLastName*}"
+childtype="BOOK"
+icon="book_3">
+<AuthorFirstName type="Text" ref="y">Orson Scott</AuthorFirstName>
+<AuthorLastName type="Text">Card</AuthorLastName>
+<BOOK item="y"
+line0="&quot;{*Title*}&quot;"
+line1="&quot;{*Title*}&quot;"
+line2="(c) {*Copyright*}"
+line3="Last Read: {*ReadDate*}"
+line4="{*Plot*}"
+icon="book_1">
+<Title type="Text" ref="y">Ender's Game</Title>
+<Copyright type="Number" format="0000">1985</Copyright>
+<ReadDate type="Date" format="mmmm, yyyy">2007/04/30</ReadDate>
+<Plot type="Text">Young boy is taught fighting and leadership</Plot>
+</BOOK>
+</AUTHOR>
+<AUTHOR item="y">
+<AuthorFirstName>Isaac</AuthorFirstName>
+<AuthorLastName>Asimov</AuthorLastName>
+<BOOK item="y">
+<Title>Foundation</Title>
+<Copyright>1951</Copyright>
+<Plot>Psychohistory predicts the fall of empire</Plot>
+</BOOK>
+</AUTHOR>
+</CATEGORY>

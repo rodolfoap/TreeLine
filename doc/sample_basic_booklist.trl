@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="SFBooks.xsl"?>
+<ROOT item="y"
+line0="{*NAME*}"
+line1="{*NAME*}"
+childtype="AUTHOR">
+<NAME type="Text" ref="y">SF Books</NAME>
+<AUTHOR item="y"
+line0="{*AuthorFirstName*} {*AuthorLastName*}"
+line1="{*AuthorFirstName*} {*AuthorLastName*} {*WebSite*}"
+childtype="BOOK"
+icon="book_1">
+<AuthorFirstName type="Text" ref="y">Greg</AuthorFirstName>
+<AuthorLastName type="Text">Bear</AuthorLastName>
+<WebSite type="URL" prefix="&amp;lt;" suffix="&amp;gt;" html="y">www.gregbear.com</WebSite>
+<BOOK item="y"
+line0="&quot;{*Title*}&quot;"
+line1="&quot;{*Title*}&quot;"
+line2="(c) {*Copyright*}, Own: {*Own*}"
+line3="Last Read: {*ReadDate*}, Rating: {*Rating*}"
+line4="{*Plot*}"
+icon="book_3">
+<Title type="Text" ref="y">Darwin's Radio</Title>
+<Copyright type="Number" format="0000"></Copyright>
+<Own type="Boolean" format="yes/no">false</Own>
+<ReadDate type="Date" format="m/d/yyyy">2000/10/01</ReadDate>
+<Rating type="Choice" format="1/2/3/4/5">4</Rating>
+<Plot type="Text" lines="7">Evolution caused by virus begining again</Plot>
+</BOOK>
+<BOOK item="y">
+<Title ref="y">Blood Music</Title>
+<Copyright>1985</Copyright>
+<Own>true</Own>
+<ReadDate>1998/07/01</ReadDate>
+<Rating>2</Rating>
+<Plot>Smart viruses take over</Plot>
+</BOOK>
+</AUTHOR>
+<AUTHOR item="y">
+<AuthorFirstName ref="y">Orson Scott</AuthorFirstName>
+<AuthorLastName>Card</AuthorLastName>
+<WebSite>www.hatrack.com</WebSite>
+<BOOK item="y">
+<Title ref="y">Pastwatch, The Redemption of Christopher Columbus</Title>
+<Copyright>1996</Copyright>
+<Own>Yes</Own>
+<ReadDate>1998/09/01</ReadDate>
+<Rating>4</Rating>
+<Plot>Time travel to change history; discovery of America</Plot>
+</BOOK>
+<BOOK item="y">
+<Title ref="y">Enchantment</Title>
+<Copyright>1999</Copyright>
+<Own>Yes</Own>
+<ReadDate>2000/08/01</ReadDate>
+<Rating>5</Rating>
+<Plot>Boy travels back to Russian fairy tale</Plot>
+</BOOK>
+<BOOK item="y">
+<Title ref="y">Ender's Shadow</Title>
+<Copyright>1999</Copyright>
+<Own>Yes</Own>
+<ReadDate>2001/05/01</ReadDate>
+<Rating>5</Rating>
+<Plot>Ender's Game from Bean's perspective</Plot>
+</BOOK>
+</AUTHOR>
+</ROOT>

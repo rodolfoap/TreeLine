@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT item="y" tlversion="0.13.84"
+line0="{*Name*}"
+line1="{*Name*}"
+childtype="DEFAULT">
+<Name type="Text" ref="y">Other Field References</Name>
+<FILE_INFO item="y"
+line0="{*Name*}"
+line1="{*Name*}"
+line2="File: {*!File_Path*}/{*!File_Name*}"
+line3="File Size: {*!File_Size*} bytes"
+line4="File Modified: {*!File_Mod_Date*} {*!File_Mod_Time*}"
+childtype="DEFAULT">
+<Name type="Text" ref="y">File Information</Name>
+</FILE_INFO>
+<PARENT_CHILD item="y"
+line0="{*Name*}"
+line1="{*Name*}"
+line2="Parent's Name: {**Name*}"
+line3="Children's Names: {*&amp;Name*}"
+childtype="DEFAULT">
+<Name type="Text" ref="y">Parent Info</Name>
+</PARENT_CHILD>
+<PARENT_CHILD item="y">
+<Name ref="y">Child Info</Name>
+<DEFAULT item="y"
+line0="{*Name*}"
+line1="{*Name*}">
+<Name type="Text" ref="y">First child</Name>
+</DEFAULT>
+<DEFAULT item="y">
+<Name ref="y">Next child</Name>
+</DEFAULT>
+<DEFAULT item="y">
+<Name ref="y">Third child</Name>
+</DEFAULT>
+</PARENT_CHILD>
+<INT_TL_FILE_DATA_FORM item="n">
+<File_Name type="Text"></File_Name>
+<File_Path type="Text"></File_Path>
+<File_Size type="Number" format="#"></File_Size>
+<File_Mod_Date type="Date" format="mmmm d, yyyy"></File_Mod_Date>
+<File_Mod_Time type="Time" format="h:MM:SS aa"></File_Mod_Time>
+<File_Owner type="Text"></File_Owner>
+<Page_Number type="Text"></Page_Number>
+<Number_of_Pages type="Text"></Number_of_Pages>
+</INT_TL_FILE_DATA_FORM>
+</ROOT>

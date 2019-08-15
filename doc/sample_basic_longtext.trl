@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT item="y" tlversion="0.13.84"
+line0="{*Name*}"
+line1="{*Name*}"
+childtype="PLAIN_TEXT">
+<Name type="Text" ref="y">Text Fields</Name>
+<PLAIN_TEXT item="y"
+line0="{*Name*}"
+line1="&lt;b&gt;{*Name*}&lt;/b&gt;"
+line2="{*Text*}">
+<Name type="Text" ref="y">Similar to Treepad</Name>
+<Text type="Text" lines="20">This file provides a single long text field for each node.
+This is similar to how the Treepad program on windows is usually used.</Text>
+</PLAIN_TEXT>
+<PLAIN_TEXT item="y">
+<Name ref="y">Plain text field</Name>
+<Text>Text fields can be set to plain text, so all line breaks and other white space are preserved.
+
+You can also use characters like &lt;, &gt; and &amp; without escaping them.</Text>
+</PLAIN_TEXT>
+<HTML_TEXT item="y"
+line0="{*Name*}"
+line1="&lt;b&gt;{*Name*}&lt;/b&gt;"
+line2="{*Text*}">
+<Name type="Text" ref="y">HTML text field</Name>
+<Text type="Text" html="y" lines="20">An HTML field allows tags like &lt;i&gt;itallics&lt;/&gt; to be used.
+
+It does not preserve white space.
+
+Characters like &amp;lt;, &amp;gt;, and &amp;amp; must be escaped.</Text>
+</HTML_TEXT>
+</ROOT>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FOLDER item="y" tlversion="0.13.84"
+line0="{*Name*}"
+line1="{*Name*}"
+icon="folder_2">
+<Name type="Text" ref="y">Bookmarks</Name>
+<FOLDER item="y">
+<Name ref="y">Linux</Name>
+<FOLDER item="y">
+<Name ref="y">Debian</Name>
+<BOOKMARK item="y"
+line0="{*Name*}"
+line1="{*Name*}"
+line2="{*Link*}"
+icon="bookmark">
+<Name type="Text" ref="y">debian.org</Name>
+<Link type="URL" html="y">http://www.debian.org/</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">Debian Planet</Name>
+<Link>http://www.debianplanet.org/</Link>
+</BOOKMARK>
+</FOLDER>
+<FOLDER item="y">
+<Name ref="y">Links</Name>
+<BOOKMARK item="y">
+<Name ref="y">Linux Doc Project</Name>
+<Link>http://metalab.unc.edu/mdw/index.html</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">Linux-tips.net</Name>
+<Link>http://www.linux-tips.net/index.php</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">MAN Pages</Name>
+<Link>http://linux.ctyme.com/</Link>
+</BOOKMARK>
+</FOLDER>
+<FOLDER item="y">
+<Name ref="y">News</Name>
+<BOOKMARK item="y">
+<Name ref="y">Linux Today</Name>
+<Link>http://linuxtoday.com/</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">LinuxPlanet</Name>
+<Link>http://www.linuxplanet.com/linuxplanet/</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">NewsForge</Name>
+<Link>http://www.newsforge.com/</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">PCLinuxOnline</Name>
+<Link>http://www.pclinuxonline.com/</Link>
+</BOOKMARK>
+</FOLDER>
+</FOLDER>
+<FOLDER item="y">
+<Name ref="y">Searches</Name>
+<BOOKMARK item="y">
+<Name ref="y">BigBook</Name>
+<Link>http://www.bigbook.com/</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">Google</Name>
+<Link>http://www.google.com/</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">Usenet</Name>
+<Link>http://groups.google.com/</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">Open Directory</Name>
+<Link>http://www.dmoz.org/</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">Switchboard</Name>
+<Link>http://www.switchboard.com/</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">Yahoo!</Name>
+<Link>http://www.yahoo.com/</Link>
+</BOOKMARK>
+</FOLDER>
+<FOLDER item="y">
+<Name ref="y">Weather</Name>
+<BOOKMARK item="y">
+<Name ref="y">AviationWeather.com</Name>
+<Link>http://www.aviationweather.com/</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">NWS</Name>
+<Link>http://www.nws.noaa.gov/data.html</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">WeatherNet</Name>
+<Link>http://cirrus.sprl.umich.edu/wxnet/</Link>
+</BOOKMARK>
+<BOOKMARK item="y">
+<Name ref="y">Weather Underground</Name>
+<Link>http://www.wunderground.com/cgi-bin/findweather/getForecast?query=gai</Link>
+</BOOKMARK>
+</FOLDER>
+<SEPARATOR item="n"
+line0="------------------"
+line1="&lt;hr&gt;">
+<Name type="Text"></Name>
+</SEPARATOR>
+</FOLDER>

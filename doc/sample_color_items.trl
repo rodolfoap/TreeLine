@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT item="y"
+line0="{*Name*}"
+line1="{*Name*}"
+childtype="DEFAULT">
+<Name type="Text">Features</Name>
+<TEXT_PARA item="y"
+line0="{*TOPIC*}"
+line1="{*TEXT*}">
+<TOPIC type="Text">Store information</TOPIC>
+<TEXT type="LongText">Stores almost any type of information, including plain text, HTML, numbers, dates, times, booleans, URLs, etc.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC>Tree structure</TOPIC>
+<TEXT>The tree structure helps keep things organized.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA_RED item="y"
+line0="{*TOPIC*}"
+line1="&lt;font color=&quot;red&quot;&gt;{*TEXT*}&lt;/font&gt;">
+<TOPIC type="Text">Fields</TOPIC>
+<TEXT type="LongText">Each node can have several fields that form a mini-database.</TEXT>
+</TEXT_PARA_RED>
+<TEXT_PARA item="y">
+<TOPIC>Node types</TOPIC>
+<TEXT>Several node types, with different sets of fields, can be included in one file.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC>Output format</TOPIC>
+<TEXT>The output format can be defined for each node type.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC>Right-hand view</TOPIC>
+<TEXT>The right-hand view can show one of three views - for showing output, editing node data and editing node titles.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA_BLUE item="y"
+line0="{*TOPIC*}"
+line1="&lt;font color=&quot;blue&quot;&gt;{*TEXT*}&lt;/font&gt;">
+<TOPIC type="Text">URL links</TOPIC>
+<TEXT type="LongText">Clicking on URLs in the output view opens the link in an external web browser.</TEXT>
+</TEXT_PARA_BLUE>
+<TEXT_PARA item="y">
+<TOPIC>Search commands</TOPIC>
+<TEXT>There are two available search commands.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC>Undo/redo</TOPIC>
+<TEXT>Undo and redo commands are available for all modifying operations.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC>Printing</TOPIC>
+<TEXT>The formatted output can be printed with parent/child lines and  headers and footers.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA_RED item="y">
+<TOPIC>HTML export</TOPIC>
+<TEXT>The data can be exported to HTML.</TEXT>
+</TEXT_PARA_RED>
+<TEXT_PARA item="y">
+<TOPIC>XSLT export</TOPIC>
+<TEXT>An XSLT file can be exported to work with the XML TreeLine files.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC>Text import and export</TOPIC>
+<TEXT>Tab-delimited tables and tab-indented text files can be imported and exported.  Plain text files and Treepad files can be imported.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC>Bookmark import/export</TOPIC>
+<TEXT>Mozilla and XBEL format bookmark files can be imported and exported.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC>Sorting</TOPIC>
+<TEXT>There are several sorting options.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC>Filtering</TOPIC>
+<TEXT>The nodes can be filtered.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA_BLUE item="y">
+<TOPIC>Spell check</TOPIC>
+<TEXT>Text data can be spell checked (requires an external program - see the System Requirements section).</TEXT>
+</TEXT_PARA_BLUE>
+<TEXT_PARA item="y">
+<TOPIC>Arranging data</TOPIC>
+<TEXT>Data can be automatically arranged using either parent references or categories from data fields.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC>Numbering</TOPIC>
+<TEXT>There is an outline numbering feature.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC>Customization</TOPIC>
+<TEXT>There are many other options for customization, including user-defined keyboard shortcuts.</TEXT>
+</TEXT_PARA>
+</ROOT>

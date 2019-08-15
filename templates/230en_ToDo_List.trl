@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CATEGORY item="y" tlversion="1.1.9"
+line0="{*Name*}"
+line1="{*Name*}"
+childtype="TASK_UNDONE">
+<Name type="Text" ref="y">Conditional Task List</Name>
+<CATEGORY item="y">
+<Name>Home Tasks</Name>
+<TASK_UNDONE item="y"
+line0="{*Name*}"
+line1="{*Name*}"
+generic="TASK_DONE"
+icon="smiley_2">
+<Name type="Text" ref="y">Mow lawn</Name>
+<Done type="Boolean" format="yes/no" init="false">false</Done>
+<Urgent type="Boolean" format="yes/no" init="false">false</Urgent>
+</TASK_UNDONE>
+</CATEGORY>
+<CATEGORY item="y">
+<Name>Work Tasks</Name>
+<TASK_UNDONE item="y">
+<Name>Write documents</Name>
+<Done>false</Done>
+<Urgent>false</Urgent>
+</TASK_UNDONE>
+</CATEGORY>
+<TASK_DONE item="n"
+line0="{*Name*}"
+line1="{*Name*}"
+condition="Done == &quot;true&quot;"
+icon="smiley_4">
+<Name type="Text" ref="y"></Name>
+<Done type="Boolean" format="yes/no" init="false"></Done>
+<Urgent type="Boolean" format="yes/no" init="false"></Urgent>
+</TASK_DONE>
+<TASK_UNDONE_URGENT item="n"
+line0="{*Name*}!!!"
+line1="&lt;i&gt;{*Name*}&lt;/i&gt;"
+generic="TASK_DONE"
+condition="Done == &quot;false&quot; and Urgent == &quot;true&quot;"
+icon="smiley_5">
+<Name type="Text" ref="y"></Name>
+<Done type="Boolean" format="yes/no" init="false"></Done>
+<Urgent type="Boolean" format="yes/no" init="true"></Urgent>
+</TASK_UNDONE_URGENT>
+</CATEGORY>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT item="y"
+line0="{*Name*}"
+line1="{*Name*}"
+childtype="DEFAULT">
+<Name type="Text" ref="y">Character Format Examples</Name>
+<TEXT_PARA item="y"
+line0="{*TOPIC*}"
+line1="&lt;b&gt;{*TOPIC*}&lt;/b&gt;"
+line2="{*TEXT*}"
+icon="doc">
+<TOPIC type="Text" ref="y">Colored Text</TOPIC>
+<TEXT type="Text" html="y" lines="7">Remember to set the field type to &lt;font color=&quot;#ff0000&quot;&gt;allow HTML rich text content&lt;/font&gt; when using formatting tags.  This is done in the &lt;font color=&quot;#0000ff&quot;&gt;&quot;Data-&gt;Configure Data Types-&gt;Field Type&quot;&lt;/font&gt; dialog.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC ref="y">Bold Text</TOPIC>
+<TEXT>Font tags can be applied from the &lt;b&gt;right-click context menu&lt;/b&gt; in the &quot;Data Editor&quot; view.</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC ref="y">Font Size</TOPIC>
+<TEXT>&lt;font size=&quot;+2&quot;&gt;Large text&lt;/font&gt; and &lt;font size=&quot;-1&quot;&gt;small text&lt;/font&gt;</TEXT>
+</TEXT_PARA>
+<TEXT_PARA item="y">
+<TOPIC ref="y">Italics and Underline</TOPIC>
+<TEXT>Text in &lt;i&gt;italics&lt;/i&gt; and even text &lt;u&gt;underlined&lt;/u&gt;</TEXT>
+</TEXT_PARA>
+</ROOT>
